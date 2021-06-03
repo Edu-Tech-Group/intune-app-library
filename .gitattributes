@@ -1,5 +1,4 @@
 Packages/Sprintplus/**/*.exe filter=lfs diff=lfs merge=lfs -text
 Packages/Sprintplus/**/*.intunewin filter=lfs diff=lfs merge=lfs -text
 Packages/TI-SmartView/**/*.intunewin filter=lfs diff=lfs merge=lfs -text
-Packages/TI-SmartView/**/*.exe filter=lfs diff=lfs merge=lfs -text
 Packages/TI-SmartView/**/*.msi filter=lfs diff=lfs merge=lfs -text
