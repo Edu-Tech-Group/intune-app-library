@@ -1,1 +1,0 @@
-add parameter -app (appname) to install and uninstall script
