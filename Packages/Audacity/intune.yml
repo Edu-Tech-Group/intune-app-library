@@ -1,0 +1,9 @@
+description: "Audacity audio software"
+displayName: "Audacity"
+publisher: "Audacity"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app audacity
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app audacity
+  detectionScript: 
