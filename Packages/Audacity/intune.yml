@@ -1,5 +1,11 @@
-description: "Audacity audio software"
-displayName: "Audacity"
+description:
+  en: "Audacity audio software"
+  fr: "Audacity audio software"
+  nl: "Audacity audio software"
+displayName:
+  en: "Audacity"
+  fr: "Audacity"
+  nl: "Audacity"
 publisher: "Audacity"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
