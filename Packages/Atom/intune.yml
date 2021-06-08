@@ -1,6 +1,12 @@
-description: "Atom"
-displayName: "Atom"
-publisher: "Audacity"
+description:
+  en: "Atom"
+  fr: "Atom"
+  nl: "Atom"
+displayName:
+  en: "Atom"
+  fr: "Atom"
+  nl: "Atom"
+publisher: "Atom"
 logoUrl: "/download.png"
 packageUrl: "/install.intunewin"
 installation:
