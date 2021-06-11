@@ -12,4 +12,4 @@ packageUrl: "/install.intunewin"
 installation:
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
-  detectionScript: 
+  detectionScript: detector.ps1
