@@ -1,0 +1,15 @@
+description:
+  en: "Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS."
+  fr: "Visual Studio Code est un éditeur de code source développé par Microsoft pour Windows, Linux et macOS."
+  nl: "Visual Studio Code is een broncode-editor ontwikkeld door Microsoft voor Windows, Linux en macOS."
+displayName:
+  en: "Visual Studio Code"
+  fr: "Visual Studio Code"
+  nl: "Visual Studio Code"
+publisher: "Microsoft"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

@@ -5,11 +5,11 @@ if(-not($testchoco)){
 }
 
 $localprograms = choco list --localonly
-if ($localprograms -like "*adobe-creative-cloud*")
+if ($localprograms -like "*vscode*")
 {
-    choco upgrade adobe-creative-cloud
+    choco upgrade vscode
 }
 Else
 {
-    choco install adobe-creative-cloud -y
+    choco install vscode -y
 }
