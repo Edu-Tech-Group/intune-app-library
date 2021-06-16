@@ -8,4 +8,4 @@ while (!($installedSoftware -like "*D9469AC3-2946-42CA-B42B-74A226CB7557*")) {
 }
 
 $path = "C:\Program Files (x86)\Common Files\SMART Technologies\SMART Activation Wizard\activationwizard.exe"
-&$path --puid=notebook_14 --m=4 --v=5 --a --pk=NC-2ABSW-DEGPI-MRF44-SEASA-AAA
+&$path --puid=notebook_14 --m=4 --v=5 --a --pk={Product key}
