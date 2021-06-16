@@ -1,0 +1,15 @@
+description:
+  en: "DbVisualizer is a database tool for developers and database administrators, helping you with both the development and maintenance of your databases."
+  fr: "DbVisualizer est un outil de base de données pour les développeurs et les administrateurs de bases de données, qui vous aide à la fois dans le développement et la maintenance de vos bases de données."
+  nl: "DbVisualizer is een database tool voor ontwikkelaars en database beheerders, die u helpt met zowel de ontwikkeling als het onderhoud van uw databases."
+displayName:
+  en: "DbVisualizer"
+  fr: "DbVisualizer"
+  nl: "DbVisualizer"
+publisher: "DbVis Software"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
