@@ -1,3 +1,3 @@
-if (Test-Path "${env:Program Files}\paint.net\PaintDotNet.exe") {
+if (Test-Path "${env:ProgramFiles}\paint.net\PaintDotNet.exe") {
     Write-Host "Found it!"
 }

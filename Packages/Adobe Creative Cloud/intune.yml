@@ -1,0 +1,15 @@
+description:
+  en: "Creative Cloud gives users access to a collection of software developed by Adobe for graphic design, video editing, web development, photography, audio editing, and services for the cloud."
+  fr: "Creative Cloud donne aux utilisateurs l'accès à une collection de logiciels développés par Adobe pour la conception graphique, le montage vidéo, le développement web, la photographie, le montage audio et les services pour le cloud."
+  nl: "Creative Cloud geeft gebruikers toegang tot een softwarecollectie ontwikkeld door Adobe voor grafisch ontwerp, videobewerking, webontwikkeling, fotografie, audiobewerking, en services voor de cloud."
+displayName:
+  en: "Adobe Creative Cloud"
+  fr: "Adobe Creative Cloud"
+  nl: "Adobe Creative Cloud"
+publisher: "Adobe"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
