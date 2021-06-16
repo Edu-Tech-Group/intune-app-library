@@ -10,6 +10,6 @@ publisher: "Audacity"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
-  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app audacity
-  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app audacity
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
   detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

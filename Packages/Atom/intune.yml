@@ -1,15 +1,15 @@
 description:
-  en: "Atom"
-  fr: "Atom"
-  nl: "Atom"
+  en: "Atom is a text and source code editor for Microsoft Windows, macOS and Linux with support for plug-ins written in Node.js"
+  fr: "Atom est un éditeur de texte et de code source pour Microsoft Windows, macOS et Linux, qui prend en charge les plugins écrits en Node.js."
+  nl: "Atom is een tekst- en broncode-editor voor Microsoft Windows, macOS en Linux met ondersteuning voor plug-ins geschreven in Node.js"
 displayName:
   en: "Atom"
   fr: "Atom"
   nl: "Atom"
 publisher: "Atom"
-logoUrl: "/download.png"
+logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
-  detectionScript: 
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

@@ -1,0 +1,15 @@
+description:
+  en: "This program provides the necessary settings to your computer to use a card reader to read the e-ID (Belgium)."
+  fr: "Ce programme fournit les paramètres nécessaires à votre ordinateur pour lire l'e-ID (Belgique) avec un lecteur de carte."
+  nl: "Dit programma levert de nodige instellingen aan je computer om met een kaartenlezer de e-ID (Belgium) uit te lezen."
+displayName:
+  en: "Belgium e-id"
+  fr: "Belgium e-id"
+  nl: "Belgium e-id"
+publisher: "Belgium"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
