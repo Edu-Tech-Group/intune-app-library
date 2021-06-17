@@ -1,0 +1,15 @@
+description:
+  en: "Hot Potatoes is a simple program to create interactive exercises."
+  fr: "Hot Potatoes est un programme simple permettant de créer des exercices interactifs."
+  nl: "Hot Potatoes is een eenvoudig programma waarmee interactieve oefeningen kunnen aangemaakt worden."
+displayName:
+  en: "Hot Potatoes"
+  fr: "Hot Potatoes"
+  nl: "Hot Potatoes"
+publisher: "Hot Potatoes"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
