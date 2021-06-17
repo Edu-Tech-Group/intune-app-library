@@ -1,0 +1,15 @@
+description:
+  en: "Java Runtime Environment is a runtime environment from Oracle Corporation that allows computer programs written in the Java programming language to run on a computer."
+  fr: "Java Runtime Environment est un environnement d'exécution d'Oracle Corporation qui permet aux programmes informatiques écrits dans le langage de programmation Java de s'exécuter sur un ordinateur."
+  nl: "Java Runtime Environment is een runtime-omgeving van Oracle Corporation die het mogelijk maakt om computerprogramma's die zijn geschreven in de programmeertaal Java op een computer uit te voeren."
+displayName:
+  en: "Java Runtime"
+  fr: "Java Runtime"
+  nl: "Java Runtime"
+publisher: "Oracle"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
