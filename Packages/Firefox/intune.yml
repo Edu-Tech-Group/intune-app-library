@@ -1,0 +1,15 @@
+description:
+  en: "Mozilla Firefox is a free, free and open source web browser developed by the Mozilla Project and volunteers. Firefox is based on the Gecko layout engine from the Mozilla Project. "
+  fr: "Mozilla Firefox est un navigateur web gratuit et open-source développé par le projet Mozilla et des volontaires. Firefox est basé sur le moteur de mise en page Gecko du projet Mozilla. "
+  nl: "Mozilla Firefox is een gratis, vrije en opensource-webbrowser ontwikkeld door het Mozilla-project en vrijwilligers. Firefox is gebaseerd op de Gecko-layout-engine uit het Mozilla-project. "
+displayName:
+  en: "Firefox"
+  fr: "Firefox"
+  nl: "Firefox"
+publisher: "Mozilla"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

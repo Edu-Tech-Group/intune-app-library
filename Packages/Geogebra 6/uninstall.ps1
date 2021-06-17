@@ -1,0 +1,1 @@
+./GeoGebra-Windows-Installer-6-0-604-0.exe /uninstall

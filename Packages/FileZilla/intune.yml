@@ -1,0 +1,15 @@
+description:
+  en: "FileZilla is an open source FTP program for Windows, Mac, Linux and FreeBSD. "
+  fr: "FileZilla est un programme FTP open-source pour Windows, Mac, Linux et FreeBSD. "
+  nl: "FileZilla is een opensource-FTP-programma voor Windows, Mac, Linux en FreeBSD. "
+displayName:
+  en: "FileZilla"
+  fr: "FileZilla"
+  nl: "FileZilla"
+publisher: "Tim Kosse"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

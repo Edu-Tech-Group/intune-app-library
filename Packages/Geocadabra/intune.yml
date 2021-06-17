@@ -1,0 +1,15 @@
+description:
+  en: "Geocadabra is a free program for all of mathematics education"
+  fr: "Geocadabra est un programme gratuit pour tout enseignement des mathématiques"
+  nl: "Geocadabra is een gratis programma voor het gehele wiskundeonderwijs."
+displayName:
+  en: "Geocadabra"
+  fr: "Geocadabra"
+  nl: "Geocadabra"
+publisher: "Ton Lecluse"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

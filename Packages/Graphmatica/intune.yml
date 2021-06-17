@@ -1,0 +1,15 @@
+description:
+  en: "Graphmatica is a powerful, easy-to-use, equation plotter with numerical and calculus features."
+  fr: "Graphmatica est un traceur d'équations puissant et facile à utiliser, doté de fonctions numériques et de calcul."
+  nl: "Graphmatica is een krachtige, eenvoudig te gebruiken vergelijkingsplotter met numerieke en calculusfuncties. "
+displayName:
+  en: "Graphmatica"
+  fr: "Graphmatica"
+  nl: "Graphmatica"
+publisher: "Graphmatica"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

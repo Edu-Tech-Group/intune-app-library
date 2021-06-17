@@ -1,0 +1,1 @@
+./GeoGebra-Windows-Installer-6-0-646-0.exe /S
