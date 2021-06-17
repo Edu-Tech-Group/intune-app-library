@@ -1,0 +1,15 @@
+description:
+  en: "Chocolatey is the base software, used to install and deliver all other software in this App distribution."
+  fr: "Chocolatey est le logiciel de base, utilisé pour installer et fournir tous les autres logiciels de cette distribution d'applications."
+  nl: "Chocolatey is de basis software, gebruikt om alle andere software in deze App distributie te installeren en te leveren."
+displayName:
+  en: "Chocolatey"
+  fr: "Chocolatey"
+  nl: "Chocolatey"
+publisher: ""Chocolatey"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
