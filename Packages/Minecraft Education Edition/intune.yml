@@ -1,0 +1,15 @@
+description:
+  en: "Minecraft Education Edition is a game-based learning platform that promotes creativity, collaboration, and problem-solving in an immersive digital environment. Educators in more than 115 countries are using Minecraft: Education Edition across the curriculum!"
+  fr: "Minecraft Education Edition est une plateforme d'apprentissage par le jeu qui favorise la créativité, la collaboration et la résolution de problèmes dans un environnement numérique immersif. Les éducateurs de plus de 115 pays utilisent Minecraft : Education Edition dans tous les programmes scolaires !"
+  nl: "Minecraft Education Edition is een op games gebaseerd leerplatform dat creativiteit, samenwerking en het oplossen van problemen stimuleert in een meeslepende digitale omgeving. Onderwijzers in meer dan 115 landen gebruiken Minecraft: Education Edition in het hele leerplan!"
+displayName:
+  en: "Minecraft Education Edition"
+  fr: "Minecraft Education Edition"
+  nl: "Minecraft Education Edition"
+publisher: "Microsoft"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

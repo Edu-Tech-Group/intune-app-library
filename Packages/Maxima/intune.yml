@@ -1,0 +1,15 @@
+description:
+  en: "Maxima is a free Opensource computer program designed for symbolic manipulation, numerical and graphical tasks."
+  fr: "Maxima est un programme informatique Opensource gratuit conçu pour la manipulation symbolique, les tâches numériques et graphiques."
+  nl: "Maxima is een gratis Opensource computerprogramma dat is ontwikkeld voor symbolische manipulatie, numerieke en grafische taken."
+displayName:
+  en: "Maxima"
+  fr: "Maxima"
+  nl: "Maxima"
+publisher: "Maxima"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

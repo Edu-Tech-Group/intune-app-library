@@ -1,0 +1,15 @@
+description:
+  en: "Microsoft Teams is a communication and collaboration platform from Microsoft that brings together chat capabilities, video conferencing, file storage, including shared files, and application integration."
+  fr: "Microsoft Teams est une plateforme de communication et de collaboration de Microsoft qui regroupe des fonctions de chat, de vidéoconférence, de stockage de fichiers, notamment de fichiers partagés, et d'intégration d'applications."
+  nl: "Microsoft Teams is een communicatie- en samenwerkingsplatform van Microsoft dat chatmogelijkheden, videoconferentie, bestandsopslag, waaronder gedeelde bestanden, en integratie van applicaties samenbrengt."
+displayName:
+  en: "Microsoft Intune (Machine Wide - No Auto start)"
+  fr: "Microsoft Intune (Machine Wide - No Auto start)"
+  nl: "Microsoft Intune (Machine Wide - No Auto start)"
+publisher: "Microsoft"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

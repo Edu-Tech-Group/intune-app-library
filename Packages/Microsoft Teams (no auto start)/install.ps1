@@ -5,11 +5,11 @@ if(-not($testchoco)){
 }
 
 $localprograms = choco list --localonly
-if ($localprograms -like "*minecraft-education*")
+if ($localprograms -like "*microsoft-teams.install*")
 {
-    choco upgrade minecraft-education --ignore-checksums
+    choco upgrade microsoft-teams.install --params "'/AllUsers /NoAutoStart'"
 }
 Else
 {
-    choco install minecraft-education -y --ignore-checksums
+    choco install microsoft-teams.install -y --params "'/AllUsers /NoAutoStart'"
 }
