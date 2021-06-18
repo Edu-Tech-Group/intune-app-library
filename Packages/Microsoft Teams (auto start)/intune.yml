@@ -7,7 +7,7 @@ displayName:
   fr: "Microsoft Intune (Machine Wide - With Auto start)"
   nl: "Microsoft Intune (Machine Wide - With Auto start)"
 publisher: "Microsoft"
-logoUrl: "/logo.jpg"
+logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1
