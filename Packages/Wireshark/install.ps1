@@ -1,9 +1,11 @@
-﻿$localprograms = choco list --localonly
-if ($localprograms -like "*wireshark*")
-{
-    choco upgrade wireshark
+./Wireshark-win64-3.4.6.exe /S
+$installedSoftware = Get-WmiObject -Class Win32_Product
+
+while (!(Test-Path "${env:ProgramFiles}\Wireshark\Wireshark.exe")) {
+    Start-Sleep -Seconds 10
 }
-Else
-{
-    choco install wireshark -y
+./nmap-7.12-setup /S
+
+while (!(Test-Path "${env:ProgramFiles}\WinPcap\rpcapd.exe")) {
+    Start-Sleep -Seconds 10
 }
