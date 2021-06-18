@@ -1,0 +1,15 @@
+description:
+  en: "VideoPad is a slim video editor for cutting and easy editing of video files from various formats"
+  fr: "VideoPad est un éditeur vidéo fin qui permet de couper et de monter facilement des fichiers vidéo de différents formats."
+  nl: "VideoPad is een slanke video-editor voor het knippen en eenvoudig bewerken van videobestanden van verschillende formaten."
+displayName:
+  en: "VideoPad"
+  fr: "VideoPad"
+  nl: "VideoPad"
+publisher: "VideoPad"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

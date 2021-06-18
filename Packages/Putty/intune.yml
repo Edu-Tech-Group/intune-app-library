@@ -1,0 +1,15 @@
+description:
+  en: "PuTTY is a free telnet and SSH client. It is software that allows someone to connect to another computer, usually servers with a UNIX-based operating system."
+  fr: "PuTTY est un client telnet et SSH gratuit. Il s'agit d'un logiciel qui permet à une personne de se connecter à un autre ordinateur, généralement des serveurs exécutant un système d'exploitation basé sur UNIX."
+  nl: "PuTTY is een vrije telnet- en SSH-client. Het is software waarmee iemand een verbinding kan maken met een andere computer, meestal zijn dit servers met een op UNIX gebaseerd besturingssysteem."
+displayName:
+  en: "Putty"
+  fr: "Putty"
+  nl: "Putty"
+publisher: "Putty"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

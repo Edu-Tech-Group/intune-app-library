@@ -1,0 +1,1 @@
+﻿.\VideoPadVideoEditor.exe -LQUIET

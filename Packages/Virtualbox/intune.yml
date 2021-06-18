@@ -1,0 +1,15 @@
+description:
+  en: "VirtualBox is a free computer program to run operating systems within an operating system. This is done on the basis of virtualization. VirtualBox is available in several languages for Windows, macOS, Linux, OS/2, Solaris and Unix."
+  fr: "VirtualBox est un programme informatique gratuit permettant d'exécuter des systèmes d'exploitation au sein d'un système d'exploitation. Cela se fait sur la base de la virtualisation. VirtualBox est disponible en plusieurs langues pour Windows, macOS, Linux, OS/2, Solaris et Unix."
+  nl: "VirtualBox is een vrij computerprogramma om besturingssystemen te draaien binnen een besturingssysteem. Dit gebeurt op basis van virtualisatie. VirtualBox is beschikbaar in verschillende talen voor Windows, macOS, Linux, OS/2, Solaris en Unix."
+displayName:
+  en: "VirtualBox"
+  fr: "VirtualBox"
+  nl: "VirtualBox"
+publisher: "SUN"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
