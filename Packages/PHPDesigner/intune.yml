@@ -1,0 +1,15 @@
+description:
+  en: "PHP Designer is een toepassing om PHP pagina's te ontwerpen. Vergelijkbaar met Atom, zonder Github integratie."
+  fr: "PHP Designer is een toepassing om PHP pagina's te ontwerpen. Vergelijkbaar met Atom, zonder Github integratie."
+  nl: "PHP Designer is een toepassing om PHP pagina's te ontwerpen. Vergelijkbaar met Atom, zonder Github integratie."
+displayName:
+  en: "PHP Designer"
+  fr: "PHP Designer"
+  nl: "PHP Designer"
+publisher: "PHP Designer"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

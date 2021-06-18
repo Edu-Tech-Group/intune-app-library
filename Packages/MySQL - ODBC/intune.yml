@@ -1,0 +1,15 @@
+description:
+  en: "MySQL - ODBC is an open Database Connector to connect to MySQL database servers."
+  fr: "MySQL - ODBC est un connecteur de base de données ouvert pour se connecter aux serveurs de bases de données MySQL."
+  nl: "MySQL - ODBC is een open Database Connector om met MySQL databank servers te connecteren"
+displayName:
+  en: "MySQL - ODBC"
+  fr: "MySQL - ODBC"
+  nl: "MySQL - ODBC"
+publisher: "MySQL"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

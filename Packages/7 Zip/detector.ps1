@@ -1,3 +1,3 @@
-if (Test-Path "${env:ProgramFiles}\7-Zip\7z.exe") {
+if (Test-Path "${env:ProgramFiles}\Microsoft VS Code\Code.exe") {
     Write-Host "Found it!"
 }

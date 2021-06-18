@@ -1,0 +1,15 @@
+description:
+  en: "Opera is a web browser and internet suite developed by the Norwegian company Opera Software. "
+  fr: "Opera est un navigateur web et une suite Internet développés par la société norvégienne Opera Software. "
+  nl: "Opera is een webbrowser en internet suite die is ontwikkeld door het Noorse bedrijf Opera Software. "
+displayName:
+  en: "Opera"
+  fr: "Opera"
+  nl: "Opera"
+publisher: "Opera Software AS"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
