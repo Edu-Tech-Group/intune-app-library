@@ -1,0 +1,15 @@
+description:
+  en: "XAMPP is an easy to install Apache distribution containing MariaDB, PHP and Perl. Releases follow PHP updates so there is a separate installer for each major PHP version"
+  fr: "XAMPP est une distribution Apache facile à installer qui contient MariaDB, PHP et Perl. Les versions suivent les mises à jour de PHP, il y a donc un installateur séparé pour chaque version majeure de PHP."
+  nl: "XAMPP is een eenvoudig te installeren Apache distributie met MariaDB, PHP en Perl. Releases volgen de PHP updates dus er is een aparte installer voor elke belangrijke PHP versie"
+displayName:
+  en: "XAMPP 8.0"
+  fr: "XAMPP 8.0"
+  nl: "XAMPP 8.0"
+publisher: "Bitnami"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
