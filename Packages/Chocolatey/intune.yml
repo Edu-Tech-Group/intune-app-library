@@ -6,7 +6,7 @@ displayName:
   en: "Chocolatey"
   fr: "Chocolatey"
   nl: "Chocolatey"
-publisher: ""Chocolatey"
+publisher: "Chocolatey"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
