@@ -3,9 +3,9 @@ description:
   fr: "Microsoft Teams est une plateforme de communication et de collaboration de Microsoft qui regroupe des fonctions de chat, de vidéoconférence, de stockage de fichiers, notamment de fichiers partagés, et d'intégration d'applications."
   nl: "Microsoft Teams is een communicatie- en samenwerkingsplatform van Microsoft dat chatmogelijkheden, videoconferentie, bestandsopslag, waaronder gedeelde bestanden, en integratie van applicaties samenbrengt."
 displayName:
-  en: "Microsoft Intune (Machine Wide - With Auto start)"
-  fr: "Microsoft Intune (Machine Wide - With Auto start)"
-  nl: "Microsoft Intune (Machine Wide - With Auto start)"
+  en: "Microsoft Teams (Machine Wide - Auto start)"
+  fr: "Microsoft Teams (Machine Wide - Auto start)"
+  nl: "Microsoft Teams (Machine Wide - Auto start)"
 publisher: "Microsoft"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"

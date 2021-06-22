@@ -1,0 +1,15 @@
+description:
+  en: "The Zoom Plugin for Outlook installs a button on the Microsoft Outlook tool bar to enable you to start or schedule a meeting with one-click."
+  fr: "Le plugin Zoom pour Outlook installe un bouton sur la barre d'outils de Microsoft Outlook pour vous permettre de lancer ou de programmer une réunion en un seul clic."
+  nl: "De Zoom-plugin voor Outlook installeert een knop op de werkbalk van Microsoft Outlook waarmee u met één klik een vergadering kunt starten of plannen."
+displayName:
+  en: "Zoom Outlook plugin"
+  fr: "Zoom Outlook plugin"
+  nl: "Zoom Outlook plugin"
+publisher: "Zoom"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
