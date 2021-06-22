@@ -1,0 +1,15 @@
+description:
+  en: "SQL Server Management Studio is an integrated environment for accessing, configuring, managing, administering, and developing all components of SQL Server. "
+  fr: "SQL Server Management Studio est un environnement intégré pour accéder, configurer, gérer, administrer et développer tous les composants de SQL Server. "
+  nl: "SQL Server Management Studio is een geïntegreerde omgeving voor het benaderen, configureren, beheren, administreren en ontwikkelen van alle componenten van SQL Server. "
+displayName:
+  en: "sql-server-management-studio"
+  fr: "sql-server-management-studio"
+  nl: "sql-server-management-studio"
+publisher: "Microsoft"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
