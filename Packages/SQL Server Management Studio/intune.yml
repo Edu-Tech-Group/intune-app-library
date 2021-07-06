@@ -7,7 +7,7 @@ displayName:
   fr: "sql-server-management-studio"
   nl: "sql-server-management-studio"
 publisher: "Microsoft"
-logoUrl: "/logo.jpg"
+logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1

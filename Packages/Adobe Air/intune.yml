@@ -1,0 +1,15 @@
+description:
+  en: "Adobe AIR (formerly Adobe Integrated Runtime) is a runtime environment developed by Adobe."
+  fr: "Adobe AIR (anciennement Adobe Integrated Runtime) est un environnement d'exécution développé par Adobe."
+  nl: "Adobe AIR (voorheen Adobe Integrated Runtime) is een runtime-environment dat ontwikkeld wordt door Adobe."
+displayName:
+  en: "Adobe Air"
+  fr: "Adobe Air"
+  nl: "Adobe Air"
+publisher: "Adobe"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
