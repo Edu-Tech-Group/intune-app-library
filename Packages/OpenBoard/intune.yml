@@ -1,0 +1,15 @@
+description:
+  en: "OpenBoard is an open source cross-platform interactive whiteboard application."
+  fr: "OpenBoard est une application open source de tableau blanc interactif multiplateforme."
+  nl: "OpenBoard is een open source cross-platform interactieve whiteboard toepassing."
+displayName:
+  en: "OpenBoard"
+  fr: "OpenBoard"
+  nl: "OpenBoard"
+publisher: "OpenBoard"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
