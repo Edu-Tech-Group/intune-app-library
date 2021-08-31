@@ -1,0 +1,15 @@
+description:
+  en: "This script edits the MS Teams installation configuration. So that the MS Teams app does not start when logging on windows"
+  fr: "Ce script modifie la configuration de l'installation de MS Teams. Pour que l'application MS Teams ne démarre pas lors de la connexion à Windows."
+  nl: "Dit script bewerkt de MS Teams installatie configuratie. Zodat de MS Teams app niet start bij het aanmelden op windows."
+displayName:
+  en: "Disable Teams On Boot"
+  fr: "Désactiver Teams au démarrage"
+  nl: "Disable Teams On Boot"
+publisher: "Kurt Roosbeek"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
