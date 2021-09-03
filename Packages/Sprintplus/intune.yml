@@ -1,0 +1,15 @@
+description:
+  en: "Sprint plus"
+  fr: "Sprint plus"
+  nl: "Sprint plus"
+displayName:
+  en: "Sprint plus"
+  fr: "Sprint plus"
+  nl: "Sprint plus"
+publisher: "Jabla"
+logoUrl: "/logo.png"
+packageUrl: "https://download.edu-tech.be/sprintplus.intunewin"
+installation:
+  installCommand: ".\setup.exe /silent"
+  uninstallCommand: ".\setup.exe /silent"
+  detectionScript: "powershell.exe -executionpolicy bypass .\detector.ps1"
