@@ -8,7 +8,7 @@ displayName:
   nl: "Sprint plus"
 publisher: "Jabla"
 logoUrl: "/logo.png"
-packageUrl: https://github.com/Edu-Tech-Group/intune-app-library/raw/main/Packages/Audacity/install.intunewin #"https://download.edu-tech.be/sprintplus.intunewin"
+packageUrl: "https://download.edu-tech.be/sprintplus.intunewin"
 installation:
   installCommand: .\setup.exe /silent
   uninstallCommand: .\setup.exe /silent
