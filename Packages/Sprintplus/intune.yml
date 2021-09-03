@@ -10,6 +10,6 @@ publisher: "Jabla"
 logoUrl: "/logo.png"
 packageUrl: "https://download.edu-tech.be/sprintplus.intunewin"
 installation:
-  installCommand: ".\setup.exe /silent"
-  uninstallCommand: ".\setup.exe /silent"
-  detectionScript: "powershell.exe -executionpolicy bypass .\detector.ps1"
+  installCommand: .\setup.exe /silent
+  uninstallCommand: .\setup.exe /silent
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
