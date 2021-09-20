@@ -1,0 +1,15 @@
+description:
+  en: "Fundels"
+  fr: "Fundels
+  nl: "Fundels"
+displayName:
+  en: "Fundels"
+  fr: "Fundels"
+  nl: "Fundels"
+publisher: "Fundels"
+logoUrl: "/logo.png"
+packageUrl: "https://download.edu-tech.be/fundels/fundels-3.0.10.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

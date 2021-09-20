@@ -1,0 +1,1 @@
+Start-Process -FilePath "setup.exe" -ArgumentList "/q"
