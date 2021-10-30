@@ -1,0 +1,15 @@
+description:
+  en: "Musescore is a free and opensource music notation software for Linux, Windows and Mac. "
+  fr: "MuseScore est un logiciel gratuit de notation musicale pour Linux, Windows et Mac. "
+  nl: "MuseScore is vrije muzieknotatiesoftware voor Linux, Windows en Mac."
+displayName:
+  en: "MuseScore"
+  fr: "MuseScore"
+  nl: "MuseScore"
+publisher: "MuseScore"
+logoUrl: "/MuseScore_logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
