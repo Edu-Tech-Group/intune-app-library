@@ -5,11 +5,11 @@ if(-not($testchoco)){
 }
 
 $localprograms = choco list --localonly
-if ($localprograms -like "*adobereader-update*")
+if ($localprograms -like "*adobereader*")
 {
-    choco upgrade adobereader-update
+    choco upgrade adobereader
 }
 Else
 {
-    choco install adobereader-update -y
+    choco install adobereader -y
 }
