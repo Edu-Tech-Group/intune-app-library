@@ -1,3 +1,8 @@
 if (Test-Path "${env:ProgramFiles(x86)}\Adobe\Flash Player\AddIns\airappinstaller\airappinstaller.exe") {
-    Write-Host "Found it!"
+    Write-Output "Found it!"
+    exit 0
+}
+else
+{
+    exit 1
 }

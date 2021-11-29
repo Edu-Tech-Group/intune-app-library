@@ -1,3 +1,8 @@
 if (Test-Path "${Env:ProgramFiles(x86)}\phpDesigner 8\phpDesigner.exe") {
-    Write-Host "Found it!"
+    Write-Output "Found it!"
+    exit 0
+}
+else
+{
+    exit 1
 }

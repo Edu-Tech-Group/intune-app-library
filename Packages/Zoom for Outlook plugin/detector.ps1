@@ -1,3 +1,8 @@
 if (Test-Path "${env:ProgramFiles}\Zoom\bin\ZoomOutlookIMPlugin.exe") {
-    Write-Host "Found it!"
+    Write-Output "Found it!"
+    exit 0
+}
+else
+{
+    exit 1
 }
