@@ -8,7 +8,7 @@ displayName:
   nl: "Sprint Viewer"
 publisher: "Sprint"
 logoUrl: "/logo.png"
-packageUrl: "/install.intunewin"
+packageUrl: "/setup_spr2_viewer.intunewin"
 installation:
   installCommand: .\setup_spr2_viewer.exe /verysilent
   uninstallCommand: .\unins000.exe /verysilent
