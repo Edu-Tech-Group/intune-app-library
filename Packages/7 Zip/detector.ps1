@@ -1,3 +1,8 @@
 if (Test-Path "${env:Program Files}\7-Zip\7z.exe") {
-    Write-Host "Found it!"
+    Write-Output "Found it!"
+    exit 0
+}
+else
+{
+    exit 1
 }

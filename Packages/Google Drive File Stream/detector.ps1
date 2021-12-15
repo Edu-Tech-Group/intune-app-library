@@ -1,3 +1,8 @@
 if (Test-Path "${Env:ProgramFiles}\Google\Drive File Stream") {
-    Write-Host "Found it!"
+    Write-Output "Found it!"
+    exit 0
+}
+else
+{
+    exit 1
 }

@@ -1,0 +1,1 @@
+./Mine-imator.exe /silent

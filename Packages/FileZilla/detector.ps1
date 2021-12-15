@@ -1,3 +1,8 @@
 if (Test-Path "${env:ProgramFiles}\FileZilla FTP Client") {
-    Write-Host "Found it!"
+    Write-Output "Found it!"
+    exit 0
+}
+else
+{
+    exit 1
 }

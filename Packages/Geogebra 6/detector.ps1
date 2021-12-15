@@ -1,3 +1,8 @@
 if (Test-Path "${env:ProgramFiles(x86)}\GeoGebra 6.0\GeoGebra.exe") {
-    Write-Host "Found it!"
+    Write-Output "Found it!"
+    exit 0
+}
+else
+{
+    exit 1
 }
