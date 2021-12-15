@@ -1,3 +1,8 @@
-if (Test-Path "${Env:ProgramData}\chocolatey\lib\putty.portable\tools\PUTTY.EXE") {
-    Write-Host "Found it!"
+if (Test-Path "${env:ProgramFiles(x86)}\Sprint Viewer 2\sprint.exe") {
+    Write-Output "Found it!"
+    exit 0
+}
+else
+{
+    exit 1
 }

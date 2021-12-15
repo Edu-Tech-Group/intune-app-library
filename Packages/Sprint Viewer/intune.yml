@@ -1,15 +1,15 @@
 description:
-  en: "PuTTY is a free telnet and SSH client. It is software that allows someone to connect to another computer, usually servers with a UNIX-based operating system."
-  fr: "PuTTY est un client telnet et SSH gratuit. Il s'agit d'un logiciel qui permet à une personne de se connecter à un autre ordinateur, généralement des serveurs exécutant un système d'exploitation basé sur UNIX."
-  nl: "PuTTY is een vrije telnet- en SSH-client. Het is software waarmee iemand een verbinding kan maken met een andere computer, meestal zijn dit servers met een op UNIX gebaseerd besturingssysteem."
+  en: "Sprint Viewer allows you to open, print, and read pdf and Sprint files without needing a SprintPlus license."
+  fr: "Avec Sprint Viewer, vous pouvez ouvrir, imprimer et lire des fichiers PDF et Sprint sans avoir besoin d'une licence SprintPlus."
+  nl: "Met Sprint Viewer kan je pdf- en Sprint-bestanden openen, afdrukken en leesklaar maken zonder dat je hiervoor een SprintPlus licentie nodig hebt."
 displayName:
-  en: "Putty"
-  fr: "Putty"
-  nl: "Putty"
-publisher: "Putty"
+  en: "Sprint Viewer"
+  fr: "Sprint Viewer"
+  nl: "Sprint Viewer"
+publisher: "Sprint"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
-  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
-  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  installCommand: .\setup_spr2_viewer.exe /verysilent
+  uninstallCommand: .\unins000.exe /verysilent
   detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
