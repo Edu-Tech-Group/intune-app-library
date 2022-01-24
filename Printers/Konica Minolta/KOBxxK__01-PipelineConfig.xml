@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Filters>
+  <Filter dll="KOBxxL_F01.dll" clsid="{7c5cff59-0fd3-43f0-814e-ef9e3a8a9c09}" name="KMMainFilterPipeline">
+    <Input guid="{b8cf8530-5562-47c4-ab67-b1f69ecf961e}" comment="IID_IXpsDocumentProvider"/>
+    <Output guid="{4368d8a2-4181-4a9f-b295-3d9a38bb9ba0}" comment="IID_IXpsDocumentConsumer"/>
+  </Filter>
+  <Filter dll="MSxpsPCL6.dll" clsid="{3821E518-33AF-4d17-92B3-28EB410D46B6}" name="Microsoft XPS to PCL6">
+    <Input guid="{4d47a67c-66cc-4430-850e-daf466fe5bc4}" comment="IID_IPrintReadStream" />
+    <Output guid="{65bb7f1b-371e-4571-8ac7-912f510c1a38}" comment="IID_IPrintWriteStream" />
+  </Filter>
+  <Filter dll = "KOBxxL_P01.dll" clsid="{fbde8d26-494a-4a19-a740-47ef35fce23d}" name="KMPostProcessFilterPipeline">
+    <Input guid="{4d47a67c-66cc-4430-850e-daf466fe5bc4}" comment="IID_IPrintReadStream"/>
+    <Output  guid="{65bb7f1b-371e-4571-8ac7-912f510c1a38}" comment="IID_IPrintWriteStream"/>
+  </Filter>
+</Filters>

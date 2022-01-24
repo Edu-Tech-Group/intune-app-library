@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+Copyright (C) 2013 KONICA MINOLTA, INC. All rights reserved.
+
+
+-->
+<Properties xmlns="http://schemas.microsoft.com/windows/2011/08/printing/devmodemap">
+  <Property Name="AllValues">
+    <String Length="15000"></String>
+  </Property>
+</Properties>

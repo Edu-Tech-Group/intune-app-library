@@ -1,0 +1,464 @@
+;
+; Copyright (C) 2016 KONICA MINOLTA, INC. All rights reserved.
+; 
+;
+[Version]
+Signature="$Windows NT$"
+Provider=KONICA MINOLTA
+ClassGuid={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+CatalogFile=KOBxxK__01.cat
+ClassVer=4.0
+DriverVer=04/04/2017,2.0.0.3
+
+[Manufacturer]
+"KONICA MINOLTA" = KONICAMINOLTA,NTamd64
+
+[KONICAMINOLTA.NTamd64]
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAWPH7F6E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAWPH7F6E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAA3Colo176A
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAA3Colo176A
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAA3BWSe719E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAA3BWSe719E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAA4Colo1D1E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAA4Colo1D1E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAA4BWSe43B8
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAA4BWSe43B8
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAA4BWLXC945
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAA4BWLXC945
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAA4BWBR8715
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAA4BWBR8715
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC658SeEFA0
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC658SeEFA0
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC368Se6AA6
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC368Se6AA6
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC287Se76D5
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC287Se76D5
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC287iS6BD5
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC287iS6BD5
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC286iSA714
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC286iSA714
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC266Se3A46
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC266Se3A46
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC754SE7F61
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC754SE7F61
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC554Se1F78
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC554Se1F78
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC364Se6A6A
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC364Se6A6A
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC281Se76B3
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC281Se76B3
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA958Ser8C0E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA958Ser8C0E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA558Ser8C5B
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA558Ser8C5B
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA367SerF96E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA367SerF96E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA754SerEC8E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA754SerEC8E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA554eSeE262
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA554eSeE262
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC759Se07BC
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC759Se07BC
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC750iC104
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC750iC104
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC650iS2A8C
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC650iS2A8C
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC360iS2889
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC360iS2889
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA750iDD12
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA750iDD12
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA650iSe1E5F
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA650iSe1E5F
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA658eSeB892
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA658eSeB892
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA368SerF991
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA368SerF991
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA306iSe96F1
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA306iSe96F1
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC3851SB2DC
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC3851SB2DC
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC4050i3F8B
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC4050i3F8B
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC4000i6FB4
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC4000i6FB4
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC3320iF4EB
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC3320iF4EB
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA4750iSB86C
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA4750iSB86C
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA4700iCBE2
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA4700iCBE2
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC3850_65C8
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC3850_65C8
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC3100P5F0A
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC3100P5F0A
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAC31109A85
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAC31109A85
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA4750_S7CB4
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA4750_S7CB4
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\Konica_Minolta4700P_90D5
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\Konica_Minolta4700P_90D5
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA4702P_92CE
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA4702P_92CE
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA4422_38AEF
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA4422_38AEF
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTA4752Se4ECD
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTA4752Se4ECD
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAKONICAF304
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAKONICAF304
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAbizhub7925
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAbizhub7925
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAbizhubB984
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAbizhubB984
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAbizhubB918
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAbizhubB918
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, WSDPRINT\KONICA_MINOLTAbizhub79B9
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, USBPRINT\KONICA_MINOLTAbizhub79B9
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAWPH7F6E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAA3Colo176A
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAA3BWSe719E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAA4Colo1D1E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAA4BWSe43B8
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAA4BWLXC945
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAA4BWBR8715
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC658SeEFA0
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC368Se6AA6
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC287Se76D5
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC287iS6BD5
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC286iSA714
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC266Se3A46
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC754SE7F61
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC554Se1F78
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC364Se6A6A
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC281Se76B3
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA958Ser8C0E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA558Ser8C5B
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA367SerF96E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA754SerEC8E
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA554eSeE262
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC759Se07BC
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC750iC104
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC650iS2A8C
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC360iS2889
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA750iDD12
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA650iSe1E5F
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA658eSeB892
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA368SerF991
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA306iSe96F1
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC3851SB2DC
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC4050i3F8B
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC4000i6FB4
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC3320iF4EB
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA4750iSB86C
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA4700iCBE2
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC3850_65C8
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC3100P5F0A
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAC31109A85
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA4750_S7CB4
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, Konica_Minolta4700P_90D5
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA4702P_92CE
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA4422_38AEF
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTA4752Se4ECD
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAKONICAF304
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAbizhub7925
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAbizhubB984
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAbizhubB918
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, KONICA_MINOLTAbizhub79B9
+"KONICA MINOLTA Universal V4 PCL" = DriverInstall, {831B6045-CAAF-4A2B-AE62-F8A60A6C7898}
+
+[DriverInstall]
+CopyFiles = DriverFiles
+
+[DriverFiles]
+KOBxxK__01.gpd
+KOBxxK_R01.gpd
+KOBxxK_J01.js
+KOBxxK_E01.xml
+KOBxxK_U01.xml
+KOBxxK__01-manifest.ini
+KOBxxK__01-PipelineConfig.xml
+KOBxxK__01.DPB
+KOBxxK_R01.dll
+KOBxxL_F01.dll
+KOBxxL_P01.dll
+KOBxxL_D01_type1.dll
+KOBxxL_D01_type2.dll
+KOBxxL_D01_type3.dll
+KOBxxL_D01_type4.dll
+
+;Printer Extension Files
+KOBxxK__01.exe
+KOBxxK__01.exe.config
+KOBxxK_C01.dll
+KOBxxK_X01.dll
+KOBxxK_L01.dll
+Newtonsoft.Json.dll
+System.Windows.Interactivity.dll
+System.Text.Json.dll
+SharpDX.Direct2D1.dll
+SharpDX.dll
+Xceed.Wpf.Toolkit.dll
+KOBxxK__01.txt
+KOBxxK_L01.txt
+KOBxxK_L01_ja.resources.dll
+KOBxxK_L01_fr.resources.dll
+KOBxxK_L01_de.resources.dll
+KOBxxK_L01_it.resources.dll
+KOBxxK_L01_es.resources.dll
+KOBxxK_L01_zh-TW.resources.dll
+KOBxxK_L01_zh-CN.resources.dll
+KOBxxK_L01_ko.resources.dll
+KOBxxK_L01_ca.resources.dll
+KOBxxK_L01_cs.resources.dll
+KOBxxK_L01_cy.resources.dll
+KOBxxK_L01_da.resources.dll
+KOBxxK_L01_el.resources.dll
+KOBxxK_L01_fi.resources.dll
+KOBxxK_L01_hu.resources.dll
+KOBxxK_L01_nl.resources.dll
+KOBxxK_L01_no.resources.dll
+KOBxxK_L01_pl.resources.dll
+KOBxxK_L01_pt.resources.dll
+KOBxxK_L01_ro.resources.dll
+KOBxxK_L01_ru.resources.dll
+KOBxxK_L01_hr.resources.dll
+KOBxxK_L01_sk.resources.dll
+KOBxxK_L01_sv.resources.dll
+KOBxxK_L01_tr.resources.dll
+KOBxxK_L01_sl.resources.dll
+KOBxxK_L01_et.resources.dll
+KOBxxK_L01_eu.resources.dll
+KOBxxK_L01_ar.resources.dll
+KOBxxK_L01_bg.resources.dll
+KOBxxK_L01_en-US.resources.dll
+KOBxxK_L01_en-GB.resources.dll
+KOBxxK_L01_he.resources.dll
+KOBxxK_L01_is.resources.dll
+KOBxxK_L01_pt-BR.resources.dll
+KOBxxK_L01_pt-PT.resources.dll
+KOBxxK_L01_th.resources.dll
+KOBxxK_L01_ur.resources.dll
+KOBxxK_L01_id.resources.dll
+KOBxxK_L01_uk.resources.dll
+KOBxxK_L01_be.resources.dll
+KOBxxK_L01_lv.resources.dll
+KOBxxK_L01_lt.resources.dll
+KOBxxK_L01_fa.resources.dll
+KOBxxK_L01_vi.resources.dll
+KOBxxK_L01_af.resources.dll
+KOBxxK_L01_hi.resources.dll
+KOBxxK_L01_mt.resources.dll
+KOBxxK_L01_ms.resources.dll
+KOBxxK_L01_mn.resources.dll
+kmbd.dll
+KOAZ_J_M.dll
+KOAZ_J_O.dll
+
+;QPBEditor Files
+KOBxxK_S01.dll
+KOBxxK_S01_ja.resources.dll
+KOBxxK_S01_fr.resources.dll
+KOBxxK_S01_de.resources.dll
+KOBxxK_S01_it.resources.dll
+KOBxxK_S01_es.resources.dll
+KOBxxK_S01_zh-TW.resources.dll
+KOBxxK_S01_zh-CN.resources.dll
+KOBxxK_S01_ko.resources.dll
+KOBxxK_S01_ca.resources.dll
+KOBxxK_S01_cs.resources.dll
+KOBxxK_S01_cy.resources.dll
+KOBxxK_S01_da.resources.dll
+KOBxxK_S01_el.resources.dll
+KOBxxK_S01_fi.resources.dll
+KOBxxK_S01_hu.resources.dll
+KOBxxK_S01_nl.resources.dll
+KOBxxK_S01_no.resources.dll
+KOBxxK_S01_pl.resources.dll
+KOBxxK_S01_pt.resources.dll
+KOBxxK_S01_ro.resources.dll
+KOBxxK_S01_ru.resources.dll
+KOBxxK_S01_hr.resources.dll
+KOBxxK_S01_sk.resources.dll
+KOBxxK_S01_sv.resources.dll
+KOBxxK_S01_tr.resources.dll
+KOBxxK_S01_sl.resources.dll
+KOBxxK_S01_et.resources.dll
+KOBxxK_S01_eu.resources.dll
+KOBxxK_S01_ar.resources.dll
+KOBxxK_S01_bg.resources.dll
+KOBxxK_S01_en-US.resources.dll
+KOBxxK_S01_en-GB.resources.dll
+KOBxxK_S01_he.resources.dll
+KOBxxK_S01_is.resources.dll
+KOBxxK_S01_pt-BR.resources.dll
+KOBxxK_S01_pt-PT.resources.dll
+KOBxxK_S01_th.resources.dll
+KOBxxK_S01_ur.resources.dll
+KOBxxK_S01_id.resources.dll
+KOBxxK_S01_uk.resources.dll
+KOBxxK_S01_be.resources.dll
+KOBxxK_S01_lv.resources.dll
+KOBxxK_S01_lt.resources.dll
+KOBxxK_S01_fa.resources.dll
+KOBxxK_S01_vi.resources.dll
+KOBxxK_S01_af.resources.dll
+KOBxxK_S01_hi.resources.dll
+KOBxxK_S01_mt.resources.dll
+KOBxxK_S01_ms.resources.dll
+KOBxxK_S01_mn.resources.dll
+
+KOBxxK_L01.cab
+
+[SourceDisksFiles]
+KOBxxK__01.gpd = 1
+KOBxxK_R01.gpd = 1
+KOBxxK_J01.js = 1
+KOBxxK_E01.xml = 1
+KOBxxK_U01.xml = 1
+KOBxxK__01-manifest.ini = 1
+KOBxxK__01-PipelineConfig.xml = 1
+KOBxxK__01.DPB = 1
+KOBxxK_R01.dll = 1
+KOBxxL_F01.dll = 1
+KOBxxL_P01.dll = 1
+KOBxxL_D01_type1.dll = 1
+KOBxxL_D01_type2.dll = 1
+KOBxxL_D01_type3.dll = 1
+KOBxxL_D01_type4.dll = 1
+
+;Printer Extension Files
+KOBxxK__01.exe = 1
+KOBxxK__01.exe.config = 1
+KOBxxK_C01.dll = 1
+KOBxxK_X01.dll = 1
+KOBxxK_L01.dll = 1
+Newtonsoft.Json.dll = 1
+System.Windows.Interactivity.dll = 1
+System.Text.Json.dll = 1
+SharpDX.Direct2D1.dll = 1
+SharpDX.dll = 1
+Xceed.Wpf.Toolkit.dll = 1
+KOBxxK__01.txt = 1
+KOBxxK_L01.txt = 1
+KOBxxK_L01_af.resources.dll = 2
+KOBxxK_L01_ar.resources.dll = 2
+KOBxxK_L01_be.resources.dll = 2
+KOBxxK_L01_bg.resources.dll = 2
+KOBxxK_L01_ca.resources.dll = 2
+KOBxxK_L01_cs.resources.dll = 2
+KOBxxK_L01_cy.resources.dll = 2
+KOBxxK_L01_da.resources.dll = 2
+KOBxxK_L01_de.resources.dll = 2
+KOBxxK_L01_el.resources.dll = 2
+KOBxxK_L01_en-GB.resources.dll = 2
+KOBxxK_L01_en-US.resources.dll = 2
+KOBxxK_L01_es.resources.dll = 2
+KOBxxK_L01_et.resources.dll = 2
+KOBxxK_L01_eu.resources.dll = 2
+KOBxxK_L01_fa.resources.dll = 2
+KOBxxK_L01_fi.resources.dll = 2
+KOBxxK_L01_fr.resources.dll = 2
+KOBxxK_L01_he.resources.dll = 2
+KOBxxK_L01_hi.resources.dll = 2
+KOBxxK_L01_hr.resources.dll = 2
+KOBxxK_L01_hu.resources.dll = 2
+KOBxxK_L01_id.resources.dll = 2
+KOBxxK_L01_is.resources.dll = 2
+KOBxxK_L01_it.resources.dll = 2
+KOBxxK_L01_ja.resources.dll = 2
+KOBxxK_L01_ko.resources.dll = 2
+KOBxxK_L01_lt.resources.dll = 2
+KOBxxK_L01_lv.resources.dll = 2
+KOBxxK_L01_mn.resources.dll = 2
+KOBxxK_L01_ms.resources.dll = 2
+KOBxxK_L01_mt.resources.dll = 2
+KOBxxK_L01_nl.resources.dll = 2
+KOBxxK_L01_no.resources.dll = 2
+KOBxxK_L01_pl.resources.dll = 2
+KOBxxK_L01_pt.resources.dll = 2
+KOBxxK_L01_pt-BR.resources.dll = 2
+KOBxxK_L01_pt-PT.resources.dll = 2
+KOBxxK_L01_ro.resources.dll = 2
+KOBxxK_L01_ru.resources.dll = 2
+KOBxxK_L01_sk.resources.dll = 2
+KOBxxK_L01_sl.resources.dll = 2
+KOBxxK_L01_sv.resources.dll = 2
+KOBxxK_L01_th.resources.dll = 2
+KOBxxK_L01_tr.resources.dll = 2
+KOBxxK_L01_uk.resources.dll = 2
+KOBxxK_L01_ur.resources.dll = 2
+KOBxxK_L01_vi.resources.dll = 2
+KOBxxK_L01_zh-CN.resources.dll = 2
+KOBxxK_L01_zh-TW.resources.dll = 2
+kmbd.dll = 1
+KOAZ_J_M.dll = 1
+KOAZ_J_O.dll = 1
+
+;QPBEditor Files
+KOBxxK_S01.dll = 1
+KOBxxK_S01_af.resources.dll = 2
+KOBxxK_S01_ar.resources.dll = 2
+KOBxxK_S01_be.resources.dll = 2
+KOBxxK_S01_bg.resources.dll = 2
+KOBxxK_S01_ca.resources.dll = 2
+KOBxxK_S01_cs.resources.dll = 2
+KOBxxK_S01_cy.resources.dll = 2
+KOBxxK_S01_da.resources.dll = 2
+KOBxxK_S01_de.resources.dll = 2
+KOBxxK_S01_el.resources.dll = 2
+KOBxxK_S01_en-GB.resources.dll = 2
+KOBxxK_S01_en-US.resources.dll = 2
+KOBxxK_S01_es.resources.dll = 2
+KOBxxK_S01_et.resources.dll = 2
+KOBxxK_S01_eu.resources.dll = 2
+KOBxxK_S01_fa.resources.dll = 2
+KOBxxK_S01_fi.resources.dll = 2
+KOBxxK_S01_fr.resources.dll = 2
+KOBxxK_S01_he.resources.dll = 2
+KOBxxK_S01_hi.resources.dll = 2
+KOBxxK_S01_hr.resources.dll = 2
+KOBxxK_S01_hu.resources.dll = 2
+KOBxxK_S01_id.resources.dll = 2
+KOBxxK_S01_is.resources.dll = 2
+KOBxxK_S01_it.resources.dll = 2
+KOBxxK_S01_ja.resources.dll = 2
+KOBxxK_S01_ko.resources.dll = 2
+KOBxxK_S01_lt.resources.dll = 2
+KOBxxK_S01_lv.resources.dll = 2
+KOBxxK_S01_mn.resources.dll = 2
+KOBxxK_S01_ms.resources.dll = 2
+KOBxxK_S01_mt.resources.dll = 2
+KOBxxK_S01_nl.resources.dll = 2
+KOBxxK_S01_no.resources.dll = 2
+KOBxxK_S01_pl.resources.dll = 2
+KOBxxK_S01_pt.resources.dll = 2
+KOBxxK_S01_pt-BR.resources.dll = 2
+KOBxxK_S01_pt-PT.resources.dll = 2
+KOBxxK_S01_ro.resources.dll = 2
+KOBxxK_S01_ru.resources.dll = 2
+KOBxxK_S01_sk.resources.dll = 2
+KOBxxK_S01_sl.resources.dll = 2
+KOBxxK_S01_sv.resources.dll = 2
+KOBxxK_S01_th.resources.dll = 2
+KOBxxK_S01_tr.resources.dll = 2
+KOBxxK_S01_uk.resources.dll = 2
+KOBxxK_S01_ur.resources.dll = 2
+KOBxxK_S01_vi.resources.dll = 2
+KOBxxK_S01_zh-CN.resources.dll = 2
+KOBxxK_S01_zh-TW.resources.dll = 2
+
+KOBxxK_L01.cab = 1
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+2 = %Location%,KOBxxK_L01.cab
+
+[DestinationDirs]
+DefaultDestDir=66000
+
+[Strings]
+;Localizable
+;Non-Localizable
+Location="Language localization resources"
+DiskName="KONICA MINOLTA Universal V4 PCL Installation Disk"
