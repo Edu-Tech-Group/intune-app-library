@@ -1,0 +1,15 @@
+description:
+  en: "Audacity is an open-source sound editing program that allows you to create, edit and save WAV, AIFF, Ogg Vorbis and MP3 files. Audacity has filters for editing sound. In addition, Audacity can edit multi-channel signals, and different sound signals can be played back simultaneously."
+  fr: "Audacity est un programme d'édition audio open-source qui vous permet de créer, d'éditer et de sauvegarder des fichiers WAV, AIFF, Ogg Vorbis et MP3. Audacity dispose de filtres pour l'édition du son. En plus, Audacity peut éditer des signaux multicanaux, et différents signaux sonores peuvent être lus simultanément."
+  nl: "Audacity is opensource-geluidsbewerkingsprogramma waarmee het mogelijk is WAV-, AIFF-, Ogg Vorbis-, en MP3-bestanden te maken, te bewerken en op te slaan. Audacity heeft filters voor het bewerken van geluid. Daarnaast kan Audacity signalen met meerdere kanalen bewerken, en kunnen verschillende geluidssignalen tegelijkertijd afgespeeld worden."
+displayName:
+  en: "Audacity"
+  fr: "Audacity"
+  nl: "Audacity"
+publisher: "Audacity"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Audacity.Audacity
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Audacity.Audacity
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
