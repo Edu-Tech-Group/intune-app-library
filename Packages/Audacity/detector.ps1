@@ -1,4 +1,6 @@
-if (Test-Path "${env:ProgramFiles(x86)}\Audacity\audacity.exe") {
+$localprograms = winget list 
+if ($localprograms -like "*audacity*")
+{
     Write-Output "Found it!"
     exit 0
 }

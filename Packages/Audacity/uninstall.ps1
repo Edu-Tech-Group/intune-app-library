@@ -1,5 +1,3 @@
-﻿$localprograms = choco list --localonly
-if ($localprograms -like "*audacity*")
-{
-    choco uninstall audacity -y
-}
+﻿param($app)
+
+winget uninstall $app

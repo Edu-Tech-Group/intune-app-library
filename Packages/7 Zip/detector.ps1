@@ -1,4 +1,6 @@
-if (Test-Path "${env:Program Files}\7-Zip\7z.exe") {
+$localprograms = winget list 
+if ($localprograms -like "*7zip*")
+{
     Write-Output "Found it!"
     exit 0
 }
