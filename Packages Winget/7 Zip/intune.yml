@@ -1,0 +1,15 @@
+description:
+  en: "7-Zip is a computer program for archiving and compressing files."
+  fr: "7-Zip est un programme informatique permettant d'archiver et de compresser des fichiers."
+  nl: "7-Zip is een computerprogramma om bestanden te archiveren en comprimeren."
+displayName:
+  en: "7-zip"
+  fr: "7-zip"
+  nl: "7-zip"
+publisher: "Igor Pavlov"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
