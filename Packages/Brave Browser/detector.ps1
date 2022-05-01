@@ -1,5 +1,5 @@
 $localprograms = winget list 
-if ($localprograms -Like "*BraveSoftware.BraveBrowser*")
+if ($localprograms -Like "*Brave*")
 {
     Write-Output "Found it!"
     exit 0
