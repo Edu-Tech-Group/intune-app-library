@@ -1,0 +1,15 @@
+description:
+  en: "8-zip Winget4 is a computer program for archiving and compressing files."
+  fr: "8-zip Winget4 est un programme informatique permettant d'archiver et de compresser des fichiers."
+  nl: "8-zip Winget4 is een computerprogramma om bestanden te archiveren en comprimeren."
+displayName:
+  en: "8-zip Winget4"
+  fr: "8-zip Winget4"
+  nl: "8-zip Winget4"
+publisher: "Igor Pavlov"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app 7zip.7zip
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app 7zip.7zip
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
