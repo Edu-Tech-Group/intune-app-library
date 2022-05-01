@@ -1,5 +1,5 @@
 $localprograms = winget list 
-if ($localprograms -like "*7zip*")
+if ($localprograms -Like "*7-Zip*")
 {
     Write-Output "Found it!"
     exit 0

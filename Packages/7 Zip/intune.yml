@@ -1,11 +1,11 @@
 description:
-  en: "7-zip Winget4 is a computer program for archiving and compressing files."
-  fr: "7-zip Winget4 est un programme informatique permettant d'archiver et de compresser des fichiers."
-  nl: "7-zip Winget4 is een computerprogramma om bestanden te archiveren en comprimeren."
+  en: "7-zip is a computer program for archiving and compressing files."
+  fr: "7-zip est un programme informatique permettant d'archiver et de compresser des fichiers."
+  nl: "7-zip is een computerprogramma om bestanden te archiveren en comprimeren."
 displayName:
-  en: "7-zip Winget4"
-  fr: "7-zip Winget4"
-  nl: "7-zip Winget4"
+  en: "7-zip "
+  fr: "7-zip "
+  nl: "7-zip "
 publisher: "Igor Pavlov"
 logoUrl: "/logo.jpg"
 packageUrl: "/install.intunewin"
