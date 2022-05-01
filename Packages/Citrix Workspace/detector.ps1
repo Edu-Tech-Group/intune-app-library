@@ -1,4 +1,6 @@
-if (Test-Path "${env:ProgramFiles(x86)}\Citrix\Citrix WorkSpace 2105") {
+$localprograms = winget list 
+if ($localprograms -Like "*Citrix.Workspace*")
+{
     Write-Output "Found it!"
     exit 0
 }
