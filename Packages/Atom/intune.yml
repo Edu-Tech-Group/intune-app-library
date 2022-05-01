@@ -10,6 +10,6 @@ publisher: "Atom"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
-  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
-  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app GitHub.Atom
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app GitHub.Atom
   detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

@@ -1,4 +1,6 @@
-if (Test-Path "${env:LOCALAPPDATA}\atom\Update.exe") {
+$localprograms = winget list 
+if ($localprograms -Like "*Atom*")
+{
     Write-Output "Found it!"
     exit 0
 }
