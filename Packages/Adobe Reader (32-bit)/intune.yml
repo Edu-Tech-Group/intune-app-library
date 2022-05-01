@@ -3,13 +3,13 @@ description:
   fr: "Adobe Acrobat Reader vous permet de visualiser, signer, annoter et collaborer sur des fichiers PDF gratuitement."
   nl: "Met Adobe Acrobat Reader kun je gratis PDF's bekijken, ondertekenen en annoteren, en er samen met anderen aan werken."
 displayName:
-  en: "Adobe Reader"
-  fr: "Adobe Reader"
-  nl: "Adobe Reader"
+  en: "Adobe Reader (32-bit)"
+  fr: "Adobe Reader (32-bit)"
+  nl: "Adobe Reader (32-bit)"
 publisher: "Adobe"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
-  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
-  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Adobe.Acrobat.Reader.32-bit
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Adobe.Acrobat.Reader.32-bit
   detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
