@@ -1,4 +1,6 @@
-if (Test-Path "${env:ProgramFiles}\FileZilla FTP Client") {
+$localprograms = winget list 
+if ($localprograms -Like "*FileZilla Client*")
+{
     Write-Output "Found it!"
     exit 0
 }
