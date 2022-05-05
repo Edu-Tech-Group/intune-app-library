@@ -1,0 +1,15 @@
+description:
+  en: "A simple and intuitive way to write musical notation or guitar tabs, Crescendo allows composers to write, save and print their music compositions on their computer."
+  fr: "Un moyen simple et intuitif d'écrire la notation musicale ou les tablatures de guitare, Crescendo permet aux compositeurs d'écrire, de sauvegarder et d'imprimer leurs compositions musicales sur leur ordinateur."
+  nl: "Crescendo is een eenvoudige en intuïtieve manier om muzieknotatie of gitaartabs te schrijven, en stelt componisten in staat hun muziekcomposities op hun computer te schrijven, op te slaan en af te drukken."
+displayName:
+  en: "Crescendo Music Notation"
+  fr: "Crescendo Music Notation"
+  nl: "Crescendo Music Notation"
+publisher: "Crescendo"
+logoUrl: "/Crescendo-Music-Notation.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
