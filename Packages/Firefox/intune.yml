@@ -7,9 +7,9 @@ displayName:
   fr: "Firefox"
   nl: "Firefox"
 publisher: "Mozilla"
-logoUrl: "/logo.jpg"
+logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
-  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
-  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Mozilla.Firefox
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Mozilla.Firefox
   detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

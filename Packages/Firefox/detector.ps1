@@ -1,4 +1,6 @@
-if (Test-Path "${env:ProgramFiles}\Mozilla Firefox\browser") {
+$localprograms = winget list 
+if ($localprograms -Like "*Mozilla Firefox*")
+{
     Write-Output "Found it!"
     exit 0
 }
