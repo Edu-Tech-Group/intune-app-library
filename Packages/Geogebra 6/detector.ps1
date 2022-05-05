@@ -1,4 +1,6 @@
-if (Test-Path "${env:ProgramFiles(x86)}\GeoGebra 6.0\GeoGebra.exe") {
+$localprograms = winget list 
+if ($localprograms -Like "*GeoGebra Classic*")
+{
     Write-Output "Found it!"
     exit 0
 }

@@ -10,6 +10,6 @@ publisher: "Geogebra"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
-  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
-  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app GeoGebra.Classic
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app GeoGebra.Classic
   detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
