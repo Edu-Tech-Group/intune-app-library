@@ -1,15 +1,15 @@
 description:
-  en: "Fundels"
-  fr: "Fundels"
-  nl: "Fundels"
+  en: "Fundels brings the most beautiful stories and picture books to life! In a child-friendly and playful way, Fundels stimulates the language development of children aged 3 to 7."
+  fr: "Fundels donne vie aux plus belles histoires et livres d'images ! De manière ludique et conviviale, Fundels stimule le développement du langage des enfants de 3 à 7 ans."
+  nl: "Fundels brengt de mooiste verhalen en prentenboeken tot leven! Op een kindvriendelijke en speelse manier stimuleert Fundels de taalontwikkeling van kinderen van 3 tot 7 jaar."
 displayName:
   en: "Fundels"
   fr: "Fundels"
   nl: "Fundels"
 publisher: "Fundels"
 logoUrl: "/logo.png"
-packageUrl: "https://download.edu-tech.be/fundels/fundels-3.0.10.intunewin"
+packageUrl: "/install.intunewin"
 installation:
-  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
-  uninstallCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app CartamundiDigital.Fundels
+  uninstallCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app CartamundiDigital.Fundels
   detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

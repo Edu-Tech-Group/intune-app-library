@@ -15,5 +15,6 @@
 		Add-AppxPackage -Path $latestRelease.browser_download_url
 	}
 
-#Install the Requested App
-winget install $app
+#Uninstall the Requested App
+
+winget uninstall $app
