@@ -1,0 +1,15 @@
+description:
+  en: "Advanced IP Scanner is a reliable and free network scanner to analyse LAN."
+  fr: "Advanced IP Scanner est un scanner de réseau fiable et gratuit pour analyser le réseau local."
+  nl: "Advanced IP Scanner is een betrouwbare en gratis netwerkscanner om LAN te analyseren."
+displayName:
+  en: "Anydesk"
+  fr: "Anydesk"
+  nl: "Anydesk"
+publisher: "Anydesk"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app AnyDeskSoftwareGmbH.AnyDesk
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app AnyDeskSoftwareGmbH.AnyDesk
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
