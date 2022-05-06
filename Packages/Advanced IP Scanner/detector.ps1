@@ -1,5 +1,5 @@
 $localprograms = winget list 
-if ($localprograms -Like "*Google Drive*")
+if ($localprograms -Like "*Advanced IP Scanner*")
 {
     Write-Output "Found it!"
     exit 0

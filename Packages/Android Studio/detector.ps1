@@ -1,5 +1,5 @@
 $localprograms = winget list 
-if ($localprograms -Like "*Google Drive*")
+if ($localprograms -Like "*Android Studio*")
 {
     Write-Output "Found it!"
     exit 0
