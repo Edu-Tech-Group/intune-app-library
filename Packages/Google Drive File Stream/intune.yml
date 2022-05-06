@@ -3,13 +3,13 @@ description:
   fr: "Google Drive est un service de stockage et de synchronisation de fichiers créé et exploité par Google."
   nl: "Google Drive is een service voor bestandsopslag en synchronisatie die is gemaakt en wordt beheerd door Google. "
 displayName:
-  en: "Google Drive File Stream"
-  fr: "Google Drive File Stream"
-  nl: "Google Drive File Stream"
+  en: "Google Drive"
+  fr: "Google Drive"
+  nl: "Google Drive"
 publisher: "Google"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
-  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
-  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Google.Drive
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Google.Drive
   detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

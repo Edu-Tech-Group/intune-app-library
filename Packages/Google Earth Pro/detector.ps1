@@ -1,5 +1,5 @@
 $localprograms = winget list 
-if ($localprograms -Like "*GeoGebra Geometry*")
+if ($localprograms -Like "*Google Earth*")
 {
     Write-Output "Found it!"
     exit 0
