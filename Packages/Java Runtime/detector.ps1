@@ -1,4 +1,6 @@
-if (Test-Path "${Env:ProgramFiles(x86)}\Java\jre1.8.0_261\bin\java.exe") {
+$localprograms = winget list 
+if ($localprograms -Like "*7-Zip*")
+{
     Write-Output "Found it!"
     exit 0
 }
