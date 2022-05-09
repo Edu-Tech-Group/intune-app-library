@@ -1,5 +1,5 @@
 $localprograms = winget list 
-if ($localprograms -Like "*7-Zip*")
+if ($localprograms -Like "*Java 8*")
 {
     Write-Output "Found it!"
     exit 0
