@@ -1,4 +1,6 @@
-if (Test-Path "${Env:ProgramFiles}\Musescore 3\bin\MuseScore3.exe") {
+$localprograms = winget list 
+if ($localprograms -Like "*MuseScore*")
+{
     Write-Output "Found it!"
     exit 0
 }
