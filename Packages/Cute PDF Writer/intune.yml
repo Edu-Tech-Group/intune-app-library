@@ -1,0 +1,15 @@
+description:
+  en: "CutePDF Writer is software that generates a pdf file by using Ghostscript."
+  fr: "CutePDF Writer est un logiciel qui génère un fichier pdf par Ghostscript."
+  nl: "CutePDF Writer is software die een pdf-bestand genereert door middel van Ghostscript."
+displayName:
+  en: "CutePDF Writer"
+  fr: "CutePDF Writer"
+  nl: "CutePDF Writer"
+publisher: "AcroSoftware"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app AcroSoftware.CutePDFWriter
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app AcroSoftware.CutePDFWriter
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
