@@ -1,0 +1,15 @@
+description:
+  en: "BlueJ is an open source IDE for the Java programming language."
+  fr: "BlueJ est un IDE open-source pour le langage de programmation Java."
+  nl: "BlueJ is een opensource IDE voor de programmeertaal Java."
+displayName:
+  en: "Blue J"
+  fr: "Blue J"
+  nl: "Blue J"
+publisher: "BlueJ"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app BlueJTeam.BlueJ
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app BlueJTeam.BlueJ
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
