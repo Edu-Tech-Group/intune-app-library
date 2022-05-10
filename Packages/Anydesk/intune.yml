@@ -7,7 +7,7 @@ displayName:
   fr: "Anydesk"
   nl: "Anydesk"
 publisher: "Anydesk"
-logoUrl: "/logo.png"
+logoUrl: "/logo.jpg"
 packageUrl: "/install.intunewin"
 installation:
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app AnyDeskSoftwareGmbH.AnyDesk
