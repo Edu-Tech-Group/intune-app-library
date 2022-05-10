@@ -1,0 +1,15 @@
+description:
+  en: "Blender is a free and open-source professional-grade 3D computer graphics and video compositing program."
+  fr: "Blender est un programme d'infographie 3D et de composition vidéo de qualité professionnelle, gratuit et à code source ouvert."
+  nl: "Blender is een gratis en open-source professioneel 3D computer graphics en video compositing programma."
+displayName:
+  en: "Blender"
+  fr: "Blender"
+  nl: "Blender"
+publisher: ""Blender Foundation""
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app BlenderFoundation.Blender
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app BlenderFoundation.Blender
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
