@@ -1,0 +1,15 @@
+description:
+  en: "CDBurnerXP is a free application to burn CDs and DVDs, including Blu-Ray and HD-DVDs."
+  fr: "CDBurnerXP est une application gratuite permettant de graver des CD et des DVD, y compris des Blu-Ray et des HD-DVD."
+  nl: "CDBurnerXP is een gratis toepassing om CD's en DVD's te branden, inclusief Blu-Ray en HD-DVD's."
+displayName:
+  en: "CD Burner XP"
+  fr: "CD Burner XP"
+  nl: "CD Burner XP"
+publisher: "CD Burner XP"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Canneverbe.CDBurnerXP
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Canneverbe.CDBurnerXP
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
