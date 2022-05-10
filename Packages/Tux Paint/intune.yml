@@ -1,0 +1,15 @@
+description:
+  en: "Tux Paint is a free and open source grid editor for young children."
+  fr: "Tux Paint est un éditeur de grilles gratuit et open-source pour les jeunes enfants".
+  nl: "Tux Paint is een vrije en opensource-rastereditor voor jonge kinderen."
+displayName:
+  en: "Tux Paint"
+  fr: "Tux Paint"
+  nl: "Tux Paint"
+publisher: "Tux Paint"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app NewBreedSoftware.TuxPaint
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app NewBreedSoftware.TuxPaint
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

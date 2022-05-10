@@ -1,5 +1,5 @@
 $localprograms = winget list 
-if ($localprograms -like "*audacity*")
+if ($localprograms -Like "*Tux Paint*")
 {
     Write-Output "Found it!"
     exit 0

@@ -1,0 +1,15 @@
+description:
+  en: "The BlueStacks App Player allows Android applications to run on PCs running Microsoft Windows and macOS."
+  fr: "Le lecteur d'applications BlueStacks permet d'exécuter des applications Android sur des PC fonctionnant sous Microsoft Windows et macOS."
+  nl: "Met de BlueStacks App Player kunnen Android-applicaties worden uitgevoerd op pc's met Microsoft Windows en macOS."
+displayName:
+  en: "Bluestacks"
+  fr: "Bluestacks"
+  nl: "Bluestacks"
+publisher: "Bluestacks"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app BlueStack.BlueStacks
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app BlueStack.BlueStacks
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

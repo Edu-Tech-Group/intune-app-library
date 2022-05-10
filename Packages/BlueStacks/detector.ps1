@@ -1,5 +1,5 @@
 $localprograms = winget list 
-if ($localprograms -like "*7zip*")
+if ($localprograms -Like "*BlueStacks*")
 {
     Write-Output "Found it!"
     exit 0
