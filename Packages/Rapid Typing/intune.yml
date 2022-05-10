@@ -1,0 +1,15 @@
+description:
+  en: "RapidTyping is a convenient and easy-to-use keyboard trainer that will help you improve your typing speed and reduce typos."
+  fr: "RapidTyping est un entraîneur de clavier pratique et facile à utiliser qui vous aidera à améliorer votre vitesse de frappe et à réduire les fautes de frappe."
+  nl: "RapidTyping is een handige en gemakkelijk te gebruiken toetsenbord-trainer die u zal helpen uw typesnelheid te verbeteren en typefouten te verminderen."
+displayName:
+  en: "Rapid Typing"
+  fr: "Rapid Typing"
+  nl: "Rapid Typing"
+publisher: "Rapid Typing"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
