@@ -1,0 +1,15 @@
+description:
+  en: "Picto-Selector is a free tool for creating visual schedules."
+  fr: "Picto-Selector est un outil gratuit permettant de créer des plannings visuels."
+  nl: "Picto-Selector is een gratis hulpmiddel voor het maken van visuele schema's."
+displayName:
+  en: "Picto-Selector"
+  fr: "Picto-Selector"
+  nl: "Picto-Selector"
+publisher: "MC vanderKooij"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app MCvanderKooij.PictoSelector
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app MCvanderKooij.PictoSelector
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

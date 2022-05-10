@@ -1,4 +1,6 @@
-if (Test-Path "${Env:ProgramFiles}\VideoLAN\VLC\vlc.exe") {
+$localprograms = winget list 
+if ($localprograms -Like "*VLC media player*")
+{
     Write-Output "Found it!"
     exit 0
 }
