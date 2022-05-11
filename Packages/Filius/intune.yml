@@ -1,0 +1,15 @@
+description:
+  en: "Filius is a free network simulation tool."
+  fr: "Filius est un outil gratuit de simulation de réseau."
+  nl: "Filius is een gratis netwerksimulatieprogramma."
+displayName:
+  en: "Filius"
+  fr: "Filius"
+  nl: "Filius"
+publisher: "Lernsoftware"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app lernsoftware.filius
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app lernsoftware.filius
+  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
