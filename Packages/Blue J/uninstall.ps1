@@ -1,6 +1,4 @@
-﻿param($app)
-
-#Install Winget if not yet installed
+﻿#Install Winget if not yet installed
 
 	$hasPackageManager = Get-AppPackage -name "Microsoft.DesktopAppInstaller"
 
@@ -17,4 +15,4 @@
 
 #Uninstall the Requested App
 
-winget uninstall $app
+winget uninstall BlueJTeam.BlueJ

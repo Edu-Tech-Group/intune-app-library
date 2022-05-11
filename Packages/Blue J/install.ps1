@@ -1,6 +1,4 @@
-﻿param($app)
-
-#Install Winget if not yet installed
+﻿#Install Winget if not yet installed
 
 	$hasPackageManager = Get-AppPackage -name "Microsoft.DesktopAppInstaller"
 
@@ -16,4 +14,4 @@
 	}
 
 #Install the Requested App
-winget install $app
+winget install BlueJTeam.BlueJ
