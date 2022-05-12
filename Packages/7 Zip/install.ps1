@@ -1,4 +1,4 @@
-﻿param($app)
+﻿Set ExecutionPolicy Bypass
 
 #Install Winget if not yet installed
 
@@ -16,4 +16,4 @@
 	}
 
 #Install the Requested App
-winget install $app
+winget install 7zip.7zip
