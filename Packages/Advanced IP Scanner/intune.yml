@@ -10,6 +10,7 @@ publisher: "Advanced IP Scanner"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
+  account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Famatech.AdvancedIPScanner
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Famatech.AdvancedIPScanner
   detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1

@@ -10,6 +10,7 @@ publisher: "Adobe"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
+  account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Adobe.Acrobat.Reader.64-bit
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Adobe.Acrobat.Reader.64-bit
   detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
