@@ -3,9 +3,9 @@ description:
   fr: "Mozilla Firefox est un navigateur web gratuit et open-source développé par le projet Mozilla et des volontaires. Firefox est basé sur le moteur de mise en page Gecko du projet Mozilla. "
   nl: "Mozilla Firefox is een gratis, vrije en opensource-webbrowser ontwikkeld door het Mozilla-project en vrijwilligers. Firefox is gebaseerd op de Gecko-layout-engine uit het Mozilla-project. "
 displayName:
-  en: "Firefox"
-  fr: "Firefox"
-  nl: "Firefox"
+  en: "Firefox 6"
+  fr: "Firefox 6"
+  nl: "Firefox 6"
 publisher: "Mozilla"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
