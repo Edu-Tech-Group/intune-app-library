@@ -1,15 +1,15 @@
 description:
-  en: "20-zip is a computer program for archiving and compressing files."
-  fr: "20-zip est un programme informatique permettant d'archiver et de compresser des fichiers."
-  nl: "20-zip is een computerprogramma om bestanden te archiveren en comprimeren."
+  en: "21-zip is a computer program for archiving and compressing files."
+  fr: "21-zip est un programme informatique permettant d'archiver et de compresser des fichiers."
+  nl: "21-zip is een computerprogramma om bestanden te archiveren en comprimeren."
 displayName:
-  en: "20-zip "
-  fr: "20-zip "
-  nl: "20-zip "
+  en: "21-zip "
+  fr: "21-zip "
+  nl: "21-zip "
 publisher: "Igor Pavlov"
 logoUrl: "/logo.jpg"
 packageUrl: "/install.intunewin"
 installation:
-  installCommand: .\install.exe
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app 7zip.7zip
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app 7zip.7zip
   detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
