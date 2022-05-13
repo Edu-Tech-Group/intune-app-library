@@ -17,4 +17,4 @@
 
 #Uninstall the Requested App
 
-winget uninstall $app
+winget uninstall $app --accept-source-agreements

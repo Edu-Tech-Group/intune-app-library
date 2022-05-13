@@ -13,4 +13,7 @@ installation:
   account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app 7zip.7zip
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app 7zip.7zip
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      path: "C:\Program Files\7-Zip"
+      fileOrFolder: "7z.exe"
