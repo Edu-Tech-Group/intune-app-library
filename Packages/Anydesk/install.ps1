@@ -14,8 +14,6 @@
 	
 		Add-AppxPackage -Path $latestRelease.browser_download_url
 	}
-Start-Sleep -Seconds 5
 
 #Install the Requested App
-winget install $app
-Start-Sleep -Seconds 5
+winget install $app --accept-source-agreements --force

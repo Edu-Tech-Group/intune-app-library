@@ -13,4 +13,7 @@ installation:
   account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app AnyDeskSoftwareGmbH.AnyDesk
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app AnyDeskSoftwareGmbH.AnyDesk
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      path: "C:\\Program Files (x86)\\AnyDeskMSI"
+      fileOrFolder: "AnyDeskMSI.exe"

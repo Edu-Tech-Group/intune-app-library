@@ -13,4 +13,7 @@ installation:
   account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Adobe.Acrobat.Reader.32-bit
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Adobe.Acrobat.Reader.32-bit
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      path: "C:\\Program Files (x86)\\Adobe\\Acrobat Reader DC\\Reader"
+      fileOrFolder: "AcroRd32.exe"
