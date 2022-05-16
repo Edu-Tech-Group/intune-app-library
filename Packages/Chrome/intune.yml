@@ -1,0 +1,19 @@
+description:
+  en: "Google Chrome is a web browser developed by Google."
+  fr: "Google Chrome est un navigateur web développé par Google."
+  nl: "Google Chrome is een webbrowser ontwikkeld door Google."
+displayName:
+  en: "Google Chrome"
+  fr: "Google Chrome"
+  nl: "Google Chrome"
+publisher: "Google"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Google.Chrome
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Google.Chrome
+  detection:
+    file:
+      path: "C:\\Program Files\\Google\\Chrome\\Application"
+      fileOrFolder: "chrome.exe"

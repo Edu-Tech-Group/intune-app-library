@@ -10,6 +10,10 @@ publisher: "Citrix"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
+  account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Citrix.Workspace
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Citrix.Workspace
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      path: "C:\\Program Files (x86)\\Citrix\\ICA Client\\SelfServicePlugin"
+      fileOrFolder: "SelfService.exe"

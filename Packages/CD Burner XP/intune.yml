@@ -10,6 +10,10 @@ publisher: "CD Burner XP"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
+  account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Canneverbe.CDBurnerXP
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Canneverbe.CDBurnerXP
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      path: "C:\\Program Files\\CDBurnerXP"
+      fileOrFolder: "cdbxpp.exe"
