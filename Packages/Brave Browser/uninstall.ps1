@@ -15,6 +15,6 @@
 		Add-AppxPackage -Path $latestRelease.browser_download_url
 	}
 
-#Uninstall the Requested App
+#Uninstall the Requested App --accept-source-agreements
 
 winget uninstall $app

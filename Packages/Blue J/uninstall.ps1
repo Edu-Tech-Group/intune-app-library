@@ -1,4 +1,6 @@
-﻿#Install Winget if not yet installed
+﻿param($app)
+
+#Install Winget if not yet installed
 
 	$hasPackageManager = Get-AppPackage -name "Microsoft.DesktopAppInstaller"
 
@@ -13,6 +15,6 @@
 		Add-AppxPackage -Path $latestRelease.browser_download_url
 	}
 
-#Uninstall the Requested App
+#Uninstall the Requested App --accept-source-agreements
 
-winget uninstall BlueJTeam.BlueJ
+winget uninstall $app

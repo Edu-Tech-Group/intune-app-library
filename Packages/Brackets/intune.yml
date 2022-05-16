@@ -10,6 +10,10 @@ publisher: "Brackets"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
+  account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app brackets-cont.brackets
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app brackets-cont.brackets
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      path: "C:\\Program Files (x86)\\Brackets"
+      fileOrFolder: "Brackets.exe"

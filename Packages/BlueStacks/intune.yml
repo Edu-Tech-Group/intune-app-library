@@ -10,6 +10,10 @@ publisher: "Bluestacks"
 logoUrl: "/logo.jpg"
 packageUrl: "/install.intunewin"
 installation:
+  account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app BlueStack.BlueStacks
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app BlueStack.BlueStacks
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      path: "C:\\Program Files\\BlueStacks_nxt"
+      fileOrFolder: "HD-Player.exe"
