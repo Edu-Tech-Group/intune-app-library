@@ -13,4 +13,7 @@ installation:
   account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Audacity.Audacity
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Audacity.Audacity
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      path: "C:\\Program Files\\Audacity"
+      fileOrFolder: "Audacity.exe"

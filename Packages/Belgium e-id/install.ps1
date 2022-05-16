@@ -8,8 +8,10 @@ $localprograms = choco list --localonly
 if ($localprograms -like "*eid-belgium*")
 {
     choco upgrade eid-belgium
+    choco upgrade eid-belgium-viewer
 }
 Else
 {
     choco install eid-belgium -y
+    choco install eid-belgium-viewer -y
 }

@@ -10,6 +10,10 @@ publisher: ""Blender Foundation""
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
+  account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app BlenderFoundation.Blender
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app BlenderFoundation.Blender
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      path: "C:\\Program Files\\Blender Foundation\\Blender 3.1"
+      fileOrFolder: "blender-launcher.exe"
