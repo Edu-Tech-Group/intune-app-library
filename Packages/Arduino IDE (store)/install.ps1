@@ -1,4 +1,6 @@
-﻿#Install Winget if not yet installed
+﻿param($app)
+
+#Install Winget if not yet installed
 
 	$hasPackageManager = Get-AppPackage -name "Microsoft.DesktopAppInstaller"
 
@@ -14,4 +16,4 @@
 	}
 
 #Install the Requested App
-winget install 9NBLGGH4RSD8 --accept-package-agreements
+winget install $app --accept-source-agreements
