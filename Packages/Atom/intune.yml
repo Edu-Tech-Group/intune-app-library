@@ -13,4 +13,7 @@ installation:
   account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app GitHub.Atom
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app GitHub.Atom
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      path: "C:\\Users\\%username%\\AppData\\Local\\atom"
+      fileOrFolder: "atom.exe"
