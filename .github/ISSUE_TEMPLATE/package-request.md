@@ -7,6 +7,6 @@ assignees: ''
 
 ---
 
-##Package name:
+### Package name:
 
-##If not available in a package repository please provide a download URL for the package:
+### If not available in a package repository please provide a download URL for the package:
