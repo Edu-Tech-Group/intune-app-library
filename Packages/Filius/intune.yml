@@ -12,4 +12,7 @@ packageUrl: "/install.intunewin"
 installation:
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app lernsoftware.filius
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app lernsoftware.filius
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      path: "C:\\Program Files\\Filius"
+      fileOrFolder: "Filius.exe"
