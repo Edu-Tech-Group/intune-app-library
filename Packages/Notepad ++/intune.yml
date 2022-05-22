@@ -1,15 +1,19 @@
 description:
-  en: "Notepad++ is a free text and source code editor for programmers."
-  fr: "Notepad++ est un éditeur de texte et de code source gratuit pour les programmeurs."
-  nl: "Notepad++ est un éditeur de texte et de code source gratuit pour les programmeurs."
+  en: "Notepad++ is a free source code editor that supports several languages."
+  fr: "Notepad++ est un éditeur de code source gratuit qui prend en charge plusieurs langues."
+  nl: "Notepad++ is een gratis broncode-editor die verschillende talen ondersteunt."
 displayName:
   en: "Notepad++"
   fr: "Notepad++"
   nl: "Notepad++"
-publisher: "Don Ho"
+publisher: "Notepad++"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
-  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
-  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Notepad++.Notepad++
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Notepad++.Notepad++
+  detection:
+    file:
+      path: "C:\\Program Files\\Notepad++"
+      fileOrFolder: "notepad++.exe"
