@@ -1,0 +1,19 @@
+description:
+  en: "LEGO Mindstorms EV3 programing enviroment for education."
+  fr: "Environnement de programmation LEGO Mindstorms EV3 pour l'éducation."
+  nl: "LEGO Mindstorms EV3 programmeeromgeving voor het onderwijs."
+displayName:
+  en: "Mindstorms Edu EV3 Classroom"
+  fr: "Mindstorms Edu EV3 Classroom"
+  nl: "Mindstorms Edu EV3 Classroom"
+publisher: "LEGO"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app LEGO.MindstormsEduEV3Classroom
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app LEGO.MindstormsEduEV3Classroom
+  detection:
+    file:
+      path: "C:\\Program Files\\EV3 Classroom"
+      fileOrFolder: "advanced_ip_scanner.exe"
