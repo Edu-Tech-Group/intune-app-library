@@ -1,15 +1,19 @@
 description:
-  en: "VLC media player is a free and open source media player, which is part of the VideoLAN project. The player supports a large number of audio and video codecs and has support for DVDs, VCDs and various streaming protocols. "
-  fr: "Le lecteur multimédia VLC est un lecteur multimédia gratuit et open source, qui fait partie du projet VideoLAN. Le lecteur supporte un grand nombre de codecs audio et vidéo et prend en charge les DVD, les VCD et divers protocoles de streaming. "
-  nl: "VLC media player is een vrije en opensource-mediaspeler, die deel uitmaakt van het VideoLAN-project. De speler ondersteunt een groot aantal audio- en videocodecs en kent ondersteuning voor dvd's, vcd's en diverse streaming-protocollen. "
+  en: "VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files, and various streaming protocols."
+  fr: "VLC est un lecteur multimédia multiplateforme gratuit et open source qui lit la plupart des fichiers multimédias, ainsi que divers protocoles de streaming."
+  nl: "VLC is een vrije en open source multimediaspeler en -framework voor alle platformen, waarmee de meeste multimediabestanden en verschillende streamingprotocollen kunnen worden afgespeeld."
 displayName:
-  en: "VLC Player"
-  fr: "VLC Player"
-  nl: "VLC Player"
-publisher: "VLC Player"
+  en: "VLC media player"
+  fr: "VLC media player"
+  nl: "VLC media player"
+publisher: "VideoLAN"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
+  account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app VideoLAN.VLC
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app VideoLAN.VLC
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      path: "C:\\Program Files\\VideoLAN\\VLC"
+      fileOrFolder: "vlc.exe"
