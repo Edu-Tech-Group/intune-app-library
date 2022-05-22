@@ -1,0 +1,19 @@
+description:
+  en: "Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education."
+  fr: "Wireshark est un analyseur de paquets gratuit et open-source. Il est utilisé pour le dépannage des réseaux, l'analyse, le développement de logiciels et de protocoles de communication, et l'éducation."
+  nl: "Wireshark is een gratis en open-source pakketanalysator. Het wordt gebruikt voor netwerk troubleshooting, analyse, software en communicatie protocol ontwikkeling, en onderwijs."
+displayName:
+  en: "Wireshark"
+  fr: "Wireshark"
+  nl: "Wireshark"
+publisher: "Wireshark Foundation"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app WiresharkFoundation.Wireshark
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app WiresharkFoundation.Wireshark
+  detection:
+    file:
+      path: "C:\\Program Files\\Wireshark"
+      fileOrFolder: "Wireshark.exe"
