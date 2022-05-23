@@ -12,4 +12,8 @@ packageUrl: "/install.intunewin"
 installation:
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app CartamundiDigital.Fundels
   uninstallCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app CartamundiDigital.Fundels
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Fundels"
+        fileOrFolderName: "Fundels.exe"
