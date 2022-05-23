@@ -1,0 +1,24 @@
+description:
+  en: "Sprint plus"
+  fr: "Sprint plus"
+  nl: "Sprint plus"
+displayName:
+  en: "Sprint plus"
+  fr: "Sprint plus"
+  nl: "Sprint plus"
+publisher: "Jabla"
+logoUrl: "/logo.png"
+packageUrl: "https://applications4intune.z6.web.core.windows.net/SprintPlus%20leesvoor/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  uninstallCommand: powershell.exe -executionpolicy bypass .\install.ps1
+  detection:
+    file:
+      - path: "C:\\Program Files (x86)\\SprintPlus 3"
+        fileOrFolder: "sprint.exe"
+      - path: "C:\\Program Files (x86)\\SprintPlus 3"
+        fileOrFolder: "Sprinter.exe"
+      - path: "C:\\Program Files (x86)\\SprintPlus 3"
+        fileOrFolder: "Sprinter.exe"
+      - path: "C:\\Program Files (x86)\\SprintPlus 3"
+        fileOrFolder: "LicMan.exe"
