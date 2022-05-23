@@ -16,4 +16,4 @@
 	}
 
 #Install the Requested App
-winget install $app --accept-source-agreements
+winget install $app --accept-source-agreements --force
