@@ -1,0 +1,22 @@
+description:
+  en: "Inkscape is a free and open-source vector graphics editor used to create vector images, primarily in Scalable Vector Graphics (SVG) format. Other formats can be imported and exported."
+  fr: "Inkscape est un éditeur de graphiques vectoriels libre et gratuit utilisé pour créer des images vectorielles, principalement au format Scalable Vector Graphics (SVG). D'autres formats peuvent être importés et exportés."
+  nl: "Inkscape is een vrije en open-source vectorafbeeldingeneditor die gebruikt wordt om vectorafbeeldingen te maken, hoofdzakelijk in Scalable Vector Graphics (SVG) formaat. Andere formaten kunnen worden geïmporteerd en geëxporteerd."
+displayName:
+  en: "Inkscape"
+  fr: "Inkscape"
+  nl: "Inkscape"
+publisher: "Inkscape"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Inkscape.Inkscape
+  uninstallCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Inkscape.Inkscape
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files\\Inkscape\\bin"
+        fileOrFolderName: "inkscape.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\Inkscape\\bin"
+        fileOrFolderName: "inkview.exe"
