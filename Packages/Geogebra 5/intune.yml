@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app GeoGebra.Classic.5
   detection:
     file:
-      path: "C:\\Program Files (x86)\\GeoGebra 5.0"
-      fileOrFolder: "GeoGebra.exe"
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\GeoGebra 5.0"
+        fileOrFolderName: "GeoGebra.exe"

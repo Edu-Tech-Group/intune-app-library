@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app LEGO.MindstormsEduEV3Classroom
   detection:
     file:
-      path: "C:\\Program Files\\EV3 Classroom"
-      fileOrFolder: "advanced_ip_scanner.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\EV3 Classroom"
+        fileOrFolderName: "advanced_ip_scanner.exe"

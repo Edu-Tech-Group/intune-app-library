@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app BraveSoftware.BraveBrowser
   detection:
     file:
-      path: "C:\\Users\\%username%\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application"
-      fileOrFolder: "brave.exe"
+      - detectionType: exists
+        path: "C:\\Users\\%username%\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application"
+        fileOrFolderName: "brave.exe"

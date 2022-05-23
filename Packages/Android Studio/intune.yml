@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Google.AndroidStudio
   detection:
     file:
-      path: "C:\\Program Files\\Android\\Android Studio\\bin"
-      fileOrFolder: "studio64.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\Android\\Android Studio\\bin"
+        fileOrFolderName: "studio64.exe"

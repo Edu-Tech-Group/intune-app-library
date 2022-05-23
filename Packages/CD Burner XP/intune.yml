@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Canneverbe.CDBurnerXP
   detection:
     file:
-      path: "C:\\Program Files\\CDBurnerXP"
-      fileOrFolder: "cdbxpp.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\CDBurnerXP"
+        fileOrFolderName: "cdbxpp.exe"

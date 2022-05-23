@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app BlueStack.BlueStacks
   detection:
     file:
-      path: "C:\\Program Files\\BlueStacks_nxt"
-      fileOrFolder: "HD-Player.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\BlueStacks_nxt"
+        fileOrFolderName: "HD-Player.exe"

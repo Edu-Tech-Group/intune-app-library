@@ -14,5 +14,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
   detection:
     file:
-      path: "C:\\Program Files(x86)\\Adobe\\Flash Player\\AddIns\\airappinstaller"
-      fileOrFolder: "airappinstaller.exe"
+      - detectionType: exists
+        path: "C:\\Program Files(x86)\\Adobe\\Flash Player\\AddIns\\airappinstaller"
+        fileOrFolderName: "airappinstaller.exe"

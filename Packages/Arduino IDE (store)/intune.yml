@@ -15,7 +15,7 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app ArduinoSA.IDE.rc
   detection:
     file:
-      path: "C:\\Users\\%username%\\AppData\\Local\\Programs\\Arduino IDE"
-      fileOrFolder: "Arduino IDE.exe"
-      
+      - detectionType: exists
+        path: "C:\\Users\\%username%\\AppData\\Local\\Programs\\Arduino IDE"
+        fileOrFolderName: "Arduino IDE.exe"
       

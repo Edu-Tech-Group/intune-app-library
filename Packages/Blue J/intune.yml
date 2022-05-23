@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app BlueJTeam.BlueJ
   detection:
     file:
-      path: "C:\\Program Files\\BlueJ"
-      fileOrFolder: "BlueJ.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\BlueJ"
+        fileOrFolderName: "BlueJ.exe"

@@ -14,5 +14,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
   detection:
     file:
-      path: "C:\\Program Files (x86)\\Belgium Identity Card\\EidViewer"
-      fileOrFolder: "eID Viewer.exe"
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Belgium Identity Card\\EidViewer"
+        fileOrFolderName: "eID Viewer.exe"

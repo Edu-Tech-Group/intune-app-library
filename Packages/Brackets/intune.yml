@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app brackets-cont.brackets
   detection:
     file:
-      path: "C:\\Program Files (x86)\\Brackets"
-      fileOrFolder: "Brackets.exe"
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Brackets"
+        fileOrFolderName: "Brackets.exe"

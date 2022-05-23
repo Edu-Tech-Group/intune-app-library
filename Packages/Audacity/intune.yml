@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Audacity.Audacity
   detection:
     file:
-      path: "C:\\Program Files\\Audacity"
-      fileOrFolder: "Audacity.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\Audacity"
+        fileOrFolderName: "Audacity.exe"

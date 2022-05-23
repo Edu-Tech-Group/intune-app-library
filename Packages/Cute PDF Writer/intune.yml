@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app AcroSoftware.CutePDFWriter
   detection:
     file:
-      path: "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs"
-      fileOrFolder: "CutePDF Writer"
+      - detectionType: exists
+        path: "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs"
+        fileOrFolderName: "CutePDF Writer"

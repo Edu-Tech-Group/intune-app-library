@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Dropbox.Dropbox
   detection:
     file:
-      path: "C:\\Program Files (x86)\\Dropbox\\Client"
-      fileOrFolder: "Dropbox.exe"
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Dropbox\\Client"
+        fileOrFolderName: "Dropbox.exe"

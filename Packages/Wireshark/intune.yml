@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app WiresharkFoundation.Wireshark
   detection:
     file:
-      path: "C:\\Program Files\\Wireshark"
-      fileOrFolder: "Wireshark.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\Wireshark"
+        fileOrFolderName: "Wireshark.exe"

@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
   detection:
     file:
-      path: "C:\\ProgramData\\chocolatey"
-      fileOrFolder: "choco.exe"
+      - detectionType: exists
+        path: "C:\\ProgramData\\chocolatey"
+        fileOrFolderName: "choco.exe"

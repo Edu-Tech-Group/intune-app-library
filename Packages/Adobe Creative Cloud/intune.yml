@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
   detection:
     file:
-      path: "C:\\Program Files\\Adobe\\Adobe Creative Cloud\\ACC"
-      fileOrFolder: "Creative Cloud.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\Adobe\\Adobe Creative Cloud\\ACC"
+        fileOrFolderName: "Creative Cloud.exe"

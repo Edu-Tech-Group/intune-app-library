@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app VideoLAN.VLC
   detection:
     file:
-      path: "C:\\Program Files\\VideoLAN\\VLC"
-      fileOrFolder: "vlc.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\VideoLAN\\VLC"
+        fileOrFolderName: "vlc.exe"

@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app AnyDeskSoftwareGmbH.AnyDesk
   detection:
     file:
-      path: "C:\\Program Files (x86)\\AnyDeskMSI"
-      fileOrFolder: "AnyDeskMSI.exe"
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\AnyDeskMSI"
+        fileOrFolderName: "AnyDeskMSI.exe"

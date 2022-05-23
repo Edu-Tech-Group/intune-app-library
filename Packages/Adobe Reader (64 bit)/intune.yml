@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Adobe.Acrobat.Reader.64-bit
   detection:
     file:
-      path: "C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat"
-      fileOrFolder: "Acrobat.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat"
+        fileOrFolderName: "Acrobat.exe"

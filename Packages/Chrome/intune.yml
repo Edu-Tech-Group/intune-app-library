@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Google.Chrome
   detection:
     file:
-      path: "C:\\Program Files\\Google\\Chrome\\Application"
-      fileOrFolder: "chrome.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\Google\\Chrome\\Application"
+        fileOrFolderName: "chrome.exe"

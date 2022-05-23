@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Famatech.AdvancedIPScanner
   detection:
     file:
-      path: "C:\\Program Files (x86)\\Advanced IP Scanner"
-      fileOrFolder: "advanced_ip_scanner.exe"
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Advanced IP Scanner"
+        fileOrFolderName: "advanced_ip_scanner.exe"

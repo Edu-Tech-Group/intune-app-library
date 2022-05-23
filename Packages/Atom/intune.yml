@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app GitHub.Atom
   detection:
     file:
-      path: "C:\\Users\\%username%\\AppData\\Local\\atom"
-      fileOrFolder: "atom.exe"
+      - detectionType: exists
+        path: "C:\\Users\\%username%\\AppData\\Local\\atom"
+        fileOrFolderName: "atom.exe"

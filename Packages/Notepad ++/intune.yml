@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Notepad++.Notepad++
   detection:
     file:
-      path: "C:\\Program Files\\Notepad++"
-      fileOrFolder: "notepad++.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\Notepad++"
+        fileOrFolderName: "notepad++.exe"

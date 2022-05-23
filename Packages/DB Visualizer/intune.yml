@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
   detection:
     file:
-      path: "C:\\Program Files\\DbVisualizer"
-      fileOrFolder: "dbvis.exe""
+      - detectionType: exists
+        path: "C:\\Program Files\\DbVisualizer"
+        fileOrFolderName: "dbvis.exe"

@@ -14,5 +14,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app lernsoftware.filius
   detection:
     file:
-      path: "C:\\Program Files\\Filius"
-      fileOrFolder: "Filius.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\Filius"
+        fileOrFolderName: "Filius.exe"

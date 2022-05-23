@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app PuTTY.PuTTY
   detection:
     file:
-      path: "C:\\Program Files\\PuTTY"
-      fileOrFolder: "putty.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\PuTTY"
+        fileOrFolderName: "putty.exe"

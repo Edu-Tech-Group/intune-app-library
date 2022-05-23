@@ -15,5 +15,6 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Citrix.Workspace
   detection:
     file:
-      path: "C:\\Program Files (x86)\\Citrix\\ICA Client\\SelfServicePlugin"
-      fileOrFolder: "SelfService.exe"
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Citrix\\ICA Client\\SelfServicePlugin"
+        fileOrFolderName: "SelfService.exe"
