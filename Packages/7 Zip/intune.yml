@@ -15,5 +15,7 @@ installation:
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app 7zip.7zip
   detection:
     file:
-      path: "C:\\Program Files\\7-Zip"
-      fileOrFolder: "7z.exe"
+      - detectionType: exists
+        path: "C:\\Program Files\\7-Zip"
+        fileOrFolderName: "7z.exe"
+        
