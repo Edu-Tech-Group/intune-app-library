@@ -13,6 +13,8 @@
 		$latestRelease = $releases.assets | Where { $_.browser_download_url.EndsWith("msixbundle") } | Select -First 1
 	
 		Add-AppxPackage -Path $latestRelease.browser_download_url
+
+		exit 1641
 	}
 
 #Install the Requested App
