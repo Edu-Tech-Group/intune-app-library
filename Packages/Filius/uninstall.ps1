@@ -13,8 +13,10 @@
 		$latestRelease = $releases.assets | Where { $_.browser_download_url.EndsWith("msixbundle") } | Select -First 1
 	
 		Add-AppxPackage -Path $latestRelease.browser_download_url
+
+		exit 1641
 	}
 
 #Uninstall the Requested App
 
-winget uninstall $app
+winget uninstall $app --accept-source-agreements
