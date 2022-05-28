@@ -17,4 +17,4 @@ installation:
     file:
       - detectionType: exists
         path: "C:\\Program Files\\Mozilla Firefox"
-        fileOrFolderName: "firefox.exe"
+        fileOrFolderName: "installed.txt"

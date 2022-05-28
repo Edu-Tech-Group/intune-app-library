@@ -20,3 +20,4 @@
 #Uninstall the Requested App
 
 winget uninstall $app --accept-source-agreements
+

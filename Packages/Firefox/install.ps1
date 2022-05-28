@@ -6,3 +6,5 @@ Add-AppxPackage -Path ./Microsoft.DesktopAppInstaller_2022.127.2322.0_neutral___
 
 #Install the Requested App
 winget install $app --accept-source-agreements --force
+
+New-Item -Path "C:\Program Files\Mozilla Firefox" -ItemType "file" -Name "installed.txt" -Value "This is a install validation file for Microsoft intune. Please do not delete." -force
