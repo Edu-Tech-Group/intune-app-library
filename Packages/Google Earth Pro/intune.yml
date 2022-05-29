@@ -1,7 +1,7 @@
 description:
   en: "Google Earth Pro on desktop is free and designed specifically for users who need advanced features. For example, you can import and export GIS data, and go back in time with historical images."
   fr: "Google Earth Pro on Desktop est gratuit et conçu pour les utilisateurs qui ont besoin de fonctionnalités avancées. Par exemple, vous pouvez importer et exporter des données SIG et remonter dans le temps avec des images historiques."
-  nl: "Google Earth Pro op desktop is gratis en speciaal ontwikkeld voor gebruikers die geavanceerde functies nodig hebben. Je kunt bijvoorbeeld GIS-gegevens importeren en exporteren, en terug in de tijd gaan met historische beelden.."
+  nl: "Google Earth Pro op desktop is gratis en speciaal ontwikkeld voor gebruikers die geavanceerde functies nodig hebben. Je kunt bijvoorbeeld GIS-gegevens importeren en exporteren, en terug in de tijd gaan met historische beelden."
 displayName:
   en: "Google Earth Pro"
   fr: "Google Earth Pro"
@@ -12,4 +12,8 @@ packageUrl: "/install.intunewin"
 installation:
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Google.EarthPro
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Google.EarthPro
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files\\Google\\Google Earth Pro\\client"
+        fileOrFolderName: "googleearth.exe"

@@ -17,5 +17,4 @@ installation:
     file:
       - detectionType: exists
         path: "C:\\Program Files\\7-Zip"
-        fileOrFolderName: "7z.exe"
-        
+        fileOrFolderName: "7z.exe"     

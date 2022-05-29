@@ -1,0 +1,20 @@
+description:
+  en: "Shotcut is a free, open source, cross-platform video editor."
+  fr: "Shotcut est un éditeur vidéo gratuit, open source et multiplateforme."
+  nl: "Shotcut is een gratis, open source, cross-platform video-editor."
+displayName:
+  en: "Shotcut"
+  fr: "Shotcut"
+  nl: "Shotcut"
+publisher: "Meltytech LLC"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Meltytech.Shotcut
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Meltytech.Shotcut
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files\\Shotcut"
+        fileOrFolderName: "shotcut.exe"

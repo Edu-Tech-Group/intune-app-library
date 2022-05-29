@@ -1,0 +1,19 @@
+description:
+  en: "Google Earth Pro on desktop is free and designed specifically for users who need advanced features. For example, you can import and export GIS data, and go back in time with historical images."
+  fr: "PDFsam Basic ou PDF Split and Merge est une application de bureau multiplateforme gratuite et open-source permettant de diviser, fusionner, extraire des pages, faire pivoter et mélanger des documents PDF."
+  nl: "PDFsam Basic of PDF Splitsen en Samenvoegen is een gratis en open-source cross-platform desktop toepassing om PDF-documenten te splitsen, samen te voegen, pagina's te extraheren, te roteren en te mengen."
+displayName:
+  en: "PDFsam"
+  fr: "PDFsam"
+  nl: "PDFsam"
+publisher: "Sober Lemur S.a.s. di Vacondio Andrea"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app PDFsam.PDFsam
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app PDFsam.PDFsam
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files\\PDFsam Basic"
+        fileOrFolderName: "pdfsam.exe"
