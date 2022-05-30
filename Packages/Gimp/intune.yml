@@ -10,6 +10,10 @@ publisher: "GIMP"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
+  account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app GIMP.GIMP
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app GIMP.GIMP
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    registry:
+      - detectionType: exists
+        keyPath: "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\GIMP-2_is1"
