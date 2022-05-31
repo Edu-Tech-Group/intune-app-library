@@ -10,7 +10,7 @@ publisher: "Blender Foundation"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
-  account: system
+  account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app BlenderFoundation.Blender
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app BlenderFoundation.Blender
   detection:
