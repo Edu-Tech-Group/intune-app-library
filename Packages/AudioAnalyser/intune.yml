@@ -1,7 +1,7 @@
 description:
-  en: "The program "AudioAnalyser" is a realtime frequency analyser for audio signals."
-  fr: "Le programme "AudioAnalyser" est un analyseur de fréquence en temps réel pour les signaux audio."
-  nl: "Het programma "AudioAnalyser" is een realtime frequentie-analyser voor audiosignalen."
+  en: "The program 'AudioAnalyser' is a realtime frequency analyser for audio signals."
+  fr: "Le programme 'AudioAnalyser' est un analyseur de fréquence en temps réel pour les signaux audio."
+  nl: "Het programma 'AudioAnalyser' is een realtime frequentie-analyser voor audiosignalen."
 displayName:
   en: "AudioAnalyser"
   fr: "AudioAnalyser"
@@ -16,5 +16,5 @@ installation:
   detection:
     file:
       - detectionType: exists
-        path: "C:\\Program Files (x86)\\AudioAnalyser2017.03
+        path: "C:\\Program Files (x86)\\AudioAnalyser2017.03"
         fileOrFolderName: "AudioAnalyser.exe"
