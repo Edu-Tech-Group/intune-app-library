@@ -1,0 +1,19 @@
+description:
+  en: "This project uses the Winget tool to daily update apps (with system context) and notify users when updates are available and installed."
+  fr: "Ce projet utilise l'outil Winget pour mettre à jour quotidiennement les applications (avec le contexte du système) et avertir les utilisateurs lorsque les mises à jour sont disponibles et installées."
+  nl: "Dit project gebruikt de Winget tool om dagelijks apps te updaten (met systeem context) en gebruikers te verwittigen wanneer updates beschikbaar en geïnstalleerd zijn."
+displayName:
+  en: "Winget-AutoUpdate"
+  fr: "Winget-AutoUpdate"
+  nl: "Winget-AutoUpdate"
+publisher: "Romanitho"
+logoUrl: "/logo.png"
+packageUrl: "/Winget-AutoUpdate-Install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -noprofile -executionpolicy bypass -file "Winget-AutoUpdate-Install.ps1" -Silent
+  uninstallCommand: powershell.exe -noprofile -executionpolicy bypass -file "Winget-AutoUpdate-Install.ps1" -Uninstall
+  detection:
+    registry:
+      - detectionType: exists
+        keyPath: "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Winget-AutoUpdate"
