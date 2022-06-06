@@ -11,8 +11,8 @@ logoUrl: "/logo.png"
 packageUrl: "/Winget-AutoUpdate-Install.intunewin"
 installation:
   account: user
-  installCommand: powershell.exe -noprofile -executionpolicy bypass -file "Winget-AutoUpdate-Install.ps1" -Silent
-  uninstallCommand: powershell.exe -noprofile -executionpolicy bypass -file "Winget-AutoUpdate-Install.ps1" -Uninstall
+  installCommand: powershell.exe -noprofile -executionpolicy bypass -file Winget-AutoUpdate-Install.ps1 -Silent
+  uninstallCommand: powershell.exe -noprofile -executionpolicy bypass -file Winget-AutoUpdate-Install.ps1 -Uninstall
   detection:
     registry:
       - detectionType: exists
