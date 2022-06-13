@@ -10,7 +10,7 @@ publisher: "Adobe"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
-  account: user
+  account: system
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1
   detection:

@@ -1,0 +1,20 @@
+description:
+  en: "Adobe Acrobat Reader lets you view, sign, annotate, and collaborate on PDFs for free."
+  fr: "Adobe Acrobat Reader vous permet de visualiser, signer, annoter et collaborer sur des fichiers PDF gratuitement."
+  nl: "Met Adobe Acrobat Reader kun je gratis PDF's bekijken, ondertekenen en annoteren, en er samen met anderen aan werken."
+displayName:
+  en: "Adobe Reader (32-bit)"
+  fr: "Adobe Reader (32-bit)"
+  nl: "Adobe Reader (32-bit)"
+publisher: "Adobe"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: system
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app adobereader
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app adobereader
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Adobe\\Acrobat Reader DC\\Reader"
+        fileOrFolderName: "AcroRd32.exe"
