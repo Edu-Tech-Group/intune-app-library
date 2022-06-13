@@ -17,4 +17,4 @@ installation:
     file:
       - detectionType: exists
         path: "C:\\Program Files\\EV3 Classroom"
-        fileOrFolderName: "advanced_ip_scanner.exe"
+        fileOrFolderName: "EV3 Classroom-win-1.5.3.4056.exe"
