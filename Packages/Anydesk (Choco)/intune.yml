@@ -1,0 +1,20 @@
+description:
+  en: "Anydesk is a Remote Support Tool."
+  fr: "Anydesk est un outil d'assistance à distance"
+  nl: "Anydesk is een Hulpmiddel voor Ondersteuning op Afstand."
+displayName:
+  en: "Anydesk"
+  fr: "Anydesk"
+  nl: "Anydesk"
+publisher: "Anydesk"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  account: system
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app anydesk.install
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app anydesk.install
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\AnyDeskMSI"
+        fileOrFolderName: "AnyDeskMSI.exe"

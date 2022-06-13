@@ -1,0 +1,21 @@
+description:
+  en: "Arduino is an open source computer platform intended to make working with microcontrollers such as the Atmel AVR easy."
+  fr: "Arduino est une plateforme informatique open source destinée à faciliter le travail avec des microcontrôleurs tels que l'AVR d'Atmel."
+  nl: "Arduino is een opensource-computerplatform bedoeld om het werken met microcontrollers zoals de Atmel AVR eenvoudig te maken."
+displayName:
+  en: "ARDUINO IDE"
+  fr: "ARDUINO IDE"
+  nl: "ARDUINO IDE"
+publisher: "Arduino"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  account: system
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app arduino
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app arduino
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Arduino"
+        fileOrFolderName: "arduino.exe"
+      

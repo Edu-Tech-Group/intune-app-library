@@ -1,0 +1,20 @@
+description:
+  en: "Android Studio is the official integrated development environment (IDE) to develop applications for Android."
+  fr: "Android Studio est l'environnement de développement intégré (IDE) officiel pour le développement d'applications pour Android."
+  nl: "Android Studio is de officiële integrated development environment (IDE) om applicaties te ontwikkelen voor Android."
+displayName:
+  en: "Android Studio"
+  fr: "Android Studio"
+  nl: "Android Studio"
+publisher: "Google"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: system
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app androidstudio
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app androidstudio
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files\\Android\\Android Studio\\bin"
+        fileOrFolderName: "studio64.exe"
