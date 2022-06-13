@@ -1,0 +1,20 @@
+description:
+  en: "This application gives you access to all your eID card data."
+  fr: "Cette application vous permet d'accéder à toutes les données de votre carte d'identité électronique."
+  nl: "Deze toepassing geeft u toegang tot al uw eID-kaartgegevens."
+displayName:
+  en: "Belgium e-id"
+  fr: "Belgium e-id"
+  nl: "Belgium e-id"
+publisher: "Belgian Government"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app BelgianGovernment.eIDViewer
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app BelgianGovernment.eIDViewer
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Belgium Identity Card\\EidViewer"
+        fileOrFolderName: "eID Viewer.exe"
