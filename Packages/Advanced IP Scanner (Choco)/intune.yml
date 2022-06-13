@@ -1,0 +1,20 @@
+description:
+  en: "Advanced IP Scanner is a reliable and free network scanner to analyse LAN."
+  fr: "Advanced IP Scanner est un scanner de réseau fiable et gratuit pour analyser le réseau local."
+  nl: "Advanced IP Scanner is een betrouwbare en gratis netwerkscanner om LAN te analyseren."
+displayName:
+  en: "Advanced IP Scanner"
+  fr: "Advanced IP Scanner"
+  nl: "Advanced IP Scanner"
+publisher: "Advanced IP Scanner"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: system
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app advanced-ip-scanner
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app advanced-ip-scanner
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Advanced IP Scanner"
+        fileOrFolderName: "advanced_ip_scanner.exe"
