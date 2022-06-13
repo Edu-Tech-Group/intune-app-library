@@ -1,0 +1,20 @@
+description:
+  en: "Safe Exam Browser is a web browser environment to carry out e-assessments safely."
+  fr: "Safe Exam Browser est un environnement de navigation web permettant de réaliser des évaluations électroniques en toute sécurité."
+  nl: "Safe Exam Browser is een web browser omgeving om veilig e-assessments uit te voeren."
+displayName:
+  en: "Safe Exam Browser"
+  fr: "Safe Exam Browser"
+  nl: "Safe Exam Browser"
+publisher: "ETHZurich"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app ETHZurich.SafeExamBrowser
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app ETHZurich.SafeExamBrowser
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files\\SafeExamBrowser\\Application"
+        fileOrFolderName: "SafeExamBrowser.exe"
