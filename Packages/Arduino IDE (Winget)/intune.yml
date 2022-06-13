@@ -14,6 +14,6 @@ installation:
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app ArduinoSA.IDE.rc
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app ArduinoSA.IDE.rc
   detection:
-  registry:
-    - detectionType: exists
-      keyPath: "HKEY_USERS\\.DEFAULT\\Software\\Classes\\Local Settings\\Software\\Microsoft\\Windows\\CurrentVersion\\AppModel\\SystemAppData\\ArduinoLLC.ArduinoIDE_mdqgnx93n4wtt"
+    registry:
+      - detectionType: exists
+        keyPath: "HKEY_USERS\\.DEFAULT\\Software\\Classes\\Local Settings\\Software\\Microsoft\\Windows\\CurrentVersion\\AppModel\\SystemAppData\\ArduinoLLC.ArduinoIDE_mdqgnx93n4wtt"
