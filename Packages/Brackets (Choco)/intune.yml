@@ -1,0 +1,20 @@
+description:
+  en: "Brackets is a modern open-source code editor for HTML, CSS and JavaScript that's built in HTML, CSS and JavaScript."
+  fr: "Brackets est un éditeur de code moderne à code source ouvert pour HTML, CSS et JavaScript qui est construit en HTML, CSS et JavaScript."
+  nl: "Brackets is een moderne open-source code-editor voor HTML, CSS en JavaScript, die gebouwd is in HTML, CSS en JavaScript."
+displayName:
+  en: "Brackets"
+  fr: "Brackets"
+  nl: "Brackets"
+publisher: "Brackets"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: system
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app brackets
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app brackets
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Brackets"
+        fileOrFolderName: "Brackets.exe"

@@ -1,0 +1,20 @@
+description:
+  en: "The Brave browser is a fast, private and secure web browser that lets you enjou an ad-free browsing expirience for PC, Mac and mobile."
+  fr: "Le navigateur Brave est un navigateur web rapide, privé et sécurisé qui vous permet de profiter d'une expérience de navigation sans publicité sur PC, Mac et mobile."
+  nl: "De Brave browser is een snelle, private en veilige webbrowser waarmee u kunt genieten van een reclamevrije surfervaring voor PC, Mac en mobiel."
+displayName:
+  en: "Brave Browser"
+  fr: "Brave Browser"
+  nl: "Brave Browser"
+publisher: "Brave"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: system
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app brave
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app brave
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Users\\%username%\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application"
+        fileOrFolderName: "brave.exe"
