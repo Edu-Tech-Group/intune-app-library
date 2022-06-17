@@ -2,9 +2,9 @@
 $filter = "*" + $app + "*"
 Set-ExecutionPolicy Bypass
 
+$Transcript_Path = "$env:TEMP\" + $app + ".log"
+Start-Transcript $Transcript_Path
 $PackageName = "chocolatey"
-$Path_4netIntune = "$Env:Programfiles\4net\EndpointManager"
-Start-Transcript -Path "$Path_4netIntune\Log\$PackageName-install.log" -Force
 
 try{
     if(!(test-path "C:\ProgramData\chocolatey\choco.exe")){
@@ -18,21 +18,19 @@ try{
 $localprograms = choco list --localonly
 if ($localprograms -like $filter)
 {
-    choco upgrade $app
+    choco upgrade $app -y
 }
 Else
 {
     choco install $app -y
 }
+
+Stop-Transcript 
     
     exit 0
 }catch{
+
+Stop-Transcript 
+
     exit 1618
 }
-
-Stop-Transcript
-
-
-
-
-

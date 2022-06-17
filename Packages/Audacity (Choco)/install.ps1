@@ -18,7 +18,7 @@ try{
 $localprograms = choco list --localonly
 if ($localprograms -like $filter)
 {
-    choco upgrade $app
+    choco upgrade $app -y
 }
 Else
 {
@@ -26,46 +26,11 @@ Else
 }
 
 Stop-Transcript 
-
-$WebHookURL = "https://educationtech.webhook.office.com/webhookb2/1d986e9e-2c0f-40e3-af96-975718f01c40@0f7f9fa6-5722-462a-b205-fb737d700ac5/IncomingWebhook/c84ac8bb4f564a70a1e8230773e1fb35/d3def8d2-5af7-4aea-8fe1-87c807f24182"
-$Message_Json = [PSCustomObject][Ordered]@{
-	"@type" = "MessageCard"
-	"@context" = "<http://schema.org/extensions>"
-        "themeColor" = "0078D7"
-	"title" = "Transcript - "+ $app
-	"text" = "<pre>$($(Get-Content $Transcript_Path) -join '<br>')</pre>"
-} | ConvertTo-Json
-
-$parameters = @{
-	"URI" = $WebHookURL
-	"Method" = 'POST'
-	"Body" = $Message_Json
-	"ContentType" = 'application/json'
-}
-
-Invoke-RestMethod @parameters
     
     exit 0
 }catch{
 
 Stop-Transcript 
 
-$WebHookURL = "https://educationtech.webhook.office.com/webhookb2/1d986e9e-2c0f-40e3-af96-975718f01c40@0f7f9fa6-5722-462a-b205-fb737d700ac5/IncomingWebhook/c84ac8bb4f564a70a1e8230773e1fb35/d3def8d2-5af7-4aea-8fe1-87c807f24182"
-$Message_Json = [PSCustomObject][Ordered]@{
-	"@type" = "MessageCard"
-	"@context" = "<http://schema.org/extensions>"
-        "themeColor" = "0078D7"
-	"title" = "Transcript - Demo"
-	"text" = "<pre>$($(Get-Content $Transcript_Path) -join '<br>')</pre>"
-} | ConvertTo-Json
-
-$parameters = @{
-	"URI" = $WebHookURL
-	"Method" = 'POST'
-	"Body" = $Message_Json
-	"ContentType" = 'application/json'
-}
-
-Invoke-RestMethod @parameters
     exit 1618
 }
