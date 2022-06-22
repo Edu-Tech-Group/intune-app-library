@@ -1,0 +1,20 @@
+description:
+  en: "With Kurvenprofi practically all two-dimensional graphs of school mathematics can be drawn to scale."
+  fr: "Avec Kurvenprofi, pratiquement tous les graphes bidimensionnels des mathématiques scolaires peuvent être dessinés à l'échelle."
+  nl: "Met Kurvenprofi kunnen praktisch alle tweedimensionale grafieken in de schoolwiskunde op schaal getekend worden."
+displayName:
+  en: "Kurvenprofi"
+  fr: "Kurvenprofi"
+  nl: "Kurvenprofi"
+publisher: "Kurvenprofi"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Kurvenprofi
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Kurvenprofi
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Kurvenprofi"
+        fileOrFolderName: "Kurvenprofi.exe"
