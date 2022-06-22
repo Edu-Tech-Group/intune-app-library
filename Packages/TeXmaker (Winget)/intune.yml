@@ -1,0 +1,20 @@
+description:
+  en: "Texmaker is a platform-independent open-source LaTeX editor with an integrated PDF viewer. It is entirely a Qt app."
+  fr: "Texmaker est un éditeur LaTeX open-source indépendant de la plate-forme avec un visualiseur PDF intégré. Il s'agit entièrement d'une Qt-app."
+  nl: "Texmaker is een platformonafhankelijke open-source LaTeX-editor met een geïntegreerde PDF-viewer. Het is volledig een Qt-app."
+displayName:
+  en: "TeXmaker"
+  fr: "TeXmaker"
+  nl: "TeXmaker"
+publisher: "TeXmaker"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app TeXmaker.TeXmaker
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app TeXmaker
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Texmaker"
+        fileOrFolderName: "texmaker.exe"
