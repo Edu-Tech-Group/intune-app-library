@@ -1,0 +1,20 @@
+description:
+  en: "Skype is a VoIP program from Microsoft that allows one to make phone calls over the Internet."
+  fr: "Skype est un programme VoIP de Microsoft, avec lequel on peut passer des appels téléphoniques sur Internet."
+  nl: "Skype is een VoIP-programma van Microsoft, waarmee men over het internet kan telefoneren."
+displayName:
+  en: "Skype"
+  fr: "Skype"
+  nl: "Skype"
+publisher: "Microsoft"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Microsoft.Skype
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Microsoft.Skype
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Microsoft\\Skype for Desktop"
+        fileOrFolderName: "Skype.exe"
