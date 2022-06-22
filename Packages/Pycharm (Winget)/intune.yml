@@ -1,0 +1,20 @@
+description:
+  en: "PyCharm is an integrated development environment used in computer programming, specifically for the Python programming language. It was developed by the Czech company JetBrains."
+  fr: "PyCharm est un environnement de développement intégré utilisé en programmation informatique, spécifiquement pour le langage de programmation Python. Il a été développé par la société tchèque JetBrains."
+  nl: "PyCharm is een geïntegreerde ontwikkelomgeving die wordt gebruikt bij computerprogrammering, specifiek voor de programmeertaal Python. Het is ontwikkeld door het Tsjechische bedrijf JetBrains."
+displayName:
+  en: "Pycharm"
+  fr: "Pycharm"
+  nl: "Pycharm"
+publisher: "Jetbrains"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app JetBrains.PyCharm.Community
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app JetBrains.PyCharm.Community
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\JetBrains\\PyCharm Community Edition 2022.1.2\\bin"
+        fileOrFolderName: "pycharm64.exe"
