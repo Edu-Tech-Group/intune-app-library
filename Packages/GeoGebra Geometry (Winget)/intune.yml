@@ -1,0 +1,19 @@
+description:
+  en: "GeoGebra is a computer algebra system. GeoGebra can be used for the different parts of mathematics."
+  fr: "GeoGebra est un système d'algèbre informatique. GeoGebra peut être utilisé pour différentes parties des mathématiques."
+  nl: "GeoGebra is een computeralgebrasysteem. GeoGebra kan voor de verschillende onderdelen van de wiskunde worden gebruikt."
+displayName:
+  en: "GeoGebra Geometry"
+  fr: "GeoGebra Geometry"
+  nl: "GeoGebra Geometry"
+publisher: "Geogebra"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app GeoGebra.Geometry
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app GeoGebra.Geometry
+  detection:
+    registry:
+      - detectionType: exists
+        keyPath: "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\GeoGebra_Geometry"
