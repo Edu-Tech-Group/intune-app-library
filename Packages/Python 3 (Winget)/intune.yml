@@ -1,0 +1,19 @@
+description:
+  en: "Python3 is versatile and easy to learn programming language. It is the latest version of the Python programming language. "
+  fr: "Python3 est un langage de programmation polyvalent et facile à apprendre. Il s'agit de la dernière version du langage de programmation Python. "
+  nl: "Python3 is veelzijdige en eenvoudig te leren programmeertaal. Het is de nieuwste versie van de programmeertaal Python. "
+displayName:
+  en: "Python 3"
+  fr: "Python 3"
+  nl: "Python 3"
+publisher: "MIT"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Python.Python.3
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Python.Python.3
+  detection:
+    registry:
+      - detectionType: exists
+        keyPath: "HKEY_CURRENT_USER\\Software\\Python\\PythonCore\\3.10\\Help\\Main Python Documentation"

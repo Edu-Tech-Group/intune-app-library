@@ -1,0 +1,20 @@
+description:
+  en: "Sweet Home 3D is free architectural design software that allows users to create a 2D plan of a house, with a 3D preview, and decorate exterior and interior views, including the ability to place furniture and home appliances."
+  fr: "Sweet Home 3D est un logiciel gratuit de conception architecturale qui permet aux utilisateurs de créer un plan 2D d'une maison, avec un aperçu 3D, et de décorer les vues extérieures et intérieures, avec la possibilité de placer des meubles et des appareils électroménagers."
+  nl: "Sweet Home 3D is gratis software voor architectonisch ontwerp waarmee gebruikers een 2D-plan van een huis kunnen maken, met een 3D-voorbeeld, en exterieur- en interieuraanzichten kunnen decoreren, inclusief de mogelijkheid om meubels en huishoudelijke apparaten te plaatsen."
+displayName:
+  en: "Sweet Home 3D"
+  fr: "Sweet Home 3D"
+  nl: "Sweet Home 3D"
+publisher: "eTeks"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app eTeks.SweetHome3D
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app eTeks.SweetHome3D
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Sweet Home 3D"
+        fileOrFolderName: "SweetHome3D.exe"

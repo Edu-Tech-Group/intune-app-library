@@ -1,0 +1,19 @@
+description:
+  en: "Company Portal is the app that lets you, as an employee or student in your organization, securely access the company app store."
+  fr: "Le portail de l'entreprise est l'application qui vous permet, en tant qu'employé ou étudiant de votre organisation, d'accéder en toute sécurité à la boutique d'applications de l'entreprise."
+  nl: "Company Portal is de app waarmee u, als werknemer of student in uw organisatie, veilig toegang krijgt tot de app store van het bedrijf."
+displayName:
+  en: "Company Portal"
+  fr: "Portail de l'entreprise"
+  nl: "Bedrijfs portal"
+publisher: "Microsoft"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app 9WZDNCRFJ3PZ
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app "9WZDNCRFJ3PZ"
+  detection:
+    registry:
+      - detectionType: exists
+        keyPath: "HKEY_CURRENT_USER\\Software\\Classes\\Local Settings\\MrtCache\\C:%5CProgram Files%5CWindowsApps%5CMicrosoft.CompanyPortal_11.1.254.0_x64__8wekyb3d8bbwe%5Cmicrosoft.system.package.metadata%5CS-1-12-1-3554605266-1256872695-3364348303-2185359879-MergedResources-3.pri"

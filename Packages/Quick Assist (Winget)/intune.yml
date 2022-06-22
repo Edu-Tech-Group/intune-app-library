@@ -1,0 +1,19 @@
+description:
+  en: "Company Portal is the app that lets you, as an employee or student in your organization, securely access the company app store."
+  fr: "Le portail de l'entreprise est l'application qui vous permet, en tant qu'employé ou étudiant de votre organisation, d'accéder en toute sécurité à la boutique d'applications de l'entreprise."
+  nl: "Company Portal is de app waarmee u, als werknemer of student in uw organisatie, veilig toegang krijgt tot de app store van het bedrijf."
+displayName:
+  en: "Quick Assist"
+  fr: "Support Rapide"
+  nl: "Quick Assist"
+publisher: "Microsoft"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app 9P7BP5VNWKX5
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app "9P7BP5VNWKX5"
+  detection:
+    registry:
+      - detectionType: exists
+        keyPath: "HKEY_CURRENT_USER\\Software\\Classes\\Local Settings\\MrtCache\\C:%5CProgram Files%5CWindowsApps%5CMicrosoftCorporationII.QuickAssist_2.0.6.0_x64__8wekyb3d8bbwe%5Cresources.pri"

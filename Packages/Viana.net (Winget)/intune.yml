@@ -1,0 +1,20 @@
+description:
+  en: "Viana.NET is the successor of the well-known video analysis program "Viana" by Thomas Kersting of the University of Essen"
+  fr: "Viana.NET est le successeur du célèbre programme d'analyse vidéo "Viana" de Thomas Kersting de l'université d'Essen."
+  nl: "Viana.NET is de opvolger van het bekende videoanalyseprogramma "Viana" van Thomas Kersting van de Universiteit van Essen"
+displayName:
+  en: "Viana.NET"
+  fr: "Viana.NET"
+  nl: "Viana.NET"
+publisher: "Viana"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app avosskuehler.viana
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app avosskuehler.viana
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Viana.NET"
+        fileOrFolderName: "VianaNET.Exe"
