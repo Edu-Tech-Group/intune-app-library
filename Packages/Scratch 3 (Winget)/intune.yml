@@ -1,0 +1,22 @@
+description:
+  en: "Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations."
+  fr: "Scratch est un langage de programmation gratuit et une communauté en ligne où vous pouvez créer vos propres histoires, jeux et animations interactifs."
+  nl: "Scratch is een gratis programmeertaal en online gemeenschap waar u uw eigen interactieve verhalen, spelletjes en animaties kunt maken."
+displayName:
+  en: "Scratch 3"
+  fr: "Scratch 3"
+  nl: "Scratch 3"
+publisher: "MIT"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app MITMediaLab.Scratch.3
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app MITMediaLab.Scratch.3
+  detection:
+    registry:
+      - detectionType: exists
+        keyPath: "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\bad79d23-e888-5a7b-9e99-60ee89b6c8bf"
+        
+        
+        

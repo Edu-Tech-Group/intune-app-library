@@ -1,0 +1,19 @@
+description:
+  en: "Scratch Link is a helper app that lets you connect Scratch to other devices, such as micro:bit and LEGO robotics kits."
+  fr: "Scratch Link est une application d'aide qui vous permet de connecter Scratch à d'autres appareils, tels que les kits micro:bit et LEGO robotics."
+  nl: "Scratch Link is een hulp-app waarmee u Scratch kunt verbinden met andere apparaten, zoals micro:bit en LEGO robotica kits."
+displayName:
+  en: "Scratch Link"
+  fr: "Scratch Link"
+  nl: "Scratch Link"
+publisher: "MIT"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app 9N48XLLCZH0X
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app "Scratch Link"
+  detection:
+    registry:
+      - detectionType: exists
+        keyPath: "HKEY_CURRENT_USER\\Software\\Classes\\Local Settings\\Software\\Microsoft\\Windows\\CurrentVersion\\AppContainer\\Mappings\\S-1-15-2-2773055094-2972966261-739447854-2832722809-2225424332-989847678-412324658"
