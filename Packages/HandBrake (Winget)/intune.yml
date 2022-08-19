@@ -4,8 +4,8 @@ description:
   nl: "HandBrake is een gratis en opensource transcoder voor digitale videobestanden die in 2003 werd ontwikkeld door Eric Petit. De software wordt gebruikt om films en videobestanden te transcoderen naar een eenvoudiger te archiveren formaat."
 displayName:
   en: "HandBrake"
-  fr: "Brave Browser"
-  nl: "Brave Browser"
+  fr: "HandBrake"
+  nl: "HandBrake"
 publisher: "Eric Petit"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
