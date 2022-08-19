@@ -1,0 +1,19 @@
+description:
+  en: "Kurvenprofi"
+  fr: "Kurvenprofi"
+  nl: "Kurvenprofi"
+displayName:
+  en: "Kurvenprofi"
+  fr: "Kurvenprofi"
+  nl: "Kurvenprofi"
+publisher: "Kurvenprofi"
+logoUrl: "/logo.jpg"
+packageUrl: "/install.intunewin"
+installation:
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app UlrichStrautz.Kurvenprofi
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app UlrichStrautz.Kurvenprofi
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Kurvenprofi"
+        fileOrFolderName: "Kurvenprofi.exe"     
