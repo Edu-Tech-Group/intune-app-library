@@ -10,6 +10,11 @@ publisher: "MC vanderKooij"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
+  account: user
   installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app MCvanderKooij.PictoSelector
   uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app MCvanderKooij.PictoSelector
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Picto Selector"
+        fileOrFolderName: "PictoSelector.exe"
