@@ -1,0 +1,20 @@
+description:
+  en: "No dependency information"
+  fr: "No dependency information"
+  nl: "No dependency information"
+displayName:
+  en: "SketchUp Pro"
+  fr: "SketchUp Pro"
+  nl: "SketchUp Pro"
+publisher: "Trimble"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Trimble.SketchUp.Pro.2022
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Trimble.SketchUp.Pro.2022
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files\\SketchUp\\SketchUp 2022"
+        fileOrFolderName: "SketchUp.exe"
