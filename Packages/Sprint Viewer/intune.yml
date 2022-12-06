@@ -8,8 +8,12 @@ displayName:
   nl: "Sprint Viewer"
 publisher: "Sprint"
 logoUrl: "/logo.png"
-packageUrl: "/setup_spr2_viewer.intunewin"
+packageUrl: "/setup_spr3_viewer.intunewin"
 installation:
-  installCommand: .\setup_spr2_viewer.exe /verysilent
-  uninstallCommand: .\unins000.exe /verysilent
-  detectionScript: powershell.exe -executionpolicy bypass .\detector.ps1
+  installCommand: .\setup_spr3_viewer.exe /verysilent
+  uninstallCommand: cmd /c
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\SprintPlus Viewer 3"
+        fileOrFolderName: "sprint.exe"
