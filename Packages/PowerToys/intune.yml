@@ -7,8 +7,8 @@ displayName:
   fr: "Power Toys"
   nl: "Power Toys"
 publisher: "Microsoft"
-logoUrl: "./logo.png"
-packageUrl: "./PowerToysSetup-0.65.0-x64.intunewin"
+logoUrl: "/logo.png"
+packageUrl: "/PowerToysSetup-0.65.0-x64.intunewin"
 installation:
   account: system
   installCommand: PowerToysSetup-0.65.0-x64.exe /install /quiet /norestart
