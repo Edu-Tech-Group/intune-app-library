@@ -3,16 +3,16 @@ description:
   fr: "GeoGebra est un système d'algèbre informatique. GeoGebra peut être utilisé pour différentes parties des mathématiques."
   nl: "GeoGebra is een computeralgebrasysteem. GeoGebra kan voor de verschillende onderdelen van de wiskunde worden gebruikt."
 displayName:
-  en: "GeoGebra Calculator Suite 6"
-  fr: "GeoGebra Calculator Suite 6"
-  nl: "GeoGebra Calculator Suite 6"
+  en: "GeoGebra Geometry"
+  fr: "GeoGebra Geometry"
+  nl: "GeoGebra Geometry"
 publisher: "Geogebra"
 logoUrl: "/logo.png"
 packageUrl: "/install.intunewin"
 installation:
   account: user
-  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app geogebra6
-  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app geogebra6
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app geogebra-geometry
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app geogebra-geometry
   detection:
     registry:
       - detectionType: exists
