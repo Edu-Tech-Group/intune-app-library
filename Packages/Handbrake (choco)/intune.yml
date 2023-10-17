@@ -1,0 +1,20 @@
+description:
+  en: "HandBrake is a free and open source transcoder for digital video files developed in 2003 by Eric Petit. The software is used to transcode movies and video files into an easier to archive format."
+  fr: "HandBrake est un transcodeur gratuit et open-source pour les fichiers vidéo numériques qui a été développé par Eric Petit en 2003. Ce logiciel est utilisé pour transcoder les films et les fichiers vidéo dans un format plus facile à archiver."
+  nl: "HandBrake is een gratis en opensource transcoder voor digitale videobestanden die in 2003 werd ontwikkeld door Eric Petit. De software wordt gebruikt om films en videobestanden te transcoderen naar een eenvoudiger te archiveren formaat."
+displayName:
+  en: "HandBrake"
+  fr: "HandBrake"
+  nl: "HandBrake"
+publisher: "Eric Petit"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app handbrake
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app handbrake
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files\\HandBrake"
+        fileOrFolderName: "HandBrake.exe"
