@@ -1,0 +1,20 @@
+description:
+  en: "Dropbox is a cloud service for storing files online. It allows users to synchronize files with different computers and mobile devices while sharing them with third parties."
+  fr: "Dropbox est un service en nuage permettant de stocker des fichiers en ligne. L'utilisateur peut l'utiliser pour synchroniser des fichiers avec divers ordinateurs et appareils mobiles et, en même temps, les partager avec des tiers."
+  nl: "Dropbox is een clouddienst voor het online opslaan van bestanden. De gebruiker kan er bestanden mee synchroniseren met verschillende computers en mobiele apparaten en ze tegelijkertijd delen met derden."
+displayName:
+  en: "Dropbox"
+  fr: "Dropbox"
+  nl: "Dropbox"
+publisher: "Dropbox"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app dropbox
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app dropbox
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Dropbox\\Client"
+        fileOrFolderName: "Dropbox.exe"
