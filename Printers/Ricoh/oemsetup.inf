@@ -1,0 +1,129 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2023 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer  = 03/27/2023,4.36.0.0
+DriverIsolation = 2
+
+CatalogFile = ricu10.cat
+
+[Manufacturer]
+%Ricoh%=Ricoh,NTamd64
+
+
+;WindowsXP(amd64)
+[Ricoh.NTamd64]
+%DrvName% = PrinterModel64.dat,USBPRINT\RICOHMP_2001360F,LPTENUM\RICOHMP_2001360F,RICOHMP_2001360F
+%CoDrvName% = PrinterModel64_ver.dat,USBPRINT\RICOHPCL6DriveforUP,LPTENUM\RICOHPCL6DriveforUP,RICOHPCL6DriveforUP
+
+
+[PrinterModel64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32,@copcl6ud.txt
+DataSection		= RPD_DATA
+DataFile		= ricu10cd.psz
+LanguageMonitor = ricu10lm,ricu10lm.dll
+
+[PrinterModel64_ver.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= ricu10cd.psz
+LanguageMonitor = ricu10lm,ricu10lm.dll
+
+[PrinterModel64.dat.Services]
+AddService   	= ,0x2
+
+[PrinterModel64_ver.dat.Services]
+AddService   	= ,0x2
+
+[RPD_FILES]
+ricu10ui.dll,ricu10ui.dl_
+ricu10ui.irj
+ricu10ui.rdj
+ricu10ui.rcf
+ricu10ug.dll,ricu10ug.dl_
+ricu10ug.miz
+ricu10ur.dll,ricu10ur.dl_
+ricu10gr.dll,ricu10gr.dl_
+ricu10gl.dll,ricu10gl.dl_ 
+ricu10ci.dll,ricu10ci.dl_
+ricu10cd.dll,ricu10cd.dl_
+ricu10cd.psz
+ricu10cf.cfz
+ricu10cl.ini
+ricu10ch.chm
+ricu10cz.dlz
+ricu10cj.dll,ricu10cj.dl_
+ricu10ct.dll,ricu10ct.dl_
+ricu10cb.dll,ricu10cb.dl_
+ricu10tl.exe,ricu10tl.ex_ 
+ricu10tc.exe,ricu10tc.ex_
+ricu10tt.exe,ricu10tt.ex_
+ricu10tf.exe,ricu10tf.ex_
+
+
+
+[RPD_COMMON_SYS32]
+ricu10lm.dll,ricu10lm.dl_,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dl_,,0x00000020
+mfricr64.dll,mfricr64.dl_,,0x00000020
+RD01Kd64.dll,RD01Kd64.dl_,,0x00000020
+
+[RPD_DATA]
+ConfigFile		= ricu10ui.dll
+DriverFile		= ricu10gr.dll
+HelpFile		= ricu10ch.chm
+
+[DestinationDirs]
+DefaultDestDir		= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware			=TRUE
+
+[SourceDisksFiles.amd64]
+ricu10ui.dl_		= 1
+ricu10ui.irj		= 1
+ricu10ui.rdj		= 1
+ricu10ui.rcf		= 1
+ricu10ug.dl_		= 1
+ricu10ug.miz		= 1
+ricu10ur.dl_		= 1
+ricu10gr.dl_		= 1
+ricu10gl.dl_            = 1
+ricu10ci.dl_		= 1
+ricu10cd.dl_		= 1
+ricu10cd.psz		= 1
+ricu10cf.cfz		= 1
+ricu10cl.ini		= 1
+ricu10ch.chm		= 1
+ricu10cz.dlz		= 1
+ricu10cj.dl_		= 1
+ricu10ct.dl_		= 1
+ricu10cb.dl_		= 1
+ricu10lm.dl_		= 1
+ricdb64.dl_			= 1
+mfricr64.dl_		= 1
+RD01Kd64.dl_		= 1
+copcl6ud.txt		= 1
+ricu10tl.ex_            = 1
+ricu10tc.ex_		= 1
+ricu10tt.ex_		= 1
+ricu10tf.ex_		= 1
+
+[Strings]
+Ricoh	= "Ricoh"
+DrvName	= "PCL6 Driver for Universal Print"
+CoDrvName = "RICOH PCL6 UniversalDriver V4.36"
+DSK		= "PCL6 Printer Driver Disk1"

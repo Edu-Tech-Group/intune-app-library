@@ -1,0 +1,15 @@
+{
+	"ini_list"	: 
+	[
+		{
+			"PrinterModelName"	: ["MP 2001","MP 2501"],
+			"LoadDll"			: "MFRICR64.dll",
+			"ResDll"			: "RD01Kd64.dll",
+			"Version"			: "1.1.17.0"
+			
+		}
+	]
+}
+
+
+

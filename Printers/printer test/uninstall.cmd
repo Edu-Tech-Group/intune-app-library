@@ -1,0 +1,1 @@
+powershell.exe -executionpolicy bypass -command "& '.\add_printer_test.ps1.ps1' 0"

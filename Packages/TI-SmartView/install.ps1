@@ -1,5 +1,5 @@
 #smartvieuw instalatie
-msiexec.exe /i TI-SmartView-CE-84-5.4.0.1181.msi /passive
+Start-Process -FilePath msiexec.exe -ArgumentList "/i TI-SmartView-CE-T-5.6.0.2092.msi", "/passive" -Wait
 
 #connection details
 ./Texas-instruments-config.exe

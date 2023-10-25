@@ -1,2 +1,2 @@
 #smartvieuw instalatie
-msiexec.exe /x TI-SmartView-CE-84-5.4.0.1181.msi /passive
+msiexec.exe /x TI-SmartView-CE-T-5.6.0.2092.msi /passive

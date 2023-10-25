@@ -1,0 +1,1707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Language" content="ja">
+<meta name="description" content="Driver Document">
+
+<style type="text/css">
+<!-- 
+PRE.title { font-weight: bold; font-size: x-large; text-align: center }
+PRE.eula  {
+    /* auto folding */
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: pre-wrap;      /* CSS3 */
+    word-wrap: break-word;      /* IE 5.5+ */
+    font-family: sans-serif; font-size: small; text-align: center }
+PRE.note { font-size: x-small; text-align: center }
+PRE { font-family: sans-serif; font-size: small }
+H1 { font-size: x-large }
+H1.eula   { color: red; text-align: center }
+H2 { font-size: large }
+H2.eula { text-align: center }
+BODY { background-color: #f0f0ff; font-size: small }
+HR.fullwidth { border-width: 4; width: 100% }
+HR.semiwidth { border-width: 2; width: 80%; align: center }
+OL LI { list-style-type: decimal; }
+OL OL LI { list-style-type: lower-alpha; }
+-->
+</style>
+
+<TITLE>
+Readme
+</TITLE>
+</HEAD>
+<BODY>
+
+
+
+
+<h1><a name="Title_en"></a></h1>
+
+<pre class=title>
+PCL6 Driver for Universal Print
+For Microsoft Windows
+</pre>
+
+
+
+
+<hr class=semiwidth>
+<h1 class=eula><a name="EULA_en">SOFTWARE LICENSE AGREEMENT</a></h1>
+
+<pre class=eula>
+YOU, THE END USER, SHALL USE THIS SOFTWARE("THE SOFTWARE") ACCORDING TO THE TERMS OF THIS AGREEMENT.
+BY LOADING THE SOFTWARE INTO ANY COMPUTER, YOU ARE AGREEING TO BE BOUND BY THESE TERMS. IF YOU DO NOT ACCEPT THE TERMS OF THIS AGREEMENT, YOU MAY NOT LOAD THIS SOFTWARE INTO ANY COMPUTER.
+</pre>
+
+<h2 class=eula>Grant of License</h2>
+<pre class=eula>
+The Software is licensed for use by you for the equipment packaged with the Software or designated by its supplier ("the equipment"). You are permitted to use the Software on any computer which permits electronic access to the equipment. You are not permitted to rent or lease the Software or to transfer your rights under this license to a third party.
+</pre>
+
+
+<h2 class=eula>Acceptance</h2>
+<pre class=eula>
+You shall be deemed to have accepted the terms of this Agreement by loading the Software into any computer.
+</pre>
+
+<h2 class=eula>Duration</h2>
+<pre class=eula>
+This license is effective until terminated. The license will terminate where you fail to comply with the terms of this Agreement. Upon termination, you agree to destroy all copies of the Software and its documentation. 
+</pre>
+
+<h2 class=eula>Ownership of Software</h2>
+<pre class=eula>
+You own, if any, only the magnetic media on which the Software has been delivered. It is an express condition of this Agreement that the title and ownership of the Software shall be retained by its owners.
+</pre>
+
+<h2 class=eula>Copying</h2>
+<pre class=eula>
+The Software and its documentation are the subject of Copyright.
+You may not make any copies nor cause others to make copies of the Software except such copies as are necessary for licensed use and one copy for operational security. Any such copies are subject to the conditions of this Agreement.
+You may not modify, adapt, merge, translate, reverse engineer, decompile, disassemble or create derivative works based on the whole or any part of the Software or its associated documentation.
+You may be held legally responsible for any copyright infringement, unauthorized transfer, reproduction or use of the Software or its documentation.
+</pre>
+
+<h2 class=eula>Limitation of Warranty</h2>
+<pre class=eula>
+The media, if any, not the Software contained therein, is warranted to the original purchaser against defects in material and workmanship for a period of one year from the date of original purchase. Defective media will be replaced when it is returned to your supplier, postage prepaid, along with a copy of the purchase receipt.
+
+THESE RIGHTS ARE YOUR SOLE AND EXCLUSIVE REMEDY, WHETHER IN TORT, CONTRACT, OR OTHERWISE. IN NO EVENT SHALL SUPPLIER, OWNER OF THE SOFTWARE OR ITS LICENSORS BE LIABLE FOR DAMAGES (INCLUDING ANY FOR LOSS OF INFORMATION, PROFITS, SAVINGS OR BUSINESS INTERRUPTION OR OTHER DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL OR SPECIAL DAMAGES) ARISING OUT OF THE SOFTWARE OR THE USE THEREOF, OR THE INABILITY TO USE THE SOFTWARE.
+</pre>
+
+<h2 class=eula>Exporting Law</h2>
+<pre class=eula>
+You acknowledge that the export of the Software is governed by the export control laws of the United States and other countries. You agree to comply with all such export control laws.
+</pre>
+
+<h2 class=eula>Governing Law and Jurisdiction</h2>
+<pre class=eula>
+If any provision or portion of this Agreement shall be found to be illegal, invalid or unenforceable, the remaining provisions shall remain in full force and effect. This Agreement shall be governed by the laws of California, USA and is subject to the jurisdiction of the Federal District courts for the Central District of California by a judge and not a jury.
+</pre>
+
+
+
+
+<hr class=semiwidth>
+<h1><a name="Preface_en">Introduction</a></h1>
+
+<p>This file describes how to set up your printer driver and contains the most up-to-date information that was available at the time of software release. For information on the Printer Driver settings and features, please check the Help file.
+The end of this readme contains some important notes about the use of this driver. Please read this carefully before installing the PCL printer driver.
+
+</p>
+
+
+
+<hr class=semiwidth>
+<h1><a name="Index_en">Contents</a></h1>
+
+<h2><a href="#Environment_en">Supported operating systems</a></h2>
+<h2><a href="#Install_en">Getting started</a></h2>
+<ul>
+<li><a href="#NewInstall_en">Installing the printer driver</a> 
+<li><a href="#UpdateInstall_en">Upgrading the printer driver</a> 
+<li><a href="#Uninstall_en">Uninstalling the printer driver</a> 
+</ul>
+<h2><a href="#limitation">Other important points</a></h2>
+<h2><a href="#SupportModels_en">Support models</a></h2>
+<h2><a href="#GenericSupportModels_en">Support models in Generic mode</a></h2>
+
+
+
+
+<hr class=semiwidth>
+<h1><a name="Environment_en">Supported operating systems</a></h1>
+
+<h2>32-bit architecture</h2>
+<ul>
+<li>Windows 8.1 Pro and Enterprise
+<li>Windows 10 Home, Pro, Enterprise, Education
+</ul>
+<h2>64-bit architecture</h2>
+<ul>
+<li>Windows 8.1 Pro and Enterprise
+<li>Windows 10 Home, Pro, Enterprise, Education
+<li>Windows 11 Home, Pro, Enterprise, Education
+<li>Windows Server 2012 Foundation, Essentials, and Standard
+<li>Windows Server 2012 R2 Foundation, Essentials, and Standard
+<li>Windows Server 2016 MultiPoint Premium Server, Datacenter, Essentials, and Standard
+<li>Windows Server 2019 Datacenter, Essentials, and Standard
+<li>Windows Server 2022 Datacenter, Datacenter: Azure Edition, and Standard
+</ul>
+
+
+
+
+<hr class=semiwidth>
+<h1><a name="Install_en">Getting Started</a></h1>
+
+<h2><a name="NewInstall_en">(1) Installing the printer driver</a></h2>
+
+<strong>Notes:</strong> <br>
+All applications must be closed before installing or upgrading the driver.<br>
+This procedure requires administrator privileges (admin account or "Run as Administrator"). <br>
+As the information contained in this document applies to multiple print devices, the word "Device" is used as a generic reference to whichever device you are using.<br>
+During the installation procedure, a dialog window will appear that will prompt for the generic name (PCL6 Driver for Universal Print) or a version-specific name (RICOH PCL6 UniversalDriver VX.X) of the driver. The version-specific name of the driver cannot be upgraded to a new version of the driver because the naming between the driver with the new version-specific name and the old one is different. Therefore, if there are plans to upgrade the driver to a later version in the future, please select the driver with the generic name. 
+
+
+<h3>(1)-1 For devices connected via USB</h3>
+
+<h4>(1)-1-1 Windows 8.1/10/11/Server 2012/Server 2012 R2/Server 2016/Server 2019/Server 2022</h4>
+<ol>
+<li>Connect the "Device" to a PC using a USB cable and then power on the "Device".
+<li>Automatic installation of the device driver will appear to start and then fail, displaying the message "Device driver software was not successfully installed". Close this message.
+<li>Open "Device Manager".
+<li>The "Device" should be listed under "Other devices". Right-click "Device" and select "Update Device Software...".
+<li>When the "Update Device Software" screen is displayed, select "Browse my computer for driver software".
+<li>Browse to the folder containing the driver files (typically the CD-ROM or an extracted archive downloaded from the website) and click "OK".
+<li>Follow the rest of the Wizard's instructions to complete the installation.
+</ol>
+
+<h3>(1)-2 For devices connected via network</h3>
+
+
+<h4>(1)-2-1 Windows 10/11/Server 2016/Server 2019/Server 2022</h4>
+
+<ol>
+<li>From the Start menu, select "Settings" > "Devices" > "Printers & scanners" > "Add printers & scanners" or select "All Apps" (skip for Windows Server 2016 )> "Windows System" > "Control Panel" > "View devices and printers" > "Add a printer".
+<li>When the window for adding a printer appears, displaying the message  "Searching for printers & scanners...", click "The printer that I want isn't listed".
+<li>In the "Find a printer by other options" window, select "Add a local printer or network printer with manual settings" and then click "Next".
+<li>In the "Choose a printer port" window, select "Create a new port:", choose "Standard TCP/IP Port" as the "Type of port:", and then click "Next". 
+<li>In the "Type a printer hostname or IP address" window, enter the hostname or IP address in "Hostname or IP address", uncheck "Query the printer and automatically select the driver to use", and then click "Next".
+<li>When the "Install the printer driver" window appears, click "Have Disk". 
+<li>Browse to the folder containing the driver files, which are typically on the device's installation CD or downloaded from the website as an executable file, and then click "OK". 
+<li>Follow the wizard's instructions to complete the installation. 
+</ol>
+
+<h4>(1)-2-2 Windows 8.1/Server 2012/Server 2012 R2</h4>
+
+<ol>
+<li>From the Charms Bar, select Settings > Control Panel > View devices and printers > Add a printer.
+<li>When the "Add a Printer" window appears, displaying the message "Searching for available printer...", click "The printer that I want isn't listed".
+<li>In the "Find a printer by other options" window, select "Add a local printer or network printer with manual settings" and then click "Next".
+<li>In the "Choose a printer port" window, select "Create a new port:", choose "Standard TCP/IP Port" as the "Type of port:", and then click "Next". 
+<li>In the "Type a printer hostname or IP address" window, enter the hostname or IP address in "Hostname or IP address", uncheck "Query the printer and automatically select the driver to use", and then click "Next".
+<li>When the "Install the printer driver" window appears, click "Have Disk". 
+<li>Browse to the folder containing the driver files, which are typically on the device's installation CD or downloaded from the website as an executable file, and then click "OK". 
+<li>Follow the wizard's instructions to complete the installation. 
+</ol>
+</ol>
+
+Default "Current Printer" is "Generic Model".
+
+<hr class=semiwidth>
+<h2><a name="UpdateInstall_en">(2) Upgrading the printer driver</a></h2>
+
+<p>
+Please conduct the following procedure to upgrade the printer driver.<br>
+This procedure requires administrator privileges.<br>
+Close all applications before starting the upgrade process.<br>
+Attention: When upgrading the printer driver, the same printer driver name must be used.  
+
+<h3>(2)-1 Upgrading from Ver.1.0.0.0 - Ver.3.0.0.0 to a newer version</h3>
+<ol>
+<li>Uninstall the printer driver with the same step as "(3) Uninstalling the printer driver ".
+<li>Install new version of the printer driver with the same step as "(1) Installing the printer driver".
+</ol>
+
+<h3>(2)-2 Upgrading the printer driver from an older version (excluding Ver.1.0.0.0 - Ver.3.0.0.0) to a newer version</h3>
+Note: If upgrading from an earlier version of the driver (Ver.3.1.0.0 - Ver.3.13.0.0), the upgrade procedure might result in changes to the values configured for some settings .</h3>
+
+<ol>
+<li>Open the "Printers" folder (or "Printers and Faxes", "View Devices and Printers") from the "Start" menu or "Control Panel". 
+<li>Open the Properties of the printer to be upgraded. 
+<li>Select "Advanced" tab > "New Driver" button. Click "Next". 
+<li>Select "Have Disk..." then browse to the folder containing the extracted printer driver (you chose at step 2) INF file. Click "Open". 
+<li>Click "OK" and select the printer model. Click "Next". 
+<li>Once the installation is complete, click "Finish". 
+<li>Click "OK" to close the printer properties dialog box. 
+<li>Log the current user account off.
+</ol>
+<h3>(2)-3 Upgrading an x86 driver installed as an "Additional Driver" on an x64 system (and vice versa)</h3>
+To replace an x86 print driver on an x64 server (and vice versa), the following should be done:
+<ol>
+<li>Open the Devices and Printers folder.
+<li>Select any print queue and open the Print Server Properties.
+<li>Select the Drivers tab.
+<li>Click Add to install the new version of the x86 driver.
+</ol>
+After completing above operation, you can use printer driver of new version. <br>
+<hr class=semiwidth>
+<h2><a name="Uninstall_en">(3) Uninstalling the printer driver </a></h2>
+<strong>Note:</strong> This procedure requires administrator privileges (admin account or "Run as Administrator").
+
+<h3>(3)-1 Windows 8.1/10/11/Server 2012/Server 2012 R2/Server 2016/Server 2019/Server 2022</h3>
+
+<ol>
+<li>Close all applications.
+<li>Open the "Printers" folder (or "Devices and Printers").
+<li>Delete the printer icon corresponding to the driver that is to be uninstalled.
+<li>Print server properties > "Driver" tab.
+<li>Press the Change Driver Settings button.
+<li>Select the driver to be uninstalled.
+<li>Press the Remove key.
+<li>Press "Remove driver and driver package".
+<li>Log the current user account off or restart the PC.
+</ol>
+
+<hr class=semiwidth>
+<h1><a name="limitation">Other important points</a></h1>
+
+The settings which are introduced below are depending on the printer or the printer driver you use.
+
+<h2>[General Issue]</h2>
+
+<ul>
+<li>To avoid problems in general, make sure that there is plenty of free disk space. 
+<li>With some applications (e.g. CorelDRAW, Visio), complicated images may take a long time to print when the Vector/Raster is "Vector". For faster printing, choose "Raster"(Vector/Raster). 
+<li>If Vector/Raster is "Raster" then parts of the job might be output as blank unprinted pages. If this occurs, try changing the resolution setting. 
+
+<li>Banner pages cannot be printed using the source tray that is selected to print "Chapter Page". Please use another source tray to print banner pages.
+<li>On some applications, the backside of a duplex page is incremented by the device counter. These applications add a blank page to the end of odd-paged duplex jobs. <br>
+<br>
+&nbsp;&nbsp;Workaround:<br>
+&nbsp;&nbsp;Specify the number of copies using the driver.
+<li>In the environment to which the computer name is set by 16 bytes or more, the host name with banner page print is printed only up to 15 bytes. 
+<li>In the case of specific application, only one part will be printed even if the combination of post-processing features and number of copies by from the driver set of multiple.
+Post-processing capability refers to the following items.
+<ul>
+<li>Staple
+<li>Punch
+<li>Fold
+<li>Sort
+<li>Perfect Binding 
+<li>Layout and Booklet etc.<br>
+The example of specific application : Microsoft Office
+</ul>
+<li>Use of Raster Mode with the Layout settings (= pages per sheet) may be printed roughly.<br>
+<br>
+&nbsp;&nbsp;Workaround:<br>
+&nbsp;&nbsp;Use Vector Mode in the PCL driver.
+<li>If the registry and configuration files that are generated during driver installation are edited or deleted, the behavior of the driver is not guaranteed. 
+<li>This driver does not support a function that TrueType fonts are replaced to printer resident fonts.
+<li>When installing a driver, if a different printer's name was selected in the "Install the printer driver" dialog, bidirectional communication cannot be performed normally. Ensure that the correct printer's name is selected when installing the driver.
+</ul>
+<h2>[OS/Windows Related Issues]</h2>
+
+<ul>
+
+<li>Jobs should not be submitted to the queue while the Windows Print Spooler is not running. 
+<li>In some cases, Separator pages might result in anomalies. 
+<li>Do not change the "Driver" setting in the Advanced tab. 
+
+<li>The "Web Image Monitor" button in the driver might not work in an IPv6 environment. 
+</ul>
+
+<h2>[Driver Setting Related Issues]</h2>
+
+<ul>
+<li>Documents may not be stapled at the slant angle, even when you select "Top Left Slant" or "Top Right Slant". In such a case, the document will be stapled parallel to an edge of the paper. 
+<li>Printing a large document in booklet, duplex or reverse order printing produce a large temporary file. If you encounter an error when printing a large document in booklet, try again after increasing the free area in system installed drive (e.g. C:). 
+<li>Use of a different Paper Source for the cover setting might result in a paper mismatch error. This occurs if the cover is of a different paper size than the rest of the document. This only happens if the cover is not blank and if the source tray for the rest of the document is not "Auto Tray Select". As a workaround, change the print settings so that any one of the above conditions are not met. Note: "cover" = Front Cover, Back Cover or Designate/Chapter 
+
+<li>The use of Reverse Order is not supported with the Duplex, Front Cover, Back Cover, Chapter Pages, Slip Sheet functions.
+<li>The number of copies specified using driver's may not work when printing from the following applications:<br>
+
+<ul>
+<li>Adobe Reader
+<li>Adobe Acrobat
+<li>Adobe Illustrator
+<li>Adobe InDesign
+</ul>
+<br>
+&nbsp;&nbsp;Workaround:<br>
+&nbsp;&nbsp;Please specify the number of copies using the application's "Copies" setting.
+<li>If the Staple setting is "2 at Center" or if the "Reverse Order"setting is On, the driver will add an extra page to the end of odd-paged duplex jobs. The added page will be incremented in the printer's counter. There is no way to prevent this.
+<li>A paper mismatch error might occur when the measurement unit in the Custom Paper Size dialog is different from the Custom Size setting on the printer operation panel.
+</ul>
+<h2>[Printing Issues]</h2>
+
+<ul>
+<li>Additional Page Count in Duplex Printing. An extra page is added to the end of odd-paged duplex jobs. The added page might be incremented in the printer's counter.
+<li>Thin lines printed at high resolution (1200dpix1200dpi) might be difficult to see in the printed output. In such cases, use of a lower resolution is recommended.
+<li>Some shaded images may not be printed correctly when Raster Mode is used.<br>
+<br>
+&nbsp;&nbsp;Workaround:<br>
+&nbsp;&nbsp;Use Vector Mode in the PCL driver.
+<li>Depending on the combination of text and font settings for watermark, text might not be printed.<br>
+In such case, a change of font is recommended.
+</ul>
+
+<h2>[B/W print with CMYK setting Issue]</h2>
+<ul>
+<li>Black and White documents might be printed in full color (CMYK).
+To ensure that the job prints using pure Black (K), please change the color mode to "Black and White" or "Monochrome". 
+<li>When selecting "Color" from "Color/ Black and White" setting , black and white document may be printed as a color job, depending on application or data. If you want to print a document in black and white, select "Black and White" in "Color/ Black and White" setting. </ul>
+
+
+
+<h2>[Graphics/Images]</h2>
+
+<ul>
+<li>Select [Quality] in [Print Priority] setting to clean up noise in printouts. 
+<li>When printing particular image data, it may appear noise on the printed document. In this case, select [Quality] in [Print Priority].
+</ul>
+
+<h2>[Fonts/Texts]</h2>
+
+<ul>
+<li>Documents that contain fonts that are not installed on your computer might not print correctly. 
+</ul>
+
+<h2>[Other issues]</h2>
+<ul>
+<li>To avoid potential problems, "Reverse Order" setting shouldn't be used with Duplex, Front cover, Back cover, Designate/Chapter, or Slip Sheets.
+<li>Upgrades with the New Driver button<br>
+If a driver is upgraded using the New Driver button, the setting "Automatically Update Printer Information" will be disabled.
+Note: If there are multiple logical printers using the upgraded driver, only the "Automatically Update Printer Information" setting of the logical printer used to access the New Driver button will be disabled.  
+
+<li>Bidirectional communication is not available over USB ports. Therefore device accessories cannot be automatically updated via a USB port.
+<li>Print jobs that include an underscore in the billing code are canceled on models that do not support underscores in the billing code.
+<li>When switching from a model that doesn’t support the “Encrypt Data for Locked Print, Stored Print, and Stored Print (Shared)” function to a model that does, the function will be turned off. Please enable the function after switching the model.
+</ul>
+
+<hr class=semiwidth>
+<h1><a name="SupportModels_en">Support models</a></h1>
+<p>
+Aficio SP 9100DN,MLP175n,P7675,SP 9100DN,SP 9100LP275
+</p>
+
+<p>
+Aficio MP 2000,9021d,MP2000/DSm721d,MP 2000,IS 2320,MP 2000LD320d,Aficio MP 1600,9016,MP1600/DSm716,MP 1600,IS 2316,MP 1600LD316
+</p>
+
+<p>
+Aficio SP 4100N,SP 4100N,MLP31n,LP131n,P7031n,Aficio SP 4110N,SP 4110N,MLP36n,LP136n,P7035n,Aficio SP 4100NL,SP 4100NL,MLP31nL,LP131nL,P7031nL
+</p>
+
+<p>
+Aficio MP 4000B,9040b,MP 4000B,MP 4000B/LD040B,Aficio MP 4000,9040,MP 4000,MP 4000/LD040,Aficio MP 5000B,9050b,MP 5000B,MP 5000B/LD050B,Aficio MP 5000,9050,MP 5000,MP 5000/LD050
+</p>
+
+<p>
+Aficio SP 8200DN,MLP150DN,SP 8200DN,LP150dn/SP8200DN
+</p>
+
+<p>
+Aficio MP 2550,9025,MP 2550,MP 2550/LD425,Aficio MP 2550B,9025b,MP 2550B,MP 2550B/LD425B,Aficio MP 3350,9033,MP 3350,MP 3350/LD433,Aficio MP 3350B,9033b,MP 3350B,MP 3350B/LD433B
+</p>
+
+<p>
+Aficio MP C6000,C6055,MP C6000,MP C6000/LD260c,Aficio MP C7500,C7570,MP C7500,MP C7500/LD275c
+</p>
+
+<p>
+Aficio MP C4000,C4040,MP C4000,MP C4000/LD540C,Aficio MP C5000,C5050,MP C5000,MP C5000/LD550C
+</p>
+
+<p>
+Aficio MP C2800,C2828,MP C2800,MP C2800/LD528C,Aficio MP C3300,C3333,MP C3300,MP C3300/LD533C
+</p>
+
+<p>
+Aficio MP C2050,MP C2050,MP C2050/LD520C,C9020,Aficio MP C2550,MP C2550,MP C2550/LD525C,C9025
+</p>
+
+<p>
+Aficio MP C2030,MP C2030,MP C2030/LD520CL,C9020L,Aficio MP C2530,MP C2550
+</p>
+
+<p>
+Aficio SP C420DN,SP C420DN,LP331cn/SP C420,CLP131DN
+</p>
+
+<p>
+Aficio SP C820DN,CLP340D,C8140ND,LP540C/SPC820DN,SP C820DN,Aficio SP C821DN,CLP350D,C8150ND,LP550C/SPC821DN,SP C821DN
+</p>
+
+<p>
+Pro 907EX,Pro 1107EX,Pro 1357EX
+</p>
+
+<p>
+Aficio MP 6001,9060,MP 6001,MP 6001/LD360,Aficio MP 7001,9070,MP 7001,MP 7001/LD370,Aficio MP 8001,9080,MP 8001,MP 8001/LD380,Aficio MP 9001,9090,MP 9001,MP 9001/LD390
+</p>
+
+<p>
+Aficio SP 4210N,SP 4210N,MLP37N,LP37N
+</p>
+
+<p>
+Aficio MP 171,MP 171,MP 171/LD 117,917
+</p>
+
+<p>
+Aficio MP 201,MP 201,MP 201/LD 220,920
+</p>
+
+<p>
+Aficio SP 6330N,SP 6330N,MLP235n,LP235N
+</p>
+
+<p>
+Aficio MP C6501,C9065,MP C6501,MP C6501/LD365C,Aficio MP C7501,C9075,MP C7501,MP C7501/LD375C
+</p>
+
+<p>
+SP C320DN,Aficio SP C320DN
+</p>
+
+<p>
+Aficio MP 2851,9228,MP 2851,MP 2851/LD528,Aficio MP 3351,9233,MP 3351,MP 3351/LD533
+</p>
+
+<p>
+Aficio MP 4001,9240,MP 4001,MP 4001/LD140,Aficio MP 5001,9250,MP 5001,MP 5001/LD150
+</p>
+
+<p>
+Aficio SP C430DN,SP C430DN,CLP37DN,LP137CN,Aficio SP C431DN,SP C431DN,CLP42DN,LP142CN
+</p>
+
+<p>
+Aficio MP C300,MP C300,C 230,LD 130C,Aficio MP C300SR,MP C300SR,C 230SR,LD 130CSR,Aficio MP C400,MP C400,C 240,LD 140C,Aficio MP C400SR,MP C400SR,C 240SR,LD 140CSR
+</p>
+
+<p>
+Aficio MP C2051,C9120,MP C2051,LD 620C,DSc720,Aficio MP C2551,C9125,MP C2551,LD 625C,DSc725
+</p>
+
+<p>
+Aficio MP C4501,C9145,MP C4501,MP C4501/LD645C,Aficio MP C4501A,C9145A,MP C4501A, MPC4501A/LD645CA,Aficio MP C5501,C9155,MP C5501,MP C5501/LD655C,Aficio MP C5501A,C9155A,MP C5501A,MPC5501A/LD655CA
+</p>
+
+<p>
+Aficio SP 4310N,SP 4310N
+</p>
+
+<p>
+Aficio MP C3001,C9130,MP C3001,MP C3001LD630C,Aficio MP C3501,C9135,MP C3501,MP C3501LD635C
+</p>
+
+<p>
+Aficio SP 5200S,SP 5200S,Aficio SP 5210SF,SP 5210SF,Aficio SP 5210SR,SP 5210SR
+</p>
+
+<p>
+Aficio SP 5200DN,SP 5200DN,Aficio SP 5210DN,SP 5210DN
+</p>
+
+<p>
+MP2352/DSm923,MP 2352,Aficio MP 2352,MP2852/DSm928,MP 2852,Aficio MP 2852,MP3352/DSm933,MP 3352,Aficio MP 3352
+</p>
+
+<p>
+MP 4002,Aficio MP 4002,MP 5002,Aficio MP 5002
+</p>
+
+<p>
+MP C3002,Aficio MP C3002,MP C3502,Aficio MP C3502
+</p>
+
+<p>
+MP C4502,Aficio MP C4502,MP C5502,Aficio MP C5502,MP C4502A,Aficio MP C4502A,MP C5502A,Aficio MP C5502A
+</p>
+
+<p>
+MP 301,Aficio MP 301
+</p>
+
+<p>
+MP C305,Aficio MP C305
+</p>
+
+<p>
+MP 6002,Aficio MP 6002,MP 7502,Aficio MP 7502,MP 9002,Aficio MP 9002
+</p>
+
+<p>
+SP 8300DN,Aficio SP 8300DN
+</p>
+
+<p>
+SP C830DN,Aficio SP C830DN,SP C831DN,Aficio SP C831DN
+</p>
+
+<p>
+MP 2001,MP 2501
+</p>
+
+<p>
+SP C730DN,Aficio SP C730DN
+</p>
+
+<p>
+MP C6502,MP C8002,Pro C5100S,Pro C5110S
+</p>
+
+<p>
+MP C3003,MP C3503,MP C4503,MP C5503,MP C6003
+</p>
+
+<p>
+Pro 8100S, Pro 8110S, Pro 8120S
+</p>
+
+<p>
+MP 2553, MP 3053, MP 3353
+</p>
+
+<p>
+MP C2003, MP C2003Z, MP C2503, MP C2503Z
+</p>
+
+<p>
+MP C401, MP C401SR
+</p>
+
+<p>
+SP C250DN, C250DN, SP C252DN, C252DN
+</p>
+
+<p>
+SP C250SF, C250SF, SP C252SF, C252SF
+</p>
+
+<p>
+MP 2554, MP 3054, MP 3554, MP 4054, MP 5054, MP 6054
+</p>
+
+<p>
+MP C2011
+</p>
+
+<p>
+SP 4510SF, MP 401SPF, SP 4510DN, SP 4520DN
+</p>
+
+<p>
+SP 3600SF, SP 3610SF, SP 3600DN
+</p>
+
+<p>
+Pro C7100S, Pro C7110S
+</p>
+
+<p>
+Pro C7100, Pro C7110
+</p>
+
+<p>
+SP 6430DN
+</p>
+
+<p>
+SP C440DN
+</p>
+
+<p>
+MP C306Z, MP C406Z
+</p>
+
+<p>
+Pro 8110, Pro 8120
+</p>
+
+<p>
+MP 305+
+</p>
+
+<p>
+SP C435DN
+</p>
+
+<p>
+MP C3004, MP C3504, MP C4504, MP C5504, MP C6004, MP C2004, MP C2504
+</p>
+
+<p>
+MP 501, MP 601, SP 5300, SP 5310
+</p>
+
+<p>
+SP C340DN, SP C342DN
+</p>
+
+<p>
+MP 6503, MP 7503, MP 9003
+</p>
+
+<p>
+MP 402SPF
+</p>
+
+<p>
+MP C6503, MP C8003
+</p>
+
+<p>
+SP C352DN
+</p>
+
+<p>
+SP C840DN, SP C842DN
+</p>
+
+<p>
+SP 400DN
+</p>
+
+<p>
+SP 450DN
+</p>
+
+<p>
+Pro 8200S, Pro 8210S, Pro 8220S
+</p>
+
+<p>
+Pro 8210, Pro 8220
+</p>
+
+<p>
+Pro C5200S, Pro C5210S
+</p>
+
+<p>
+MP 2555, MP 3055, MP 3555, MP 4055, MP 5055, MP 6055
+</p>
+
+<p>
+MP C307, MP C407
+</p>
+
+<p>
+MP C2004ex, MP C2504ex, MP C3004ex, MP C3504ex, MP C4504ex, MP C5504ex, MP C6004ex
+</p>
+
+<p>
+SP 8400DN
+</p>
+
+<p>
+SP C360SFNw, SP C360SNw,SP C361SFNw
+</p>
+
+<p>
+SP C360DNw
+</p>
+
+<p>
+SP C262SFNw, C262SFNw
+</p>
+
+<p>
+SP C262DNw, C262DNw
+</p>
+
+<p>
+SP C261SFNw,C261SFNw 
+</p>
+
+<p>
+SP C261DNw,C261DNw 
+</p>
+
+<p>
+SP 330SN,SP 330SFN,SP 3710SF,330SN,330SFN,3710SF
+</p>
+
+<p>
+SP 330DN,SP 3710DN,330DN,3710DN
+</p>
+
+<p>
+MP C501
+</p>
+
+<p>
+Pro C7200S, Pro C7210S, Pro C7200S Light
+</p>
+
+<p>
+Pro C7200, Pro C7210
+</p>
+
+<p>
+Aficio SP 4400S,SP 4400S,Aficio SP 4410SF,SP 4410SF,Aficio SP 4420SF,SP 4420SF
+</p>
+
+<p>
+IM C2000, IM C2500, IM C3000, IM C3500, IM C4500, IM C5500, IM C6000, IM C3509J, IM C2509J
+</p>
+
+<p>
+GS3020, GS3025, GS3030, GS3045, GS3160
+</p>
+
+<p>
+IM 350, IM 430
+</p>
+
+<p>
+P 501, P 502
+</p>
+
+<p>
+Pro 8300S, Pro 8310S, Pro 8320S
+</p>
+
+<p>
+Pro 8310, Pro 8320
+</p>
+
+<p>
+IM 2702, GS1227
+</p>
+
+<p>
+P C600
+</p>
+
+<p>
+P 800, P 801
+</p>
+
+<p>
+IM 550, IM 600, IM 600SR
+</p>
+
+<p>
+CP C300W, P C301W
+</p>
+
+<p>
+M C250FW, M C250FWB
+</p>
+
+<p>
+IM C300, IM C400, IM C400SR
+</p>
+
+<p>
+IM C6500, IM C8000
+</p>
+
+<p>
+Pro C5300S, Pro C5310S, Pro C5300SL
+</p>
+
+<p>
+GS3021, M C2001
+</p>
+
+<p>
+IM C530F, IM C530FB
+</p>
+
+<p>
+IM 7000, IM 8000, IM 9000
+</p>
+
+<p>
+M C2000, G3020c
+</p>
+
+<p>
+IM 2500, IM 2509J, IM 3000, IM 3009J, IM 3500, IM 3509J, IM 4000, IM 5000, IM 6000, GS3025m, GS3030m, GS3035m, GS3040m, GS3050m, GS3060m
+</p>
+
+<p>
+P 310, P 311
+</p>
+
+<p>
+M 320, M 320FB, M 320F
+</p>
+
+<p>
+P C311W, M C251FW
+</p>
+
+<p>
+IM C3010, IM C3510, IM C3519J, GS4030c, IM C4510, IM C5510, IM C6010, GS4045c, GS4160c, IM C2010, IM C2510, IM C2519J, GS4020c, GS4025c
+</p>
+
+<hr class=semiwidth>
+<h1><a name="GenericSupportModels_en">Support models in Generic mode</a></h1>
+
+<p>
+The model that supports it as generic mode is the following models.<br><br>
+ Aficio MP 3500,
+ Aficio MP 4500,
+ Aficio SP 8100DN,
+ Aficio MP 4000B,
+ Aficio MP 4000,
+ Aficio MP 5000B,
+ Aficio MP 5000,
+ Aficio MP C3500,
+ Aficio MP C4500,
+ Aficio SP C811DN,
+ Aficio MP C2500,
+ Aficio MP C3000,
+ Aficio MP C2000,
+ Aficio SP C410DN,
+ Aficio SP C411DN,
+ Aficio SP C400DN,
+ Aficio SP C420DN,
+ Aficio SP 9100DN,
+ Aficio MP 2510,
+ Aficio MP 3010,
+ Aficio MP 2550B,
+ Aficio MP 2550,
+ Aficio MP 3350B,
+ Aficio MP 3350,
+ Aficio SP 4100N,
+ Aficio SP 4110N,
+ Aficio SP 4100NL,
+ Aficio SP 8200DN, 
+ Aficio CL7200, 
+ Aficio CL7300, 
+ Aficio AP610N, 
+ Aficio CL3500N, 
+ Aficio CL4000DN, 
+ Aficio CL4000HDN, 
+ Aficio AP410, 
+ Aficio AP410N, 
+ Aficio MP 161, 
+ Aficio MP 2000, 
+ Aficio MP 1600, 
+ Aficio 3035, 
+ Aficio 3045, 
+ Aficio 3025, 
+ Aficio 3030, 
+ Aficio MP C2800, 
+ Aficio MP C3300, 
+ Aficio MP C4000, 
+ Aficio MP C5000, 
+ Aficio MP 6000, 
+ Aficio MP 7000, 
+ Aficio MP 8000, 
+ Aficio MP C6000, 
+ Aficio MP C7500, 
+ Aficio 3260C, 
+ Aficio Color5560, 
+ Aficio MP 5500, 
+ Aficio MP 6500, 
+ Aficio MP 7500, 
+ Aficio 3235C, 
+ Aficio 3245C, 
+ Aficio 3228C, 
+ Aficio MP 9000, 
+ Aficio MP 1100, 
+ Aficio MP 1350, 
+ Aficio MP C2050, 
+ Aficio MP C2550, 
+ Aficio MP C2030, 
+ Aficio MP C2530, 
+ Aficio 2051, 
+ Aficio 2060, 
+ Aficio 2075, 
+ Aficio 3224C, 
+ Aficio 3232C, 
+ Aficio MP 2500, 
+ MP C1500/615C, 
+ Aficio SP 4210N, 
+ Aficio SP C820DN, 
+ Aficio SP C821DN, 
+ Aficio MP 171, 
+ Aficio AP900, 
+ Aficio MP 6001, 
+ Aficio MP 7001, 
+ Aficio MP 8001, 
+ Aficio MP 9001, 
+ Pro 906EX, 
+ Pro 1106EX, 
+ Pro 1356EX, 
+ Pro 907EX, 
+ Pro 1107EX, 
+ Pro 1357EX, 
+</br></br>
+ MP3500/DSm735e,
+ MP4500/DSm745e,
+ P7245,
+ MP 4000B,
+ MP 4000,
+ MP 5000B,
+ MP 5000,
+ MPC3500/DSc535,
+ MPC4500/DSc545,
+ C7640nD,
+ MPC2500/DSc525,
+ MPC3000/DSc530,
+ MPC2000/DSc520,
+ C7526dn,
+ C7531dn,
+ SP C420DN,
+ P7675,
+ MP 2510/DSm725e,
+ MP 3010/DSm730e,
+ MP 2550B,
+ MP 2550,
+ MP 3350B,
+ MP 3350,
+ P7031n,
+ P7035n,
+ P7031nL,
+ SP 8200DN, 
+ C7528n, 
+ C7535n, 
+ P7535n, 
+ C7521n, 
+ C7425dn, 
+ P7527, 
+ P7527n, 
+ MP 161/DSm416, 
+ MP2000/DSm721d, 
+ MP1600/DSm716, 
+ DSm735/735G, 
+ DSm745/745G, 
+ DSm725, 
+ DSm730, 
+ MP C2800, 
+ MP C3300, 
+ MP C4000, 
+ MP C5000, 
+ MP 6000, 
+ MP 7000, 
+ MP 8000, 
+ MP C6000, 
+ MP C7500, 
+ DSc460, 
+ CS555, 
+ MP5500/DSm755, 
+ MP6500/DSm765, 
+ MP7500/DSm775, 
+ DSc435, 
+ DSc445, 
+ DSc428, 
+ MP9000/DSm790, 
+ MP1100/DSm7110, 
+ MP1350/DSm7135, 
+ MP C2050, 
+ MP C2550, 
+ MP C2030, 
+ MP C2530, 
+ DSm651, 
+ DSm660, 
+ DSm675, 
+ DSc424, 
+ DSc432, 
+ MP2500/DSm625, 
+ MPC1500/GS106, 
+ SP 4210N, 
+ C8140ND, 
+ C8150ND, 
+ MP 171, 
+ P7575, 
+ MP 6001, 
+ MP 7001, 
+ MP 8001, 
+ MP 9001, 
+ Pro 906EX, 
+ Pro 1106EX, 
+ Pro 1356EX, 
+ Pro 907EX, 
+ Pro 1107EX, 
+ Pro 1357EX, 
+</br></br>
+ Pro 907EX, 
+ Pro 1107EX, 
+ Pro 1357EX, 
+</br></br>
+  IS 2435,
+  IS 2445,
+ MP 4000B,
+ MP 4000,
+ MP 5000B,
+ MP 5000,
+  ISC 3535,
+  ISC 4045,
+  IPC 4040DN,
+  ISC 2525,
+  ISC 3030,
+  ISC 2020,
+  IPC 2525DN,
+  IPC 3030DN,
+  IS 2425,
+  IS 2430,
+ MP 2550B,
+ MP 2550,
+ MP 3350B,
+ MP 3350,
+  IPC 2832, 
+  IPC 3535e, 
+  IPC 2525, 
+  IPC 2525e, 
+  IS 2416, 
+  IS 2320, 
+  IS 2316, 
+  IS 2235, 
+  IS 2245, 
+  IS 2225, 
+  IS 2230, 
+ MP C2800, 
+ MP C3300, 
+ MP C4000, 
+ MP C5000, 
+ MP 6000, 
+ MP 7000, 
+ MP 8000, 
+ MP C6000, 
+ MP C7500,
+  ISC 4560, 
+  ISC 5560, 
+  IS 2255, 
+  IS 2265, 
+  IS 2275, 
+  ISC 2835, 
+  ISC 3545, 
+  ISC 2428, 
+  IS 3090, 
+  IS 3110, 
+  IS 3135, 
+ MP C2050, 
+ MP C2550, 
+ MP C2030, 
+ MP C2530, 
+  IS 2151, 
+  IS 2160, 
+  IS 2175, 
+  ISC 1024c, 
+  ISC 1032c, 
+  IS 2325, 
+  ISC 615G, 
+ MP 171, 
+ MP 6001, 
+ MP 7001, 
+ MP 8001, 
+ MP 9001, 
+ Pro 906EX, 
+ Pro 1106EX, 
+ Pro 1356EX, 
+ Pro 907EX, 
+ Pro 1107EX, 
+ Pro 1357EX, 
+</br></br>
+ MP 3500/LD335,
+ MP 4500/LD345,
+ LP145n/SP 8100DN,
+ MP 4000B/LD040B,
+ MP 4000/LD040,
+ MP 5000B/LD050B,
+ MP 5000/LD050,
+ MP C3500/LD435c,
+ MP C4500/LD445c,
+ LP440c/SP C811DN,
+ MP C2500/LD425c,
+ MP C3000/LD430c,
+ MP C2000/LD420c,
+ LP226c/SP C410,
+ LP231c/SP C411,
+ SP C400DN,
+ LP331cn/SP C420,
+ SP 9100/LP275,
+ MP 2510/LD325,
+ MP 3010/LD330,
+ MP 2550B/LD425B,
+ MP 2550/LD425,
+ MP 3350B/LD433B,
+ MP 3350/LD433,
+ LP131n,
+ SP 4100N,
+ LP136n,
+ SP 4110N,
+ LP131nL,
+ SP 4100NL,
+ LP150dn/SP8200DN, 
+ LP332c, 
+ LP335c, 
+ LP135n, 
+ LP222cn/LP221c, 
+ LP125cx/LP126cn, 
+ LP128, 
+ LP127n/LP128n, 
+ MP 161/LD016, 
+ MP 2000/LD320d, 
+ MP 1600/LD316, 
+ LD235, 
+ LD245, 
+ LD225, 
+ LD230, 
+ MP C2800/LD528C, 
+ MP C3300/LD533C, 
+ MP C4000/LD540C, 
+ MP C5000/LD550C, 
+ MP 6000/LD260, 
+ MP 7000/LD270, 
+ MP 8000/LD280, 
+ MP C6000/LD260c, 
+ MP C7500/LD275c, 
+ LD160c, 
+ LC155, 
+ MP 5500/LD255, 
+ MP 6500/LD265, 
+ MP 7500/LD275, 
+ LD335c, 
+ LD345c, 
+ LD328c, 
+ MP 9000/LD190, 
+ MP 1100/LD1100, 
+ MP 1350/LD1135, 
+ MP C2050/LD520C, 
+ MP C2550/LD525C, 
+ MP C2030/LD520CL, 
+ MP C2530,
+ LD151, 
+ LD160, 
+ LD175, 
+ LD124c, 
+ LD132c, 
+ MP2500/LD125, 
+ MPC1500/LD215c, 
+ LP37N, 
+ SP 4210N, 
+ LP540C/SPC820DN, 
+ LP550C/SPC821DN,  
+ MP 171/LD 117,  
+ LP175/LP175hdn,  
+ MP 6001/LD360,  
+ MP 7001/LD370,  
+ MP 8001/LD380,  
+ MP 9001/LD390,  
+ Pro 906EX,  
+ Pro 1106EX,  
+ Pro 1356EX,  
+ Pro 907EX,  
+ Pro 1107EX,  
+ Pro 1357EX,  
+</br></br>
+ MP 3500,
+ MP 4500,
+ SP 8100DN,
+ MP 4000B,
+ MP 4000,
+ MP 5000B,
+ MP 5000,
+ MP C3500,
+ MP C4500,
+ SP C811DN,
+ MP C2500,
+ MP C3000,
+ MP C2000,
+ SP C410DN,
+ SP C411DN,
+ SP C420DN,
+ SP 9100DN,
+ MP 2510,
+ MP 3010,
+ MP 2550B,
+ MP 2550,
+ MP 3350B,
+ MP 3350,
+ SP 4100N,
+ SP 4110N,
+ SP 4100NL,
+ SP 8200DN, 
+ C7528n, 
+ C7535hdn, 
+ P7535n, 
+ C7521n, 
+ C7425dn, 
+ C7425hdn, 
+ P7527, 
+ P7527n, 
+ MP 161, 
+ MP 2000, 
+ MP 1600, 
+ DSm735, 
+ DSm745, 
+ DSm725, 
+ DSm730, 
+ MP C2800, 
+ MP C3300, 
+ MP C4000, 
+ MP C5000, 
+ MP 6000, 
+ MP 7000, 
+ MP 8000, 
+ MP C6000, 
+ MP C7500, 
+ DSc460, 
+ CS555, 
+ MP 5500, 
+ MP 6500, 
+ MP 7500, 
+ DSc435, 
+ DSc445, 
+ DSc428, 
+ MP 9000, 
+ MP 1100, 
+ MP 1350, 
+ MP C2050, 
+ MP C2550, 
+ MP C2030, 
+ MP C2530, 
+ DSm651, 
+ DSm660, 
+ DSm675, 
+ DSc424, 
+ DSc432, 
+ MP 2500, 
+ MP C1500sp, 
+ SP 4210N, 
+ SP C820DN, 
+ SP C821DN, 
+ MP 171, 
+ P7575, 
+ MP 6001, 
+ MP 7001, 
+ MP 8001, 
+ MP 9001, 
+ Pro 906EX, 
+ Pro 1106EX, 
+ Pro 1356EX, 
+ Pro 907EX, 
+ Pro 1107EX, 
+ Pro 1357EX, 
+</br></br>
+ 8035e,
+ 8045e,
+ MLP145,
+ 9040b,
+ 9040,
+ 9050b,
+ 9050,
+ C3535,
+ C4540,
+ CLP240D,
+ C2525,
+ C3030,
+ C2020,
+ CLP27DN,
+ CLP31DN,
+ SP C400DN,
+ CLP131DN,
+ MLP175n,
+ 8025e,
+ 8030e,
+ 9025b,
+ 9025,
+ 9033b,
+ 9033,
+ MLP31n,
+ MLP36n,
+ MLP31nL,
+ MLP150DN, 
+ CLP128, 
+ CLP135, 
+ MLP35n, 
+ CLP22, 
+ CLP26DN, 
+ MLP28, 
+ MLP28n, 
+ 816, 
+ 9021d, 
+ 9016, 
+ 8035/8035g, 
+ 8045/8045g, 
+ 8025, 
+ 8030, 
+ C2828, 
+ C3333, 
+ C4040, 
+ C5050, 
+ 8060, 
+ 8070, 
+ 8080, 
+ C6055, 
+ C7570, 
+ C6045, 
+ SDC555, 
+ 8055, 
+ 8065, 
+ 8075, 
+ C3528, 
+ C4535, 
+ C2824, 
+ 8090, 
+ 8110, 
+ 8135, 
+ C9020, 
+ C9025, 
+ C9020L, 
+ 4051, 
+ 4060, 
+ 4075, 
+ C2410, 
+ C3210e, 
+ 7025, 
+ SGC 1506, 
+ MLP37N, 
+ CLP340D, 
+ CLP350D, 
+917, 
+ MLP75n, 
+9060, 
+9070, 
+9080, 
+9090, 
+ Pro 906EX, 
+ Pro 1106EX, 
+ Pro 1356EX, 
+ Pro 907EX, 
+ Pro 1107EX, 
+ Pro 1357EX, 
+</br></br>
+ Aficio SP 6330N, 
+ SP 6330N,
+ MLP235N, 
+ SP 6330N, 
+ LP235N, 
+ SP 6330N, 
+ Aficio MP 4001, 
+ Aficio MP 5001, 
+ 9240, 
+ 9250, 
+ MP4001, 
+ MP5001, 
+ MP4001/LD140, 
+ MP5001/LD150, 
+ Aficio MP 2851, 
+ Aficio MP 3351, 
+ 9228, 
+ 9233, 
+ MP 2851,
+ MP 3351,
+ MP 2851/LD528,
+ MP 3351/LD533,
+ Aficio MP C6501, 
+ Aficio MP C7501,
+ C9065, 
+ C9075, 
+ MP C6501,
+ MP C7501,
+ MP C6501/LD365C,
+ MP C7501/LD375C,
+</br></br>
+ Aficio SP C430DN,
+ Aficio SP C431DN,
+ CLP37DN,
+ CLP42DN,
+ SP C430DN,
+ SP C431DN,
+ LP137CN,
+ LP142CN,
+ SP C430DN,
+ SP C431DN
+</br></br>
+ Aficio MP C4501,
+ Aficio MP C5501,
+ Aficio MP C4501A,
+ Aficio MP C5501A,
+ C9145,
+ C9155,
+ C9145A,
+ C9155A,
+ MP C4501,
+ MP C5501,
+ MP C4501A,
+ MP C5501A,
+ MP C4501/LD645C,
+ MP C5501/LD655C,
+ MPC4501A/LD645CA,
+ MPC5501A/LD655CA,
+</br></br>
+ Aficio MP C3001,
+ Aficio MP C3501,
+ C9130,
+ C9135,
+ MP C3001,
+ MP C3501,
+ MP C3001/LD630C,
+ MP C3501/LD635C,
+ MP C3001, MP C3501,
+</br></br>
+ Aficio MP C300,
+ Aficio MP C300SR,
+ Aficio MP C400,
+ Aficio MP C400SR,
+ C 230,
+ C 230SR,
+ C 240,
+ C 240SR,
+ MP C300,
+ MP C300SR,
+ MP C400,
+ MP C400SR,
+ LD 130C,
+ LD 130CSR,
+ LD 140C,
+ LD 140CSR,
+</br></br>
+ Aficio MP C2051,
+ Aficio MP C2551,
+ C9120,
+ C9125,
+ MP C2051,
+ MP C2551,
+ LD 620C,
+ LD 625C
+</br></br>
+ Aficio SP C320DN,
+ SP C320DN,
+</br></br>
+ Aficio MP 201,
+ 920,
+ MP 201/LD 220,
+ MP 201,
+</br></br>
+ Aficio SP 4310N,
+ SP 4310,
+</br></br>
+ Aficio SP 5200S,
+ Aficio SP 5210SF,
+ Aficio SP 5210SR,
+ SP5200S,
+ SP5210SF,
+ SP5210SR,
+</br></br>
+ Aficio SP 5200DN,
+ Aficio SP 5210DN,
+ SP5200DN,
+ SP5210DN,
+</br></br>
+ Aficio MP 2352,
+ Aficio MP 2852,
+ Aficio MP 3352,
+ MP 2352,
+ MP 2852,
+ MP 3352,
+ MP2352/DSm923,
+ MP2852/DSm928,
+ MP3352/DSm933,
+</br></br>
+ Aficio MP 4002,
+ Aficio MP 5002,
+ MP 4002,
+ MP 5002,
+ DSm940,
+ DSm950,
+</br></br>
+ Aficio MP C4502,
+ Aficio MP C5502,
+ Aficio MP C4502A,
+ Aficio MP C5502A,
+ MP C4502,
+ MP C5502,
+ MP C4502A,
+ MP C5502A,
+</br></br>
+ Aficio MP C3002,
+ Aficio MP C3502,
+ MP C3002,
+ MP C3502,
+ DSc930,
+ DSc935,
+</br></br>
+ Aficio SP 4400S,
+ Aficio SP 4410SF,
+ Aficio SP 4420SF,
+</br></br>
+ Aficio MP C305,
+ MP C305,
+ DSc530,
+</br></br>
+ Aficio MP 301,
+ MP 301,
+</br></br>
+ Aficio MP 6002,
+ Aficio MP 7502,
+ Aficio MP 9002,
+ MP 6002,
+ MP 7502,
+ MP 9002,
+</br></br>
+ Aficio SP 8300DN,
+ SP 8300DN,
+</br></br>
+ Aficio SP C830DN,
+ Aficio SP C831DN,
+ SP C830DN,
+ SP C831DN,
+</br></br>
+ Aficio SP C730DN,
+ SP C730DN,
+</br></br>
+ MP 2001,
+ MP 2501
+</br></br>
+MP C6502,MP C8002,Pro C5100S,Pro C5110S
+</br></br>
+MP C3003,MP C3503,MP C4503,MP C5503,MP C6003
+</br></br>
+Pro 8100S, Pro 8110S, Pro 8120S
+</br></br>
+MP 2553, MP 3053, MP 3353
+</br></br>
+MP C2003, MP C2003Z, MP C2503, MP C2503Z
+</br></br>
+MP C401, MP C401SR
+</br></br>
+MP 2554, MP 3054, MP 3554, MP 4054, MP 5054, MP 6054
+</br></br>
+MP C2011
+</br></br>
+SP 4510SF, MP 401SPF, SP 4510DN, SP 4520DN
+</br></br>
+SP 3600SF, SP 3610SF, SP 3600DN
+</br></br>
+Pro C7100S, Pro C7110S
+</br></br>
+Pro C7100, Pro C7110
+</br></br>
+SP 6430DN
+</br></br>
+SP C440DN
+</br></br>
+MP C306Z, MP C406Z
+</br></br>
+Pro 8110, Pro 8120
+</br></br>
+MP 305+
+</br></br>
+SP C435DN
+</br></br>
+MP C3004, MP C3504, MP C4504, MP C5504, MP C6004, MP C2004, MP C2504
+</br></br>
+MP 501, MP 601, SP 5300, SP 5310
+</br></br>
+SP C340DN, SP C342DN
+</br></br>
+MP 6503, MP 7503, MP 9003
+</br></br>
+MP 402SPF
+</br></br>
+MP C6503, MP C8003
+</br></br>
+SP C352DN
+</br></br>
+SP C840DN, SP C842DN
+</br></br>
+SP 400DN
+</br></br>
+SP 450DN
+</br></br>
+Pro 8200S, Pro 8210S, Pro 8220S
+</br></br>
+Pro 8210, Pro 8220
+</br></br>
+Pro C5200S, Pro C5210S
+</br></br>
+MP 2555, MP 3055, MP 3555, MP 4055, MP 5055, MP 6055
+</br></br>
+MP C307, MP C407
+</br></br>
+MP C2004ex, MP C2504ex, MP C3004ex, MP C3504ex, MP C4504ex, MP C5504ex, MP C6004ex
+</br></br>
+SP 8400DN
+</br></br>
+SP C360SFNw, SP C360SNw, SP C361SFNw
+</br></br>
+SP C360DNw
+</br></br>
+MP C501
+</br></br>
+Pro C7200S, Pro C7210S, Pro C7200S Light
+</br></br>
+Pro C7200, Pro C7210
+</br></br>
+Aficio SP 3500SF,Aficio SP 3510SF,3500SF,3510SF,SP 3500SF,SP 3510SF
+</br></br>
+Aficio SP 3500N,Aficio SP 3510DN,3500N,3510DN,SP 3500N,SP 3510DN
+</br></br>
+IM C2000, IM C2500, IM C3000, IM C3500, IM C4500, IM C5500, IM C6000, IM C3509J, IM C2509J
+</br></br>
+GS3020, GS3025, GS3030, GS3045, GS3160
+</br></br>
+IM 350, IM 430
+</br></br>
+P 501, P 502
+</br></br>
+Pro 8300S, Pro 8310S, Pro 8320S
+</br></br>
+Pro 8310, Pro 8320
+</br></br>
+IM 2702, GS1227
+</br></br>
+P C600
+</br></br>
+P 800, P 801
+</br></br>
+IM 550, IM 600, IM 600SR
+</br></br>
+IM C300, IM C400, IM C400SR
+</br></br>
+IM C6500, IM C8000
+</br></br>
+Pro C5300S, Pro C5310S, Pro C5300SL
+</br></br>
+GS3021, M C2001
+</br></br>
+IM C530F, IM C530FB
+</br></br>
+IM 7000, IM 8000, IM 9000
+</br></br>
+IM 2500, IM 2509J, IM 3000, IM 3009J, IM 3500, IM 3509J, IM 4000, IM 5000, IM 6000, GS3025m, GS3030m, GS3035m, GS3040m, GS3050m, GS3060m
+</br></br>
+IM C3010, IM C3510, IM C3519J, GS4030c, IM C4510, IM C5510, IM C6010, GS4045c, GS4160c, IM C2010, IM C2510, IM C2519J, GS4020c, GS4025c
+</br></br>
+Using Generic Model the device will default to color/Black and White mode = color. 
+</p>
+
+
+
+
+<hr class=semiwidth>
+<h1><a name="Trademarks_en"></a></h1>
+
+<p>All brand names and product names mentioned in this document are trademarks or registered trademarks of their respective companies. 
+</p>
+<hr class=semiwidth>
+<h1><a name="Trademarks_en"></a></h1>
+
+<p><h2>Enhanced Locked Print NX FlexRelease Sever</h2>
+In order to print using Enhanced Locked Print NX FlexRelease Sever, the selected model (Accesories tab) must be "Support models in Generic mode". 
+
+</p>
+
+</BODY>
+</HTML>
+
+<!-- End of documents -->
+
