@@ -1,0 +1,20 @@
+description:
+  en: "Citrix Workspace app (formerly known as Citrix Receiver) gives you instant access to all your services powered by Citrix."
+  fr: "L'application Citrix Workspace (anciennement connue sous le nom de Citrix Receiver) vous donne un accès instantané à tous vos services fournis par Citrix."
+  nl: "Citrix Workspace app (voorheen bekend als Citrix Receiver) geeft u direct toegang tot al uw diensten die worden aangestuurd door Citrix."
+displayName:
+  en: "Citrix Workspace"
+  fr: "Citrix Workspace"
+  nl: "Citrix Workspace"
+publisher: "Citrix"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app Citrix.Workspace
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app Citrix.Workspace
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Citrix\\ICA Client\\SelfServicePlugin"
+        fileOrFolderName: "SelfService.exe"

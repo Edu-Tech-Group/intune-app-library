@@ -1,0 +1,20 @@
+description:
+  en: "Fast and compact image viewer and converter."
+  fr: "Visualiseur et convertisseur d'images rapide et compact"
+  nl: "Snelle en compacte afbeeldingenviewer en -converter"
+displayName:
+  en: "IrfanView"
+  fr: "IrfanView"
+  nl: "IrfanView"
+publisher: "IrfanSkiljan"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app irfanview
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app irfanview
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files\\IrfanView"
+        fileOrFolderName: "i_view64.exe"

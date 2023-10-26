@@ -1,0 +1,20 @@
+description:
+  en: "LibreCAD is open source computer-aided design (CAD) software that was released on December 15, 2011."
+  fr: "LibreCAD est un logiciel libre de conception assistée par ordinateur (CAO) qui a été publié le 15 décembre 2011."
+  nl: "LibreCAD is opensourcesoftware voor computer-aided design (CAD) die werd uitgebracht op 15 december 2011."
+displayName:
+  en: "LibreCAD"
+  fr: "LibreCAD"
+  nl: "LibreCAD"
+publisher: "LibreCAD"
+logoUrl: "/logo.png"
+packageUrl: "/install.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\install.ps1 -app librecad
+  uninstallCommand: powershell.exe -executionpolicy bypass .\uninstall.ps1 -app librecad
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\LibreCAD"
+        fileOrFolderName: "LibreCAD.exe"

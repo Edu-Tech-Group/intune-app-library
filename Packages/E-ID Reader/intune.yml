@@ -1,0 +1,20 @@
+description:
+  en: "Belgian E-ID Reader software"
+  fr: "Belgian E-ID Reader software"
+  nl: "Belgian E-ID Reader software"
+displayName:
+  en: "E-ID Reader"
+  fr: "E-ID Reader"
+  nl: "E-ID Reader"
+publisher: "Belgium"
+logoUrl: "/logo.png"
+packageUrl: "/Script.intunewin"
+installation:
+  account: user
+  installCommand: powershell.exe -executionpolicy bypass .\Script.ps1 -app
+  uninstallCommand: powershell.exe -executionpolicy bypass .\Script.ps1 -app
+  detection:
+    file:
+      - detectionType: exists
+        path: "C:\\Program Files (x86)\\Belgium Identity Card\\BeID Minidriver"
+        fileOrFolderName: "beidmdrv.inf"
